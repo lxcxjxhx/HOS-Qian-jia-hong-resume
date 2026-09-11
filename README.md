@@ -62,9 +62,9 @@
 <sub>国家级竞赛荣誉<br/>AI×安全创新</sub>
 </td>
 <td width="20%" align="center">
-<br/><img src="https://img.shields.io/badge/2219-22D3EE?style=for-the-badge&logo=github&logoColor=white&labelColor=22D3EE" width="120"/><br/><br/>
+<br/><img src="https://img.shields.io/badge/2183-22D3EE?style=for-the-badge&logo=github&logoColor=white&labelColor=22D3EE" width="120"/><br/><br/>
 <b>GitHub 贡献</b><br/>
-<sub>年度 2219 commits<br/>持续开源</sub>
+<sub>年度 2183 commits<br/>持续开源</sub>
 </td>
 </tr>
 </table>
@@ -82,8 +82,8 @@
 **Qian Jiahong (钱佳宏) · 上海，中国**
 
 信息安全 × AI 双域实践者，以代码为武器深耕大模型攻防与系统安全。
-CSDN **1,467** 篇原创文章、**222** 个已合并 Pull Request、
-**7** 个 PyPI 开源包、年度 **2219** 次 GitHub 贡献，
+CSDN **1,467** 篇原创文章、**210** 个已合并 Pull Request、
+**7** 个 PyPI 开源包、年度 **2183** 次 GitHub 贡献，
 持续用工程实践探索 AI 时代的安全边界。
 
 </div>
@@ -115,12 +115,12 @@ CSDN **1,467** 篇原创文章、**222** 个已合并 Pull Request、
 <br/>
 
 <a href="./PR/README.md">
-<img src="https://img.shields.io/badge/📊_查看_PR_记录-222_merged-10B981?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/📊_查看_PR_记录-210_merged-10B981?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 <br/><br/>
 
-<sub>已合并 Pull Request: <b>222</b> | 涉及项目: <b>6+</b></sub>
+<sub>已合并 Pull Request: <b>210</b> | 涉及项目: <b>6+</b></sub>
 
 </div>
 
@@ -420,7 +420,7 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 </tr>
 <tr>
 <td align="left">🔓 <strong>开源</strong></td>
-<td align="left">PyPI 7 个开源包、GitHub 2219 年度贡献、Hugging Face 微调模型</td>
+<td align="left">PyPI 7 个开源包、GitHub 2183 年度贡献、Hugging Face 微调模型</td>
 </tr>
 </tbody>
 </table>
@@ -510,5 +510,5 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 ---
 
 <div align="center">
-<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-09-10 02:57:28 UTC</sub>
+<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-09-11 02:51:33 UTC</sub>
 </div>
