@@ -39,6 +39,7 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#3](https://github.com/lxcxjxhx/HOS-ARES/pull/3) | refactor: remove deepaudit agent (~40K lines) | 2026-08-17 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#2](https://github.com/lxcxjxhx/HOS-ARES/pull/2) | build: optimize APK size + upgrade build toolchain | 2026-08-17 |
 | [lxcxjxhx/HOS-Forge](https://github.com/lxcxjxhx/HOS-Forge) | [#46](https://github.com/lxcxjxhx/HOS-Forge/pull/46) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
+| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#65](https://github.com/lxcxjxhx/HOS-LS/pull/65) | feat(p0): W1 static prep - sample select + ground truth templates | 2026-09-12 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#63](https://github.com/lxcxjxhx/HOS-LS/pull/63) | feat: ECATSL Section 7-9 - verified evaluation/reporting, package wiring, and full validation | 2026-09-05 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#62](https://github.com/lxcxjxhx/HOS-LS/pull/62) | ECATSL Section 6 - catalog ingestion extension and scalable deterministic discovery | 2026-09-04 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#61](https://github.com/lxcxjxhx/HOS-LS/pull/61) | chore: remove tracked hypothesis cache artifacts | 2026-09-03 |
@@ -103,7 +104,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#50](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/50) | feat(S-12): 新增多篇汇总 HTML 渲染工具 render-summary-html.py | 2026-08-03 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#49](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/49) | fix(S-12): 默认输出升级为 HTML + Evidence 强制联网核验 arXiv/GitHub 元数据 | 2026-08-03 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#48](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/48) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#47](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/47) | feat(S-12): 论文输入 tex 源优先 + PDF 多级降级链，输出升级为美观 HTML/PDF | 2026-08-02 |
 | [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#6](https://github.com/lxcxjxhx/lxcxjxhx/pull/6) | chore: 移除 profile 仓库的 LICENSE 文件与展示 | 2026-08-02 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-09-12 02:59:49 UTC
+Last updated: 2026-09-13 02:59:40 UTC
 
 ---
 
