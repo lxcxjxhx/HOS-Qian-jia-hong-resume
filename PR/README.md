@@ -11,6 +11,7 @@ Merged Pull Requests across open source projects.
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
+| [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
 | [lxcxjxhx/BOS-NI](https://github.com/lxcxjxhx/BOS-NI) | [#2](https://github.com/lxcxjxhx/BOS-NI/pull/2) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#27](https://github.com/lxcxjxhx/HOS-ARES/pull/27) | fix(ci): round-16 根治 compressReleaseAssets Java heap space（noCompress + rootfs 裁剪） | 2026-08-26 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#26](https://github.com/lxcxjxhx/HOS-ARES/pull/26) | fix(ci): round-15 修复 skeleton 编译错误（compileReleaseKotlin 11 条） | 2026-08-26 |
@@ -104,7 +105,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#50](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/50) | feat(S-12): 新增多篇汇总 HTML 渲染工具 render-summary-html.py | 2026-08-03 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#49](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/49) | fix(S-12): 默认输出升级为 HTML + Evidence 强制联网核验 arXiv/GitHub 元数据 | 2026-08-03 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#48](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/48) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
-| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#6](https://github.com/lxcxjxhx/lxcxjxhx/pull/6) | chore: 移除 profile 仓库的 LICENSE 文件与展示 | 2026-08-02 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#4](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/4) | feat: 首页重构为海报式 SOC 信号分析台（去模板化） | 2026-08-20 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-01 03:58:32 UTC
+Last updated: 2026-10-02 03:55:35 UTC
 
 ---
 
