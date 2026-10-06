@@ -82,7 +82,7 @@
 **Qian Jiahong (钱佳宏) · 上海，中国**
 
 信息安全 × AI 双域实践者，以代码为武器深耕大模型攻防与系统安全。
-CSDN **1,467** 篇原创文章、**212** 个已合并 Pull Request、
+CSDN **1,467** 篇原创文章、**213** 个已合并 Pull Request、
 **7** 个 PyPI 开源包、年度 **2212** 次 GitHub 贡献，
 持续用工程实践探索 AI 时代的安全边界。
 
@@ -115,12 +115,12 @@ CSDN **1,467** 篇原创文章、**212** 个已合并 Pull Request、
 <br/>
 
 <a href="./PR/README.md">
-<img src="https://img.shields.io/badge/📊_查看_PR_记录-212_merged-10B981?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/📊_查看_PR_记录-213_merged-10B981?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 <br/><br/>
 
-<sub>已合并 Pull Request: <b>212</b> | 涉及项目: <b>6+</b></sub>
+<sub>已合并 Pull Request: <b>213</b> | 涉及项目: <b>6+</b></sub>
 
 </div>
 
@@ -510,5 +510,5 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 ---
 
 <div align="center">
-<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-10-05 03:54:45 UTC</sub>
+<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-10-06 04:42:40 UTC</sub>
 </div>
