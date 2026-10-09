@@ -510,5 +510,5 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 ---
 
 <div align="center">
-<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-10-08 04:21:12 UTC</sub>
+<sub>🤖 本 README 通过 GitHub Actions 自动更新，英文版 README.en.md 自动翻译 | 最后更新: 2026-10-09 04:26:40 UTC</sub>
 </div>
