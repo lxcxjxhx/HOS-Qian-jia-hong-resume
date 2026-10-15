@@ -12,6 +12,7 @@ Merged Pull Requests across open source projects.
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
 | [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
+| [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
 | [lxcxjxhx/BOS-NI](https://github.com/lxcxjxhx/BOS-NI) | [#2](https://github.com/lxcxjxhx/BOS-NI/pull/2) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#27](https://github.com/lxcxjxhx/HOS-ARES/pull/27) | fix(ci): round-16 根治 compressReleaseAssets Java heap space（noCompress + rootfs 裁剪） | 2026-08-26 |
@@ -40,7 +41,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#4](https://github.com/lxcxjxhx/HOS-ARES/pull/4) | refactor: remove pentestgpt agent (~5.5K lines) | 2026-08-17 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#3](https://github.com/lxcxjxhx/HOS-ARES/pull/3) | refactor: remove deepaudit agent (~40K lines) | 2026-08-17 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#2](https://github.com/lxcxjxhx/HOS-ARES/pull/2) | build: optimize APK size + upgrade build toolchain | 2026-08-17 |
-| [lxcxjxhx/HOS-Forge](https://github.com/lxcxjxhx/HOS-Forge) | [#46](https://github.com/lxcxjxhx/HOS-Forge/pull/46) | chore: 清理残留的旧 MIT 许可证文件与 README 引用 | 2026-08-02 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#65](https://github.com/lxcxjxhx/HOS-LS/pull/65) | feat(p0): W1 static prep - sample select + ground truth templates | 2026-09-12 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#63](https://github.com/lxcxjxhx/HOS-LS/pull/63) | feat: ECATSL Section 7-9 - verified evaluation/reporting, package wiring, and full validation | 2026-09-05 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#62](https://github.com/lxcxjxhx/HOS-LS/pull/62) | ECATSL Section 6 - catalog ingestion extension and scalable deterministic discovery | 2026-09-04 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-14 03:25:14 UTC
+Last updated: 2026-10-15 03:03:31 UTC
 
 ---
 
