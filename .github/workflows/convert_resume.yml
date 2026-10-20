@@ -3,11 +3,22 @@ name: Build Resume (ZH + EN) to DOCX & PDF
 on:
   push:
     branches: [main]
-    paths: ['resume.html']
+    paths:
+      - 'resume.html'
+      # 构建脚本自身变更也必须重建，否则改了转换器却跑的是旧产物
+      - '.github/scripts/convert_to_pdf.py'
+      - '.github/scripts/convert_to_docx.py'
+      - '.github/scripts/translate_resume.py'
+      - '.github/workflows/convert_resume.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# 与 update_all / translate_readme 共用写权限，避免两个任务同时 git push 互相顶掉
+concurrency:
+  group: resume-writers
+  cancel-in-progress: false
 
 jobs:
   convert:
@@ -43,91 +54,81 @@ jobs:
           echo "=== Python dependencies installed ==="
 
       # ── Step 1: translate resume.html -> resume.en.html ──
-      # Free by default (Google Translate public endpoint / MyMemory fallback);
-      # if the DEEPSEEK_API_KEY secret is configured, DeepSeek is used instead
-      # for higher quality (same key as the README translation workflow).
+      # 只用免费后端：Google gtx 公开端点为主，MyMemory 兜底。不需要任何 secret。
+      # 脚本内部循环重试（默认 6 轮、指数退避）；只要还有段落没译完、
+      # 或中文残留超过 10%，就以非 0 退出且不写 resume.en.html ——
+      # 本 job 随之中断，后续生成与 commit 步骤全部不执行，不会产生半成品更新。
       - name: Translate resume to English
         env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
-          DEEPSEEK_MODEL: ${{ secrets.DEEPSEEK_MODEL }}
+          TRANSLATE_MAX_ROUNDS: '6'
+          TRANSLATE_MAX_RESIDUAL: '0.10'
         run: |
           python .github/scripts/translate_resume.py
-          if [ -f "resume.en.html" ]; then
-            echo "✓ English resume generated"
-            ls -lh resume.en.html
-          else
-            echo "✗ English resume generation failed"
-            exit 1
-          fi
+          test -f "resume.en.html" || { echo "✗ English resume generation failed"; exit 1; }
+          echo "✓ English resume generated (complete translation)"
+          ls -lh resume.en.html
 
       # ── Step 2: Chinese versions ──
       - name: Generate Chinese PDF
         run: |
-          echo "=== Generating Chinese PDF ==="
           python .github/scripts/convert_to_pdf.py resume.html "简历 钱佳宏.pdf"
-          if [ -f "简历 钱佳宏.pdf" ]; then
-            echo "✓ PDF generated successfully"
-            ls -lh "简历 钱佳宏.pdf"
-          else
-            echo "✗ PDF generation failed"
-            exit 1
-          fi
+          test -f "简历 钱佳宏.pdf" || { echo "✗ PDF generation failed"; exit 1; }
+          ls -lh "简历 钱佳宏.pdf"
 
       - name: Generate Chinese DOCX
         run: |
-          echo "=== Generating Chinese DOCX ==="
           python .github/scripts/convert_to_docx.py resume.html "简历 钱佳宏.docx"
-          if [ -f "简历 钱佳宏.docx" ]; then
-            echo "✓ DOCX generated successfully"
-            ls -lh "简历 钱佳宏.docx"
-          else
-            echo "✗ DOCX generation failed"
-            exit 1
-          fi
+          test -f "简历 钱佳宏.docx" || { echo "✗ DOCX generation failed"; exit 1; }
+          ls -lh "简历 钱佳宏.docx"
 
       # ── Step 3: English versions ──
       - name: Generate English PDF
         run: |
-          echo "=== Generating English PDF ==="
           python .github/scripts/convert_to_pdf.py resume.en.html "Resume Qian Jiahong.pdf"
-          if [ -f "Resume Qian Jiahong.pdf" ]; then
-            echo "✓ English PDF generated successfully"
-            ls -lh "Resume Qian Jiahong.pdf"
-          else
-            echo "✗ English PDF generation failed"
-            exit 1
-          fi
+          test -f "Resume Qian Jiahong.pdf" || { echo "✗ English PDF generation failed"; exit 1; }
+          ls -lh "Resume Qian Jiahong.pdf"
 
       - name: Generate English DOCX
         run: |
-          echo "=== Generating English DOCX ==="
           python .github/scripts/convert_to_docx.py resume.en.html "Resume Qian Jiahong.docx"
-          if [ -f "Resume Qian Jiahong.docx" ]; then
-            echo "✓ English DOCX generated successfully"
-            ls -lh "Resume Qian Jiahong.docx"
-          else
-            echo "✗ English DOCX generation failed"
-            exit 1
-          fi
+          test -f "Resume Qian Jiahong.docx" || { echo "✗ English DOCX generation failed"; exit 1; }
+          ls -lh "Resume Qian Jiahong.docx"
+
+      # ── Step 4: 产物自检（页数/纸张），防止静默生成长度异常的文件 ──
+      - name: Verify PDF page count and page size
+        run: |
+          pip install pypdf
+          python - <<'PY'
+          import sys, glob
+          from pypdf import PdfReader
+          bad = 0
+          for name in glob.glob('*.pdf'):
+              r = PdfReader(name)
+              n = len(r.pages)
+              box = r.pages[0].mediabox
+              w, h = round(float(box.width) / 72 * 25.4, 1), round(float(box.height) / 72 * 25.4, 1)
+              ok = (n == 1 and abs(w - 210) <= 2 and abs(h - 297) <= 2)
+              print(f"{'OK ' if ok else 'ERR'} {name}: {n} page(s), {w}x{h}mm")
+              bad += 0 if ok else 1
+          sys.exit(1 if bad else 0)
+          PY
 
       - name: Commit & push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "=== Committing changes ==="
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add resume.en.html "简历 钱佳宏.docx" "简历 钱佳宏.pdf" "Resume Qian Jiahong.docx" "Resume Qian Jiahong.pdf"
+          git add resume.en.html "简历 钱佳宏.docx" "简历 钱佳宏.pdf" \
+                  "Resume Qian Jiahong.docx" "Resume Qian Jiahong.pdf"
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            echo "Committing converted files..."
             git commit -m "Auto-build resume: Chinese + English (HTML/DOCX/PDF)
 
             Generated from resume.html using GitHub Actions
-            - resume.en.html: auto-translated via free translation API
+            - resume.en.html: auto-translated via free API (Google gtx / MyMemory)
             - Chinese: PDF (weasyprint) + DOCX (python-docx)
             - English: PDF (weasyprint) + DOCX (python-docx)"
             git push

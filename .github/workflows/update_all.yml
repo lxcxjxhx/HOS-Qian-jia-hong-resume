@@ -8,12 +8,20 @@ on:
   push:
     branches:
       - main
+    # 修正：脚本实际在 .github/scripts/ 下，旧路径 'generate_readme.py' 永远匹配不到
     paths:
-      - 'generate_readme.py'
-      - 'update_pr_workflow.py'
+      - '.github/scripts/generate_readme.py'
+      - '.github/scripts/update_pr_workflow.py'
+      - '.github/workflows/update_all.yml'
 
 permissions:
   contents: write
+
+# 与 convert_resume / translate_readme 共用同一 group：三个 job 都会 git push，
+# 并发跑必然出现 "remote contains work you do not have" 的推空。
+concurrency:
+  group: resume-writers
+  cancel-in-progress: false
 
 jobs:
   update-pr-records:
@@ -23,7 +31,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        # 需要完整历史以便提交
         fetch-depth: 0
 
     - name: Set up Python
@@ -39,14 +46,12 @@ jobs:
     - name: Update PR records
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python .github/scripts/update_pr_workflow.py
+      run: python .github/scripts/update_pr_workflow.py
 
     - name: Generate updated README
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python .github/scripts/generate_readme.py
+      run: python .github/scripts/generate_readme.py
 
     - name: Commit and push changes
       env:
@@ -56,11 +61,29 @@ jobs:
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add -A
         TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
-        git diff --staged --quiet || git commit -m "Auto-update PR records and README
+
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        git commit -m "Auto-update PR records and README
 
         Updated at: ${TIMESTAMP}
 
         - Updated PR records with latest merged PRs
         - Regenerated README with current statistics
         - Updated contribution counts and metrics"
-        git push
+
+        # 提交期间远端可能已被 translate_readme 推进，重试 rebase 两次
+        for i in 1 2 3; do
+          if git push; then
+            echo "✓ Changes pushed successfully"
+            exit 0
+          fi
+          echo "push rejected, rebasing (attempt $i)…"
+          git pull --rebase --autostash origin main
+          sleep 3
+        done
+        echo "⚠ push failed after 3 attempts"
+        exit 1

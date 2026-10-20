@@ -98,12 +98,16 @@ def get_pypi_stats():
 
 
 def get_pr_count():
-    """获取已合并 PR 数量"""
+    """获取已合并 PR 数量。
+
+    search/issues 默认每页 30 条，靠 len(items) 数会严重低估；
+    这里直接读返回体里的 total_count —— 与 update_pr_workflow.py 的口径一致。
+    """
     if not GITHUB_TOKEN:
         return 0
-    
+
     r = requests.get(
-        f'https://api.github.com/search/issues?q=author:{GITHUB_USERNAME}+is:pr+is:merged',
+        f'https://api.github.com/search/issues?q=author:{GITHUB_USERNAME}+is:pr+is:merged&per_page=1',
         headers=HEADERS
     )
     if r.status_code == 200:
@@ -111,11 +115,44 @@ def get_pr_count():
     return 0
 
 
+def get_contributed_repo_count():
+    """已合并 PR 涉及的仓库数。
+
+    原版 README 里写的是 len(pinned_repos)，那是 GitHub 置顶仓库数（上限 6），
+    与"涉及项目"毫无关系，会渲染成 "6+" 这种假数字。这里按真实 PR 归属去重统计。
+    """
+    if not GITHUB_TOKEN:
+        return 0
+
+    repos = set()
+    page = 1
+    while page <= 10:
+        r = requests.get(
+            f'https://api.github.com/search/issues?q=author:{GITHUB_USERNAME}+is:pr+is:merged'
+            f'&per_page=100&page={page}',
+            headers=HEADERS
+        )
+        if r.status_code != 200:
+            break
+        items = r.json().get('items', [])
+        if not items:
+            break
+        for it in items:
+            parts = it.get('repository_url', '').split('/')
+            if len(parts) >= 2:
+                repos.add(f'{parts[-2]}/{parts[-1]}')
+        if len(items) < 100:
+            break
+        page += 1
+    return len(repos)
+
+
 def generate_readme():
     """生成 README 内容"""
     github_stats = get_github_stats()
     pypi_stats = get_pypi_stats()
     pr_count = get_pr_count()
+    repo_count = get_contributed_repo_count()
     
     current_date = datetime.now().strftime('%B %Y')
     
@@ -241,7 +278,7 @@ CSDN **1,467** 篇原创文章、**{pr_count}** 个已合并 Pull Request、
 
 <br/><br/>
 
-<sub>已合并 Pull Request: <b>{pr_count}</b> | 涉及项目: <b>{len(github_stats['pinned_repos'])}+</b></sub>
+<sub>已合并 Pull Request: <b>{pr_count}</b> | 涉及项目: <b>{repo_count}</b></sub>
 
 </div>
 
@@ -449,7 +486,7 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>HOS-CTF \| 从入门到国赛的攻防之路 2026</strong></td>
+<td align="left"><strong>HOS-CTF \\| 从入门到国赛的攻防之路 2026</strong></td>
 <td align="center">20</td>
 <td align="left">🔒 付费专栏</td>
 </tr>
@@ -464,7 +501,7 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 <td align="left">📐 系统化教程</td>
 </tr>
 <tr>
-<td align="left"><strong>HOS-AI \| 大模型系统工程 × AI变现实战</strong></td>
+<td align="left"><strong>HOS-AI \\| 大模型系统工程 × AI变现实战</strong></td>
 <td align="center">150</td>
 <td align="left">⭐ 核心专栏</td>
 </tr>
@@ -484,7 +521,7 @@ Intel AI 竞赛 · AI+威胁检测<br/>
 <td align="left">💡 创意系列</td>
 </tr>
 <tr>
-<td align="left"><strong>HOS工程急救库 \| Git·Python·AI环境问题速查</strong></td>
+<td align="left"><strong>HOS工程急救库 \\| Git·Python·AI环境问题速查</strong></td>
 <td align="center">41</td>
 <td align="left">🔧 工具速查</td>
 </tr>
