@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>钱佳宏 · 个人简历</title>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============================ 页眉 ============================ -->
+  <header class="masthead">
+    <div class="masthead-main">
+      <h1 class="name">钱佳宏</h1>
+
+      <div class="facts">
+        <div class="f"><span class="k">出生日期</span><span class="v">2006-05-11</span></div>
+        <div class="f"><span class="k">身高</span><span class="v">185cm</span></div>
+        <div class="f"><span class="k">学校</span><span class="v">上海建桥学院</span></div>
+        <div class="f"><span class="k">专业</span><span class="v">计算机科学与技术（计科）</span></div>
+        <div class="f"><span class="k">学历</span><span class="v">本科在读 · 2028 届</span></div>
+        <div class="f"><span class="k">地址</span><span class="v">上海市</span></div>
+      </div>
+
+      <div class="contact">
+        <div class="c"><span>电话</span><a href="tel:19921057118">19921057118</a></div>
+        <div class="c"><span>邮箱</span><a href="mailto:aqfxz_zh@qq.com">aqfxz_zh@qq.com</a></div>
+        <div class="c"><span>GitHub</span><a href="https://github.com/lxcxjxhx">github.com/lxcxjxhx</a></div>
+        <div class="c"><span>博客</span><a href="https://security-hyacinth.blog.csdn.net">security-hyacinth.blog.csdn.net</a></div>
+        <div class="c"><span>arXiv</span><a href="https://arxiv.org/search/?query=JH-Qian&amp;searchtype=author">arxiv.org/?query=JH-Qian</a></div>
+        <div class="c"><span>LinkedIn</span><a href="https://www.linkedin.com/in/%E4%BD%B3%E5%AE%8F-%E9%92%B1-816875352/">linkedin.com/in/佳宏-钱</a></div>
+      </div>
+    </div>
+
+    <img class="photo" src="assets/photo.jpg" alt="钱佳宏证件照">
+  </header>
+
+  <!-- ============================ 实习经历 ============================ -->
+  <section class="section">
+    <h2>实习经历</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <span class="org">绿盟科技集团股份有限公司 上海分公司</span>
+        <span class="when">2025.07 – 2026.07</span>
+      </div>
+      <div class="entry-sub">实习安全工程师</div>
+      <ul class="bullets">
+        <li><b>安全产品交付与运维</b>：负责防火墙、WAF、RSAS 等设备的策略配置与故障排查，参与金融、制造业客户的等保合规项目现场实施。</li>
+        <li><b>AI 赋能安全运营 · PoC</b>：加入公司「安全运营–AI 赋能专项组」，主导大模型辅助告警分析的技术调研；基于 LangChain 搭建本地化 RAG 原型，完成安全日志向量化存储与 Prompt 工程调试，输出《AI 在安全日志分析中的应用调研报告》并组内分享。</li>
+        <li><b>自研提效工具投产</b>：独立研发规则自动化检查与修复工具 <a href="https://github.com/lxcxjxhx/HOS-LS">HOS-LS</a>，提交至绿盟工程交付工具平台并投入内部试用；构建轻量级安全知识库 <a href="https://github.com/lxcxjxhx/BOS-NI">BOS-NI</a>，集成语义检索能力，帮助新员工快速定位常见问题。</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============================ 项目经历 ============================ -->
+  <section class="section">
+    <h2>项目经历</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <span class="org">安全风信子 — AI+ 信息安全攻防实训平台</span>
+        <span class="when">2024.09 – 2025.06</span>
+      </div>
+      <div class="entry-sub">负责人 &amp; 软件开发<span class="sep">|</span><span class="badge">中美创客分赛道国家奖</span></div>
+      <ul class="bullets">
+        <li>带领 6 人团队打造「攻击模拟–日志审计–智能响应」一体化实训平台。</li>
+        <li><b>核心技术攻坚</b>：基于 <b>Qwen-14B</b> 指令微调（LoRA），结合 <b>Neo4j 知识图谱</b>与 <b>PPO 强化学习</b>优化漏洞利用路径推荐；开发命令行智能辅助模块。</li>
+        <li><b>工程落地</b>：设计攻击日志归类与可视化响应模块，实现异常行为快速溯源。成果：中美创客国奖、软著实审中、专利撰写中。</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <span class="org">智医语伴机器人 — 医疗 AI 对话系统</span>
+        <span class="when">2023.09 – 2024.06</span>
+      </div>
+      <div class="entry-sub">队员 &amp; AI 应用开发<span class="sep">|</span><span class="badge">英特尔 AI 创新大赛入围</span></div>
+      <ul class="bullets">
+        <li>基于「AI PC」平台研发面向基层诊所的智能问诊辅助机器人。</li>
+        <li><b>负责隐私安全与 AI 交互</b>：设计端到端通信加密与敏感内容识别机制（BERT 微调分类器），确保医疗数据合规；参与语音识别（Whisper 微调）与意图理解（LLM Few-shot）开发。</li>
+        <li>入围英特尔创新创业专项赛（GBAC240303106392）。</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============================ 技能 & 证书 ============================ -->
+  <section class="section">
+    <h2>技能 &amp; 证书</h2>
+    <div class="skills">
+      <div class="row">
+        <span class="k">AI 工程</span>
+        <span class="v"><code>PyTorch</code> / <code>LangChain</code> 全链路；RAG 检索增强、Prompt 工程、大模型微调 <code>LoRA</code>/<code>QLoRA</code>；<code>Neo4j</code> 知识图谱、<code>PPO</code> 强化学习应用。</span>
+      </div>
+      <div class="row">
+        <span class="k">安全方向</span>
+        <span class="v">防火墙 / WAF / RSAS 等安全设备策略配置与故障排查；等保合规实施；源码级漏洞挖掘与修复，在多个知名开源项目提交已合入的安全补丁。</span>
+      </div>
+      <div class="row">
+        <span class="k">开发语言</span>
+        <span class="v"><code>Python</code> 为主，熟悉 <code>C</code> / <code>Go</code> / <code>JavaScript</code>；<code>Git</code> 协作、<code>Docker</code> 部署、<code>Linux</code> 环境运维。</span>
+      </div>
+      <div class="row">
+        <span class="k">证书 · 其他</span>
+        <span class="v">网络安全应急响应（中级）<span class="sep">|</span>英语 CET-6<span class="sep">|</span>普通话二级乙等<span class="sep">|</span>计算机一级<span class="sep">|</span>EFG 创业训练营结业（第 75 期）<span class="sep">|</span>C2 驾照</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 开源贡献 ============================ -->
+  <section class="section">
+    <h2>开源贡献（均已合入主干）</h2>
+    <ul class="prs">
+      <li>
+        <span class="repo"><span class="org">hiyouga/</span>LlamaFactory</span>
+        <span class="star">7.4 万星</span>
+        <span class="pr"><a href="https://github.com/hiyouga/LlamaFactory/pull/10626">#10626</a></span>
+        <span class="desc">优化入门指南，降低大模型微调上手门槛</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">axolotl-ai-cloud/</span>axolotl</span>
+        <span class="star">7.4 万星</span>
+        <span class="pr"><a href="https://github.com/axolotl-ai-cloud/axolotl/pull/3802">#3802</a></span>
+        <span class="desc">修复 Jinja 聊天模板校验的错误提示逻辑</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">vanhauser-thc/</span>thc-hydra</span>
+        <span class="star">1.2 万星</span>
+        <span class="pr"><a href="https://github.com/vanhauser-thc/thc-hydra/pull/1092">#1092</a></span>
+        <span class="desc">修复缓冲区溢出；另提交 #1091 内存泄漏等共 6 个已合入修复</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">aquasecurity/</span>trivy</span>
+        <span class="star">3.8 万星</span>
+        <span class="pr"><a href="https://github.com/aquasecurity/trivy/pull/11013">#11013</a></span>
+        <span class="desc">修复 Alpine APKINDEX 归档读取中的类型断言失败</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">zaproxy/</span>zaproxy</span>
+        <span class="star">1.6 万星</span>
+        <span class="pr"><a href="https://github.com/zaproxy/zaproxy/pull/9411">#9411</a></span>
+        <span class="desc">修复 HashUtils 资源未释放问题</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">slimm609/</span>checksec</span>
+        <span class="star">2.3k 星</span>
+        <span class="pr"><a href="https://github.com/slimm609/checksec/pull/349">#349</a></span>
+        <span class="desc">修正 kernel.unprivileged_bpf_disabled 的检测逻辑</span>
+      </li>
+      <li>
+        <span class="repo"><span class="org">bytedance/</span>g3</span>
+        <span class="star">888 星</span>
+        <span class="pr"><a href="https://github.com/bytedance/g3/pull/1103">#1103</a></span>
+        <span class="desc">移除 openssl 证书对中的不安全 unwrap() 调用</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============================ 页脚 ============================ -->
+  <footer class="footer">
+    <span>最后更新：2026-10</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
