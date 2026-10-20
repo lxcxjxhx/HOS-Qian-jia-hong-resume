@@ -20,9 +20,10 @@ on:
 permissions:
   contents: write
 
+# 与 update_all / convert_resume 共用同一 group，避免并发 git push 冲突
 concurrency:
-  group: translate-readme
-  cancel-in-progress: true
+  group: resume-writers
+  cancel-in-progress: false
 
 jobs:
   translate:
@@ -59,12 +60,22 @@ jobs:
 
           if git diff --staged --quiet; then
             echo "README.en.md is up to date - nothing to commit."
-          else
-            echo "Committing updated English README..."
-            git commit -m "Auto-translate README to English (README.en.md)
-
-            Generated from README.md by .github/scripts/translate_readme.py
-            using the DeepSeek API."
-            git push
-            echo "✓ Changes pushed successfully"
+            exit 0
           fi
+
+          git commit -m "Auto-translate README to English (README.en.md)
+
+          Generated from README.md by .github/scripts/translate_readme.py
+          using the DeepSeek API."
+
+          for i in 1 2 3; do
+            if git push; then
+              echo "✓ Changes pushed successfully"
+              exit 0
+            fi
+            echo "push rejected, rebasing (attempt $i)…"
+            git pull --rebase --autostash origin main
+            sleep 3
+          done
+          echo "⚠ push failed after 3 attempts"
+          exit 1
