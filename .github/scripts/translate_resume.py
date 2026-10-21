@@ -10,6 +10,20 @@ Translate resume.html (Chinese) into resume.en.html (English) — 免费后端�
   2. MyMemory 公开 API —— 主链路失败或返回空时的兜底
 不存在付费/需鉴权的后端分支，未配置任何 secret 也能完整跑通。
 
+── v4：翻译缓存与 429 熔断 ──
+  问题：改 workflow、改转换脚本都会触发构建，而 resume.html 一个字符没变，
+  75 段正文仍被全量重译一遍。免费端点对这类重复请求只会回 429，于是
+  「不完整不产出」的闸门把整条 CI 判红 —— 明明简历内容毫无改动。
+  v4 在 resume.en.html 里写入源文件 sha256 标记：
+    * 指纹一致   -> 直接复用，零请求，秒级通过
+    * 指纹不一致 -> 正常翻译，完成后刷新标记
+    * 需强制重译 -> FORCE_RETRANSLATE=1（workflow_dispatch 提供开关）
+  gtx 连续 429 时熔断 60s 并轮换主机，本轮剩余段落直接走 MyMemory，
+  而不是对着同一堵墙把 35 段各撞 6 遍。
+  另修一处静默污染：MyMemory 额度耗尽时会把 "MYMEMORY WARNING: ..." 塞进
+  translatedText，该串含拉丁字母且不等于原文，能同时骗过两道校验，
+  最终会作为正文写进英文简历。现在显式拦截。
+
 ── v3：免费后端的质量与稳定性修复 ──
   旧版按 80 字符切块、每块一次请求，长句被硬切断后逐块翻译再拼接，
   得到的是「句子的碎片译文」，语序断裂且重复关键词。
@@ -30,8 +44,10 @@ Translate resume.html (Chinese) into resume.en.html (English) — 免费后端�
 Usage:
   python .github/scripts/translate_resume.py [input.html] [output.html]
   Defaults: resume.html -> resume.en.html
+  FORCE_RETRANSLATE=1 可忽略缓存强制重译。
 """
 
+import hashlib
 import os
 import re
 import sys
@@ -47,6 +63,12 @@ OUTPUT_FILE = sys.argv[2] if len(sys.argv) > 2 else "resume.en.html"
 CJK_RE = re.compile(r'[\u4e00-\u9fff]')
 LATIN_RE = re.compile(r'[A-Za-z]')
 DATA_URI_RE = re.compile(r'^\s*data:[\w/+.-]+;base64,', re.I)
+
+# ── 翻译缓存 ──
+# 只在 resume.html 内容真正变化时才重新翻译。改 workflow、改转换脚本都会
+# 触发构建，但正文没变却要全量重译 75 段 —— 既慢又必然撞上 429。
+CACHE_MARKER_RE = re.compile(r'<!--\s*translation-cache:\s*([0-9a-f]{64})\s*-->')
+FORCE_RETRANSLATE = os.environ.get('FORCE_RETRANSLATE', '').strip().lower() in ('1', 'true', 'yes')
 
 # ── 循环补齐策略 ──
 # 免费端点会 429 / 断连，单轮失败不该让整份简历带中文发出去。
@@ -82,8 +104,23 @@ FULLWIDTH = str.maketrans({
     '“': '"', '”': '"', '‘': "'", '’': "'",
 })
 
-# MyMemory 匿名额度较低，只在前半段用尽时才全量兜底
-MYMEMORY_PER_RUN = 40
+# ── gtx 限流应对 ──
+# 429 时轮换主机，并连续两次失败后熔断一段时间，期间不再尝试 gtx。
+GTX_HOSTS = ('translate.googleapis.com', 'translate.google.com')
+GTX_UA = ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 '
+          '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+GTX_BLOCK_SECONDS = float(os.environ.get('TRANSLATE_GTX_BLOCK', '60'))
+_GTX = {'host_idx': 0, 'fails': 0, 'blocked_until': 0.0}
+
+# MyMemory 匿名额度按 IP 每日计算；缓存生效后极少用到，留足一次全量兜底的余量
+MYMEMORY_PER_RUN = int(os.environ.get('TRANSLATE_MYMEMORY_BUDGET', '100'))
+# 额度耗尽时 MyMemory 会把警告塞进 translatedText，必须拦下，
+# 否则英文简历正文里会出现 "MYMEMORY WARNING: YOU USED ALL AVAILABLE ..."
+MYMEMORY_BAD_MARKERS = ('MYMEMORY WARNING', 'QUOTA', 'INVALID', 'PLEASE SELECT TWO DISTINCT')
+
+
+class RateLimited(Exception):
+    """gtx 返回 429。"""
 
 
 def normalize(text):
@@ -115,13 +152,34 @@ def is_translatable(node):
 
 # ---- 免费后端 ---------------------------------------------------------------
 
+def gtx_available():
+    return time.time() >= _GTX['blocked_until']
+
+
+def _gtx_mark_ok():
+    _GTX['fails'] = 0
+
+
+def _gtx_mark_429():
+    """连续 429 就熔断：与其把每段都撞一遍，不如整轮直接交给 MyMemory。"""
+    _GTX['host_idx'] += 1
+    _GTX['fails'] += 1
+    if _GTX['fails'] >= 2 and gtx_available():
+        _GTX['blocked_until'] = time.time() + GTX_BLOCK_SECONDS
+        print(f'  [WARN] gtx 连续 429，熔断 {GTX_BLOCK_SECONDS:.0f}s，'
+              f'本轮剩余段落直接走 MyMemory')
+
+
 def _gtx_request(segment):
     """一次 gtx 请求翻一整段；返回译文字符串。"""
+    host = GTX_HOSTS[_GTX['host_idx'] % len(GTX_HOSTS)]
     params = [('client', 'gtx'), ('sl', 'zh-CN'), ('tl', 'en'), ('dt', 't'), ('q', segment)]
     r = requests.get(
-        'https://translate.googleapis.com/translate_a/single',
-        params=params, timeout=40,
+        f'https://{host}/translate_a/single',
+        params=params, timeout=40, headers={'User-Agent': GTX_UA},
     )
+    if r.status_code == 429:
+        raise RateLimited(host)
     r.raise_for_status()
     data = r.json()
     if not data or not data[0]:
@@ -154,16 +212,31 @@ def google_translate(segments):
     """Google gtx 免费端点：整段一次请求，段与段之间轻微限速。"""
     out = []
     for seg in segments:
+        if not gtx_available():
+            out.append('')
+            continue
         parts = []
         for chunk in _soft_split(seg):
             try:
                 parts.append(_gtx_request(chunk))
+                _gtx_mark_ok()
+            except RateLimited as e:  # noqa: BLE001 - 交给 MyMemory 兜底
+                print(f'  [WARN] gtx 429 on {e}')
+                _gtx_mark_429()
+                parts.append('')
+                if not gtx_available():
+                    break
             except Exception as e:  # noqa: BLE001 - 该段留给 MyMemory / 原文兜底
                 print(f'  [WARN] gtx failed: {e}')
                 parts.append('')
             time.sleep(0.15)
         out.append(' '.join(p for p in parts if p).strip())
     return out
+
+
+def _mymemory_ok(text):
+    up = (text or '').upper()
+    return bool(up.strip()) and not any(b in up for b in MYMEMORY_BAD_MARKERS)
 
 
 class MyMemory:
@@ -183,11 +256,16 @@ class MyMemory:
                 r = requests.get(
                     'https://api.mymemory.translated.net/get',
                     params={'q': s, 'langpair': 'zh-CN|en'},
-                    timeout=40,
+                    timeout=40, headers={'User-Agent': GTX_UA},
                 )
                 r.raise_for_status()
                 data = r.json()
-                out.append(data.get('responseData', {}).get('translatedText') or '')
+                text = data.get('responseData', {}).get('translatedText') or ''
+                if not _mymemory_ok(text):
+                    # 额度耗尽/非法输入时它会回一段英文警告，绝不能当译文用
+                    print(f'  [WARN] mymemory 返回警告而非译文，丢弃: {text[:60]}')
+                    text = ''
+                out.append(text)
             except Exception as e:  # noqa: BLE001
                 print(f'  [WARN] mymemory failed: {e}')
                 out.append('')
@@ -221,9 +299,62 @@ def base64_payloads(html):
     return [m.group(1) for m in re.finditer(r'data:[\w/+.-]+;base64,([^"\'\s)]+)', html, re.I)]
 
 
+def source_fingerprint(html):
+    """源文件指纹：只看正文内容，与构建脚本版本无关。"""
+    return hashlib.sha256(html.encode('utf-8')).hexdigest()
+
+
+def reuse_cached_output(html, fingerprint):
+    """若 resume.en.html 已由同一份源文件产出，直接复用，不再请求翻译接口。
+
+    这是对付免费端点 429 的根本办法：只改 workflow / 转换脚本时，
+    正文一个字符都没变，却要把全部段落重译一遍 —— 既慢又必然触发限流。
+    """
+    if FORCE_RETRANSLATE:
+        print('[INFO] FORCE_RETRANSLATE 已置位，忽略缓存强制重译')
+        return False
+    if not os.path.exists(OUTPUT_FILE):
+        return False
+    try:
+        with open(OUTPUT_FILE, encoding='utf-8') as f:
+            prev = f.read()
+    except OSError:
+        return False
+
+    m = CACHE_MARKER_RE.search(prev)
+    if not m:
+        print(f'[INFO] {OUTPUT_FILE} 无缓存标记，需完整翻译一次以建立标记')
+        return False
+    if m.group(1) != fingerprint:
+        print(f'[INFO] 源文件已变更 ({m.group(1)[:12]}… -> {fingerprint[:12]}…)，重新翻译')
+        return False
+
+    # 指纹一致仍要校验产物本身没坏
+    if len(prev) < 1000:
+        print('[INFO] 缓存产物过小，重新翻译')
+        return False
+    if base64_payloads(prev) != base64_payloads(html):
+        print('[INFO] 缓存产物 base64 资源与源文件不一致，重新翻译')
+        return False
+    total = len(CJK_RE.findall(html)) or 1
+    residual = len(CJK_RE.findall(prev))
+    if residual / total > MAX_RESIDUAL:
+        print(f'[INFO] 缓存产物中文残留 {residual / total:.0%} 超阈值，重新翻译')
+        return False
+
+    print(f'[SKIP] 源文件未变更 (sha256 {fingerprint[:12]}…)，复用现有 {OUTPUT_FILE}')
+    return True
+
+
 def main():
     with open(INPUT_FILE, encoding='utf-8') as f:
         html = f.read()
+
+    fingerprint = source_fingerprint(html)
+    if reuse_cached_output(html, fingerprint):
+        print('[OK] 无需重新翻译，英文版保持原样，本次不发起任何翻译请求')
+        print(f'[INFO] finished at {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC')
+        return
 
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -307,6 +438,15 @@ def main():
     out = str(soup)
     if out.startswith('\n'):
         out = out[1:]
+
+    # ---- 写入缓存标记：下次同源文件可直接复用 ----
+    marker = f'<!-- translation-cache: {fingerprint} -->'
+    if CACHE_MARKER_RE.search(out):
+        out = CACHE_MARKER_RE.sub(marker, out, count=1)
+    elif '</head>' in out:
+        out = out.replace('</head>', marker + '\n</head>', 1)
+    else:
+        out = marker + '\n' + out
 
     # ---- 断言 1：base64 负载必须逐字节一致 ----
     before_b64 = base64_payloads(html)
