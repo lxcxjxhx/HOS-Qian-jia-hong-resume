@@ -63,7 +63,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto-translate README to English (README.en.md)
+          git commit -s -m "Auto-translate README to English (README.en.md)
 
           Generated from README.md by .github/scripts/translate_readme.py
           using the DeepSeek API."

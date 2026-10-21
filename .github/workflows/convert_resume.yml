@@ -125,7 +125,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-build resume: Chinese + English (HTML/DOCX/PDF)
+            git commit -s -m "Auto-build resume: Chinese + English (HTML/DOCX/PDF)
 
             Generated from resume.html using GitHub Actions
             - resume.en.html: auto-translated via free API (Google gtx / MyMemory)
