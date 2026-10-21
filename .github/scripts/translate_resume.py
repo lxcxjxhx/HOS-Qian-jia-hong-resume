@@ -96,7 +96,20 @@ TERM_FIXES = [
     (re.compile(r'\bsafety hyacinth\b', re.I), 'Security Hyacinth'),
     (re.compile(r'\bsecurity hyacinth\b', re.I), 'Security Hyacinth'),
     (re.compile(r'\bsafety engineer\b', re.I), 'Security Engineer'),
+    # 全链路：机器翻译会直译成 "entire link"，英文里不成立，统一为 pipeline
+    (re.compile(r'\bthe entire link of\b', re.I), 'the full pipeline of'),
+    (re.compile(r'\bthe entire link\b', re.I), 'the full pipeline'),
+    (re.compile(r'\bentire link\b', re.I), 'full pipeline'),
+    (re.compile(r'\bfull link\b', re.I), 'full pipeline'),
+    # 中文无主语句式会被直译成 "It can independently complete ..."
+    (re.compile(r'\bIt can independently complete\b', re.I), 'Independently delivers'),
+    (re.compile(r'\bcan also locate and repair\b', re.I), 'also locates and repairs'),
 ]
+
+# 翻译规则版本：normalize()/TERM_FIXES 逻辑变更时递增，
+# 参与缓存指纹计算 —— 否则改了规则，缓存仍判定"源文件未变"而跳过，
+# 新规则永远不生效。
+RULES_VERSION = 'v4.1'
 
 FULLWIDTH = str.maketrans({
     '：': ':', '，': ',', '。': '.', '；': ';',
@@ -300,8 +313,23 @@ def base64_payloads(html):
 
 
 def source_fingerprint(html):
-    """源文件指纹：只看正文内容，与构建脚本版本无关。"""
-    return hashlib.sha256(html.encode('utf-8')).hexdigest()
+    """缓存指纹 = 源文件内容 + 翻译规则。
+
+    只哈希源文件是不够的：改了 TERM_FIXES / GLOSSARY 后，源文件没变，
+    缓存会判定"未变更"直接复用旧产物，新规则永远不生效。把规则一起
+    纳入指纹，规则一改就自动失效重译。
+    """
+    rules = '\x00'.join([
+        RULES_VERSION,
+        repr(sorted(GLOSSARY.items())),
+        repr([(p.pattern, r) for p, r in TERM_FIXES]),
+        repr(sorted(FULLWIDTH.items())),
+    ])
+    h = hashlib.sha256()
+    h.update(html.encode('utf-8'))
+    h.update(b'\x00')
+    h.update(rules.encode('utf-8'))
+    return h.hexdigest()
 
 
 def reuse_cached_output(html, fingerprint):
