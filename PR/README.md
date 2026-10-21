@@ -82,6 +82,7 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#24](https://github.com/lxcxjxhx/HOS-LS/pull/24) | fix: NVD 查询列名 + CWE ETL 导入修复 | 2026-08-13 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#22](https://github.com/lxcxjxhx/HOS-LS/pull/22) | feat: 移除报告中的 APTS 合规披露区块 | 2026-08-13 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#21](https://github.com/lxcxjxhx/HOS-LS/pull/21) | fix: 修复 AI pipeline JSON 输出可靠性问题 | 2026-08-13 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#12](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/12) | fix(resume): 重排版解决「拥挤、上下划分不清晰」 | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#11](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/11) | feat(resume): 新增 A4 单页简历排版工程 (RESUME-A4-QIANJIAHONG) | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#10](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/10) | fix(ci): 修复简历构建链的结构性缺陷并改为纯免费翻译 | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#9](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/9) | style: 增加视觉层次，找回被过度清理的内容 | 2026-08-23 |
@@ -104,7 +105,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#52](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/52) | fix(S-01): 移除不存在的 mcp-compressor 依赖，改为 Reasonix 原生 [[plugins]] MCP 直连 | 2026-08-04 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#51](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/51) | feat(S-01): HOS-Save-Cost 重构为工作流层 Token 管家（四层集成 v2.0） | 2026-08-04 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#50](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/50) | feat(S-12): 新增多篇汇总 HTML 渲染工具 render-summary-html.py | 2026-08-03 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#49](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/49) | fix(S-12): 默认输出升级为 HTML + Evidence 强制联网核验 arXiv/GitHub 元数据 | 2026-08-03 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#4](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/4) | feat: 首页重构为海报式 SOC 信号分析台（去模板化） | 2026-08-20 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-20 08:38:38 UTC
+Last updated: 2026-10-21 03:11:26 UTC
 
 ---
 
