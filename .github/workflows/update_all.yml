@@ -67,7 +67,7 @@ jobs:
           exit 0
         fi
 
-        git commit -m "Auto-update PR records and README
+        git commit -s -m "Auto-update PR records and README
 
         Updated at: ${TIMESTAMP}
 
