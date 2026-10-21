@@ -55,7 +55,7 @@ import time
 from datetime import datetime, timezone
 
 import requests
-from bs4 import BeautifulSoup, Comment
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 INPUT_FILE = sys.argv[1] if len(sys.argv) > 1 else "resume.html"
 OUTPUT_FILE = sys.argv[2] if len(sys.argv) > 2 else "resume.en.html"
@@ -104,12 +104,14 @@ TERM_FIXES = [
     # 中文无主语句式会被直译成 "It can independently complete ..."
     (re.compile(r'\bIt can independently complete\b', re.I), 'Independently delivers'),
     (re.compile(r'\bcan also locate and repair\b', re.I), 'also locates and repairs'),
+    # 博客粉丝数：机器翻译给 "fans"，英文简历惯例用 "followers"
+    (re.compile(r'\b(\d[\d,]*\+?)\s*fans\b', re.I), r'\1 followers'),
 ]
 
 # 翻译规则版本：normalize()/TERM_FIXES 逻辑变更时递增，
 # 参与缓存指纹计算 —— 否则改了规则，缓存仍判定"源文件未变"而跳过，
 # 新规则永远不生效。
-RULES_VERSION = 'v4.1'
+RULES_VERSION = 'v4.2'
 
 FULLWIDTH = str.maketrans({
     '：': ':', '，': ',', '。': '.', '；': ';',
@@ -312,6 +314,85 @@ def base64_payloads(html):
     return [m.group(1) for m in re.finditer(r'data:[\w/+.-]+;base64,([^"\'\s)]+)', html, re.I)]
 
 
+def fix_latin_spacing(soup):
+    """修补行内标签拼接处的缺失空格。
+
+    翻译按文本节点进行，`基于 <b>Qwen-14B</b> 指令微调` 会被拆成多个节点
+    分别翻译；中文靠字形分隔不需要空格，英文拼起来就成了
+    "based onQwen-14BCommand fine-tuning"。这里在相邻节点之间、
+    两侧都是拉丁字母/数字处补一个空格。
+    """
+    # 左节点以标点收尾（"attack:"、"Stars"）时同样需要空格；
+    # 右节点以 "#" 开头（PR 号）也要隔开，否则拼成 "Stars#10626"。
+    LATIN_END = re.compile(r'[A-Za-z0-9:;.,!?)\]]$')
+    LATIN_START = re.compile(r'^[A-Za-z0-9#(\[]')
+    fixed = 0
+
+    def visible(node):
+        return node.get_text() if hasattr(node, 'get_text') else str(node)
+
+    for el in soup.find_all(True):
+        kids = [k for k in el.children if str(k).strip()]
+        for a, b in zip(kids, kids[1:]):
+            if not LATIN_END.search(visible(a).rstrip()):
+                continue
+            if not LATIN_START.match(visible(b).lstrip()):
+                continue
+            # 已经隔着空白就不动
+            if str(a)[-1:].isspace() or str(b)[:1].isspace():
+                continue
+            a.insert_after(NavigableString(' '))
+            fixed += 1
+
+    if fixed:
+        print(f'  [INFO] 修补了 {fixed} 处行内标签拼接缺失的空格')
+    return fixed
+
+
+# 翻译接口偶尔返回零宽字符，在英文排版里会变成看不见的空隙
+ZERO_WIDTH_RE = re.compile('[\u200b\u200c\u200d\u2060\ufeff]')
+
+
+def strip_zero_width(soup):
+    """清理零宽字符与不换行空格，避免英文里出现异常空隙。"""
+    cleaned = 0
+    for s in soup.find_all(string=True):
+        if isinstance(s, Comment):
+            continue
+        t = str(s)
+        t2 = ZERO_WIDTH_RE.sub('', t).replace('\u00a0', ' ')
+        if t2 != t:
+            s.replace_with(NavigableString(t2))
+            cleaned += 1
+    if cleaned:
+        print(f'  [INFO] 清理了 {cleaned} 处零宽字符/不换行空格')
+    return cleaned
+
+
+def fix_punct_spacing(soup):
+    """修补标点后缺失的空格。
+
+    中文里"：基于"不需要空格，英文"attack:based"必须写成"attack: based"。
+    逐节点翻译后冒号常常紧跟下一个词，这里补上。
+    跳过链接/邮箱等含 `//` 或 `@` 的文本，避免把 https:// 拆坏。
+    """
+    PUNCT_GLUE = re.compile(r'([:;,])(?=[A-Za-z])')
+    fixed = 0
+    for s in soup.find_all(string=True):
+        if isinstance(s, Comment):
+            continue
+        t = str(s)
+        if '//' in t or '@' in t:
+            continue
+        t2 = PUNCT_GLUE.sub(r'\1 ', t)
+        if t2 != t:
+            s.replace_with(NavigableString(t2))
+            fixed += 1
+    if fixed:
+        print(f'  [INFO] 修补了 {fixed} 处标点后缺失的空格')
+    return fixed
+
+
 def source_fingerprint(html):
     """缓存指纹 = 源文件内容 + 翻译规则。
 
@@ -462,6 +543,14 @@ def main():
         t = s.translate(FULLWIDTH)
         if t != s:
             s.replace_with(t)
+
+    # ---- 清理零宽字符 + 修补行内标签拼接处的缺失空格 ----
+    # 两者都直接作用于 soup，避免二次序列化带来的格式漂移。
+    # 逐节点翻译时中文靠字形分隔不需要空格，英文拼起来会粘成一串，
+    # 例如 "based onQwen-14BCommand fine-tuning"、"Stars#10626"。
+    strip_zero_width(soup)
+    fix_latin_spacing(soup)
+    fix_punct_spacing(soup)
 
     out = str(soup)
     if out.startswith('\n'):
