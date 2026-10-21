@@ -82,6 +82,11 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#24](https://github.com/lxcxjxhx/HOS-LS/pull/24) | fix: NVD 查询列名 + CWE ETL 导入修复 | 2026-08-13 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#22](https://github.com/lxcxjxhx/HOS-LS/pull/22) | feat: 移除报告中的 APTS 合规披露区块 | 2026-08-13 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#21](https://github.com/lxcxjxhx/HOS-LS/pull/21) | fix: 修复 AI pipeline JSON 输出可靠性问题 | 2026-08-13 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#17](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/17) | chore(ci): CI 自动提交补上 Signed-off-by | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#16](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/16) | fix(resume): 精简 header 冗余字段（生日/身高），腾出空间加厚章节间距 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#15](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/15) | fix(pdf): 自动适配单页，修复英文简历被撑成 2 页 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#14](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/14) | fix(resume): 重分配纵向空间，解决「拥挤、上下划分不清晰」 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#13](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/13) | chore: 移除误提交的 RESUME-A4-QIANJIAHONG 临时排版目录 | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#12](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/12) | fix(resume): 重排版解决「拥挤、上下划分不清晰」 | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#11](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/11) | feat(resume): 新增 A4 单页简历排版工程 (RESUME-A4-QIANJIAHONG) | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#10](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/10) | fix(ci): 修复简历构建链的结构性缺陷并改为纯免费翻译 | 2026-10-20 |
@@ -100,11 +105,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#61](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/61) | feat(S-01-HOS-Save-Cost): ponytail-restraint + token-router skills + reasonix.toml template | 2026-08-19 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#60](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/60) | feat: integrate CN-SRC-Hunter bug bounty pipeline methodology | 2026-08-17 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#58](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/58) | feat(S-12): 方法论背书 + CS 审稿 rubric 补全 | 2026-08-11 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#57](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/57) | feat: add X-00 HOS-Chara-Sequence — ComfyUI character portrait sequence generator (entertainment series) | 2026-08-07 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#53](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/53) | feat: 新增 S-13-HOS-Char-Factory 角色素材工厂 skill | 2026-08-06 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#52](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/52) | fix(S-01): 移除不存在的 mcp-compressor 依赖，改为 Reasonix 原生 [[plugins]] MCP 直连 | 2026-08-04 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#51](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/51) | feat(S-01): HOS-Save-Cost 重构为工作流层 Token 管家（四层集成 v2.0） | 2026-08-04 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#50](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/50) | feat(S-12): 新增多篇汇总 HTML 渲染工具 render-summary-html.py | 2026-08-03 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#4](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/4) | feat: 首页重构为海报式 SOC 信号分析台（去模板化） | 2026-08-20 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-21 03:11:26 UTC
+Last updated: 2026-10-21 10:41:58 UTC
 
 ---
 
