@@ -3,17 +3,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Biography - Qian Jiahong</title>
+<title>Resume - Qian Jiahong</title>
 <style>
   @page { size: A4; margin: 0; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: "Microsoft YaHei", "PingFang SC", "SimHei", sans-serif;
     font-size: 9.5pt;
-    line-height: 1.38;
+    line-height: 1.40;
     color: #222;
     width: 210mm;
-    padding: 8mm 15mm 6mm 15mm;
+    padding: 10mm 15mm 4.5mm 15mm;
   }
 
   /* ===== Header ===== */
@@ -42,25 +42,31 @@
   /* ===== Divider ===== */
   .divider { border: none; border-top: 2px solid #2c3e50; margin: 4px 0 5px 0; }
 
-  /* ===== Section Title ===== */
+  /* ===== Section Title =====
+     章节间距是"上下划分"的主要视觉来源。旧值 margin-top: 5px(1.3mm)
+     让五个章节视觉上连成一片，是面试官反馈"划分不清晰"的根因。 */
   .sec-title {
-    background: #2c3e50; color: #fff; font-size: 10.5pt; font-weight: 700;
-    padding: 2px 10px; letter-spacing: 2px; margin-bottom: 3px; margin-top: 5px;
+    background: #2c3e50; color: #fff; font-size: 11.5pt; font-weight: 700;
+    padding: 3.5px 10px; letter-spacing: 2.4px; margin-bottom: 6px; margin-top: 13px;
     width: 100%; border-left: 4px solid #3498db;
   }
 
   /* ===== Entry ===== */
-  .entry { margin-bottom: 3px; }
+  .entry { margin-bottom: 0; }
+  /* 同章节内条目之间用虚线划清边界，避免两段项目经历粘连 */
+  .entry + .entry {
+    border-top: 1px dashed #dde3ea; margin-top: 8px; padding-top: 8px;
+  }
   .entry-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0; }
   .entry-name { font-size: 9.5pt; font-weight: 700; color: #2c3e50; }
   .entry-date { font-size: 8pt; color: #7f8c8d; white-space: nowrap; font-weight: 500; }
   .entry-role { font-size: 8.5pt; color: #34495e; font-weight: 600; margin-bottom: 0; }
   .entry-text { font-size: 9pt; color: #333; text-indent: 2em; line-height: 1.38; }
   .entry-text ul { padding-left: 1.5em; list-style: disc; margin-top: 1px; margin-bottom: 0; }
-  .entry-text li { text-indent: 0; margin-bottom: 0; line-height: 1.35; }
+  .entry-text li { text-indent: 0; margin-bottom: 1.5px; line-height: 1.40; }
 
   /* ===== Skill Row ===== */
-  .skill { font-size: 9pt; color: #333; margin-bottom: 0; line-height: 1.32; }
+  .skill { font-size: 9pt; color: #333; margin-bottom: 2px; line-height: 1.45; }
   .skill b { color: #2c3e50; font-weight: 700; }
 
   /* ===== Self Intro ===== */
@@ -68,7 +74,7 @@
 
   /* ===== PR list ===== */
   .pr-list { font-size: 9pt; color: #333; margin-top: 2px; margin-bottom: 0; list-style: none; padding: 0; }
-  .pr-list li { margin-bottom: 2px; line-height: 1.45; padding-left: 1.4em; position: relative; }
+  .pr-list li { margin-bottom: 3px; line-height: 1.5; padding-left: 1.4em; position: relative; }
   .pr-list li:before { content: "▸"; position: absolute; left: 0; color: #3498db; font-weight: bold; }
   .pr-list a { color: #3498db; text-decoration: none; font-weight: 500; }
   .pr-list a:hover { text-decoration: underline; }
@@ -79,9 +85,9 @@
   }
 
   /* ===== Footer ===== */
-  .footer { text-align: center; font-size: 7pt; color: #95a5a6; margin-top: 4px; font-weight: 500; }
+  .footer { text-align: center; font-size: 7pt; color: #95a5a6; margin-top: 8px; font-weight: 500; }
 
-  @media print { body { padding: 8mm 15mm 6mm 15mm; } }
+  @media print { body { padding: 10mm 15mm 4.5mm 15mm; } }
 </style>
 </head>
 <body>
@@ -91,13 +97,13 @@
 <h1>Resume</h1>
 <table class="info-table">
 <tr><td class="label">Name:</td><td class="val">Qian Jiahong</td><td></td><td></td></tr>
-<tr><td class="label">&lt;g id="Bold"&gt;Date of Birth:&lt;/g&gt;</td><td class="val">2006</td><td class="label">&lt;g id="Bold"&gt;Height:&lt;/g&gt;</td><td class="val">185cm</td></tr>
-<tr><td class="label">Education:</td><td class="val">Undergraduate</td><td class="label">Address:</td><td class="val">Shanghai City</td></tr>
-<tr><td class="label">Tél.</td><td class="val">19921057118</td><td class="label">E-mail:</td><td class="val">aqfxz_zh@qq.com</td></tr>
+<tr><td class="label">Birthday:</td><td class="val">2006</td><td class="label">height:</td><td class="val">185cm</td></tr>
+<tr><td class="label">Education:</td><td class="val">Undergraduate student</td><td class="label">address:</td><td class="val">Shanghai</td></tr>
+<tr><td class="label">Telephone:</td><td class="val">19921057118</td><td class="label">Mail:</td><td class="val">aqfxz_zh@qq.com</td></tr>
 </table>
 <table class="links-table">
-<tr><td class="link-label">GitHub:</td><td class="link-val"><a href="https://github.com/lxcxjxhx">github.com/lxcxjxhx</a></td><td class="link-label">Blog:</td><td class="link-val"><a href="https://security-hyacinth.blog.csdn.net">security-hyacinth.blog.csdn.net</a></td></tr>
-<tr><td class="link-label">arXiv:</td><td class="link-val"><a href="https://arxiv.org/search/?query=JH-Qian&amp;searchtype=author">arxiv.org/search/?query=JH-Qian</a></td><td class="link-label">LinkedIn:</td><td class="link-val"><a href="https://www.linkedin.com/in/%E4%BD%B3%E5%AE%8F-%E9%92%B1-816875352/">linkedin.com/in/ Jia Hong - Money</a></td></tr>
+<tr><td class="link-label">GitHub：</td><td class="link-val"><a href="https://github.com/lxcxjxhx">github.com/lxcxjxhx</a></td><td class="link-label">blog:</td><td class="link-val"><a href="https://security-hyacinth.blog.csdn.net">security-hyacinth.blog.csdn.net</a></td></tr>
+<tr><td class="link-label">arXiv：</td><td class="link-val"><a href="https://arxiv.org/search/?query=JH-Qian&amp;searchtype=author">arxiv.org/search/?query=JH-Qian</a></td><td class="link-label">LinkedIn：</td><td class="link-val"><a href="https://www.linkedin.com/in/%E4%BD%B3%E5%AE%8F-%E9%92%B1-816875352/">linkedin.com/in/jiahong-qian</a></td></tr>
 </table>
 </div>
 <div class="photo">
@@ -106,34 +112,34 @@
 </div>
 <hr class="divider"/>
 <!-- 实习经历 -->
-<div class="sec-title">Internship</div>
+<div class="sec-title">Internship experience</div>
 <div class="entry">
 <div class="entry-top">
-<span class="entry-name">Lvmeng Technology Group Co., Ltd. Shanghai Branch</span>
+<span class="entry-name">NSFOCUS Technology Group Co., Ltd. Shanghai Branch</span>
 <span class="entry-date">2025.7 – 2026.7</span>
 </div>
 <div class="entry-role">Intern Security Engineer</div>
 <div class="entry-text">
 <ul>
-<li><b>Secure Product Delivery and O&amp;M</b>: Independently responsible for the strategic configuration and troubleshooting of firewall, WAF, RSAs and other equipment, deeply involved in financial/manufacturing customers and other security compliance projects, with solid system engineering delivery capabilities.</li>
-<li><b>AI-enabled safe operation · PoC</b>: Actively joined the company's "Security Operations-AI Empowerment Task Force" to lead the technical research of large model-assisted alarm analysis. Build a localized rag prototype system based on LangChain, complete the security log vector storage and Prompt project debugging, output the "Application Research Report of AI in Security Log Analysis" and share it within the group.</li>
-<li><b>Self-developed and effective tools put into production</b>: Independent R&amp;D Rules Automated Inspection and Repair Tool<a href="https://github.com/lxcxjxhx/HOS-LS" style="color:#3498db">HOS-LS</a>, submitted to the Green Alliance Engineering Delivery Tool Platform and put into internal trial; build a lightweight safety knowledge base<a href="https://github.com/lxcxjxhx/BOS-NI" style="color:#3498db">BOS-NI</a>, integrate semantic retrieval capabilities to help new hires quickly locate frequently asked questions.</li>
+<li><b>Security product delivery and operation and maintenance</b>: Independently responsible for policy configuration and troubleshooting of firewalls, WAF, RSAS and other equipment, deeply involved in compliance projects for financial/manufacturing customers, etc., with solid system engineering delivery capabilities.</li>
+<li><b>AI empowers security operations · PoC</b>: Actively joined the company's "Security Operations-AI Empowerment Task Force" and led technical research on large model-assisted alarm analysis. Build a localized RAG prototype system based on LangChain, complete the vectorized storage of security logs and debug the Prompt project, and output the "Research Report on the Application of AI in Security Log Analysis" and share it within the group.</li>
+<li><b>Self-developed efficiency improvement tools put into production</b>:Independently developed rule automated checking and repair tools<a href="https://github.com/lxcxjxhx/HOS-LS" style="color:#3498db">HOS-LS</a>, submitted to the NSFOCUS project delivery tool platform and put into internal trial; building a lightweight security knowledge base<a href="https://github.com/lxcxjxhx/BOS-NI" style="color:#3498db">BOS-NI</a>, integrated semantic search capabilities to help new employees quickly locate common problems.</li>
 </ul>
 </div>
 </div>
 <!-- 项目经历 -->
-<div class="sec-title">Project Experience</div>
+<div class="sec-title">Project experience</div>
 <div class="entry">
 <div class="entry-top">
-<span class="entry-name">Security Windshield Transducer – AI + Information Security Attack and Defense Training Platform</span>
+<span class="entry-name">Security Hyacinth – AI+ information security attack and defense training platform</span>
 <span class="entry-date">2024.9 – 2025.6</span>
 </div>
-<div class="entry-role">Leader &amp; Software Development | Won the China-US Maker Track National Award</div>
+<div class="entry-role">Person in Charge &amp; Software Development | Won the National Award for the Sino-US Maker Track</div>
 <div class="entry-text">
 <ul>
-<li>Lead a team of 6 people to build an integrated training platform for "Attack Simulation – Log Audit – Intelligent Response".</li>
-<li><b>Core technology to tackle</b>Settings based on:<b>Qwen-14B</b>Instruction fine-tuning (LoRA), in conjunction with<b>Neo4j Knowledge Graph</b>AND:<b>PPO Reinforcement Learning</b>Optimize vulnerability exploit path recommendations; develop command-line intelligent auxiliary modules.</li>
-<li><b>Project landing</b>: Design the attack log categorization and visual response module to achieve rapid traceability of abnormal behavior. Achievements: China-US Maker Country Award, soft and real review, patent writing.</li>
+<li>Led a team of 6 people to build an integrated training platform for "attack simulation-log audit-intelligent response".</li>
+<li><b>Core technology attack</b>:based on<b>Qwen-14B</b>Command fine-tuning (LoRA), combined with<b>Neo4j knowledge graph</b>and<b>PPO reinforcement learning</b>Optimize vulnerability exploitation path recommendations; develop command line intelligent auxiliary modules.</li>
+<li><b>Project implementation</b>: Design attack log classification and visual response modules to achieve rapid source tracing of abnormal behaviors. Achievements: Sino-US Maker National Award, soft copy pending, patent drafting in progress.</li>
 </ul>
 </div>
 </div>
@@ -142,34 +148,34 @@
 <span class="entry-name">Intelligent Medical Language Companion Robot – Medical AI Dialogue System</span>
 <span class="entry-date">2023.9 – 2024.6</span>
 </div>
-<div class="entry-role">Team Member &amp; AI Application Development | Intel AI Innovation Competition Finalist</div>
+<div class="entry-role">Team Members &amp; AI Application Development | Intel AI Innovation Competition Finalist</div>
 <div class="entry-text">
 <ul>
-<li>Develop intelligent consultation assistance robots for grassroots clinics based on the "AI PC" platform.</li>
-<li><b>Responsible for privacy security and AI interaction</b>: Designed end-to-end communication encryption and sensitive content recognition mechanism (Bert fine-tuning classifier) to ensure medical data compliance; participated in speech recognition (Whisper fine-tuning) and intent understanding (LLM Few-shot) development.</li>
-<li>Shortlisted for the Intel Innovation and Entrepreneurship Special Competition (GBAC240303106392), highly recognized by the organizer.</li>
+<li>Based on the "AI PC" platform, we develop intelligent consultation assistance robots for grassroots clinics.</li>
+<li><b>Responsible for privacy security and AI interaction</b>: Design end-to-end communication encryption and sensitive content identification mechanism (BERT fine-tuning classifier) ​​to ensure medical data compliance; participate in the development of speech recognition (Whisper fine-tuning) and intent understanding (LLM Few-shot).</li>
+<li>Shortlisted for the Intel Innovation and Entrepreneurship Competition (GBAC240303106392) and highly recognized by the organizer.</li>
 </ul>
 </div>
 </div>
 <!-- 技能 & 证书 -->
 <div class="sec-title">Skills &amp; Certifications</div>
-<div class="skill"><b>Core capabilities:</b>AI system engineering (PyTorch/LangChain full link, rag, code generation, large model fine-tuning LoRA/QLoRA) is parallel to AI security (offense and defense, vulnerability mining), and 168 open source PRs support the project's landing capability.</div>
-<div class="skill"><b>Explore orientation</b>Cutting-edge architectures such as reinforcement learning (PPO), AI Agent development, model compression distillation, and MCP/Skills.</div>
-<div class="skill"><b>Other:</b>English CET-6 | Mandarin Grade 2 B | EFG Entrepreneurship Bootcamp Completion (Issue 75) | Computer Grade 1 | C2 Driver's License</div>
+<div class="skill"><b>Core competencies:</b>AI system engineering (PyTorch/LangChain full link, RAG, code generation, large model fine-tuning LoRA/QLoRA) and AI security (offense and defense, vulnerability mining) run in parallel, and 168 open source PRs demonstrate the project's implementation capabilities.</div>
+<div class="skill"><b>Directions to explore:</b>Reinforcement learning (PPO), AI Agent development, model compression distillation, MCP/Skills and other cutting-edge architectures.</div>
+<div class="skill"><b>other:</b>English CET-6 | Mandarin Level 2 B | EFG Entrepreneurship Training Camp Completion (75th Issue) | Computer Level 1 | C2 Driver's License</div>
 <!-- 开源贡献 -->
-<div class="sec-title">Open source contributions (all merged PR)</div>
+<div class="sec-title">Open source contributions (all merged PRs)</div>
 <ul class="pr-list">
-<li><span class="pr-tag">Combined</span><a href="https://github.com/hiyouga/LlamaFactory/pull/10626">hiyouga/LlamaFactory</a><span style="color:#888;font-size:8.5pt">74,000 Stars</span># 10626 - Improve the Getting Started Guide document to lower the threshold for fine-tuning large models</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/axolotl-ai-cloud/axolotl/pull/3802">axolotl-ai-cloud/axolotl</a><span style="color:#888;font-size:8.5pt">74,000 Stars</span># 3802 - Fix Jinja Chat Template Validation Error Prompt Logic</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/vanhauser-thc/thc-hydra/pull/1092">vanhauser-thc/thc-hydra</a><span style="color:#888;font-size:8.5pt">12,000 stars</span># 1092 Buffer Overflow |<a href="https://github.com/vanhauser-thc/thc-hydra/pull/1091">#1091</a>Memory Leaks | etc Total 6 Consolidated Security Fixes PR</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/aquasecurity/trivy/pull/11013">aquasecurity/trivy</a><span style="color:#888;font-size:8.5pt">38,000 Stars</span># 11013 - Fix type assertion in Alpine APKINDEX archive read</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/zaproxy/zaproxy/pull/9411">zaproxy/zaproxy</a><span style="color:#888;font-size:8.5pt">16,000 stars</span># 9411 - HashUtils Resource Leak Fix</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/slimm609/checksec/pull/349">slimm609/checksec</a><span style="color:#888;font-size:8.5pt">2.3k stars</span># 349 - Fix kernel.unprivileged_bpf_disabled detection logic</li>
-<li><span class="pr-tag">Combined</span><a href="https://github.com/bytedance/g3/pull/1103">bytedance/g3</a><span style="color:#888;font-size:8.5pt">888 Stars</span># 1103 - Fix unsafe unwrap () call in openssl certificate alignment</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/hiyouga/LlamaFactory/pull/10626">hiyouga/LlamaFactory</a><span style="color:#888;font-size:8.5pt">74,000 stars</span>#10626 - Improve the Getting Started Guide documentation to lower the threshold for fine-tuning large models</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/axolotl-ai-cloud/axolotl/pull/3802">axolotl-ai-cloud/axolotl</a><span style="color:#888;font-size:8.5pt">74,000 stars</span>#3802 - Fix Jinja chat template verification error prompt logic</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/vanhauser-thc/thc-hydra/pull/1092">vanhauser-thc/thc-hydra</a><span style="color:#888;font-size:8.5pt">12,000 stars</span>#1092 Buffer overflow |<a href="https://github.com/vanhauser-thc/thc-hydra/pull/1091">#1091</a>Memory leak | 6 merged security fix PRs</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/aquasecurity/trivy/pull/11013">aquasecurity/trivy</a><span style="color:#888;font-size:8.5pt">38,000 stars</span>#11013 - Fix type assertion in Alpine APKINDEX archive reading</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/zaproxy/zaproxy/pull/9411">zaproxy/zaproxy</a><span style="color:#888;font-size:8.5pt">16,000 stars</span>#9411 - HashUtils resource leak fix</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/slimm609/checksec/pull/349">slimm609/checksec</a><span style="color:#888;font-size:8.5pt">2.3k stars</span>#349 - Fix kernel.unprivileged_bpf_disabled detection logic</li>
+<li><span class="pr-tag">Merged</span><a href="https://github.com/bytedance/g3/pull/1103">bytedance/g3</a><span style="color:#888;font-size:8.5pt">888 stars</span>#1103 - Fix unsafe unwrap() call in openssl certificate pair</li>
 </ul>
 <!-- 自我介绍 -->
-<div class="sec-title">Introduce yourself</div>
-<div class="intro">My core direction is the intersection of AI engineering and system security: using PyTorch and LangChain to build AI prototypes from rag to code generation, and thinking about the vulnerability of the big model itself from the perspective of system security. I believe the best defense comes from a deep understanding of the attacker's mind. Now I'm looking forward to really combining the two lines to make a reliable, in-depth smart product.</div>
-<div class="footer">Last Updated: August 23, 2026</div>
+<div class="sec-title">introduce yourself</div>
+<div class="intro">My core direction is the intersection of AI engineering and system security: using PyTorch and LangChain to build AI prototypes from RAG to code generation, and using a system security perspective to think about the vulnerability of the large model itself. I believe the best defense comes from a deep understanding of the attacker's mind. Now I look forward to truly combining these two lines to make reliable and in-depth smart products.</div>
+<div class="footer">Last updated: August 23, 2026</div>
 </body>
 </html>
