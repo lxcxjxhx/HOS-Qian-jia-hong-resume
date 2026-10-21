@@ -11,6 +11,11 @@ on:
       - '.github/scripts/translate_resume.py'
       - '.github/workflows/convert_resume.yml'
   workflow_dispatch:
+    inputs:
+      force_retranslate:
+        description: '忽略翻译缓存，强制重新翻译'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -58,10 +63,14 @@ jobs:
       # 脚本内部循环重试（默认 6 轮、指数退避）；只要还有段落没译完、
       # 或中文残留超过 10%，就以非 0 退出且不写 resume.en.html ——
       # 本 job 随之中断，后续生成与 commit 步骤全部不执行，不会产生半成品更新。
+      #
+      # 翻译结果按 resume.html 的 sha256 缓存：正文没变就直接复用，零请求。
+      # 这样改 workflow / 改转换脚本触发的重建不会再去撞免费端点的 429。
       - name: Translate resume to English
         env:
           TRANSLATE_MAX_ROUNDS: '6'
           TRANSLATE_MAX_RESIDUAL: '0.10'
+          FORCE_RETRANSLATE: ${{ inputs.force_retranslate && '1' || '0' }}
         run: |
           python .github/scripts/translate_resume.py
           test -f "resume.en.html" || { echo "✗ English resume generation failed"; exit 1; }
