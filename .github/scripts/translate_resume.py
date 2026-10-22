@@ -101,6 +101,12 @@ GLOSSARY = {
         'overflows. Fixes submitted upstream are merged; self-built tools are '
         'software-copyright registered.',
 
+    # 自我介绍是 HR 第一眼看到的内容，机翻产出
+    # "algorithm development related to landing"、"he led"（人称错乱）、
+    # "soft notes"（软著误译）、"Green Alliance"（绿盟误译）、"rag" 小写，
+    # 直接给英文，不经机器翻译。
+    '我主要做 AI Agent 和算法落地相关的开发。之前带队做了攻防实训平台，用 Qwen-14B 微调 + 知识图谱 + PPO 做漏洞利用路径推荐，拿了中美创客国家奖；在绿盟也独立搭过本地化 RAG 告警分析原型，做过 Prompt 工程和向量检索调优。平时会写工具、提上游 PR，也拿了几项软著。现在更专注把 Agent、工具链和算法真正跑通到可用系统里。':
+        'I build AI agents and put algorithms into production. I led a team building an attack-defense training platform: vulnerability exploitation path recommendation using Qwen-14B fine-tuning, a knowledge graph, and PPO, which won the China-US Maker National Award. At NSFOCUS I independently built a local RAG prototype for alert analysis, covering prompt engineering and vector retrieval tuning. I write tools and send upstream PRs, and hold several software copyrights. Right now I focus on getting agents, tooling, and algorithms to run as usable systems.',
     # 技能区两行同样直连：gtx 被限流时回退 MyMemory，会产出 "both have merged PR"、
     # "rag"（小写破坏技术名词）、"Being processed"、"IPR" 等劣化表达。
     # 这三类岗（Agent / 算法 / 开发）的关键词必须准确，不能交给不稳定的机翻。

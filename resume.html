@@ -125,7 +125,7 @@
   <div class="entry-role">实习安全工程师</div>
   <div class="entry-text">
     <ul>
-      <li><b>安全产品交付与运维</b>：负责防火墙、WAF、RSAS 等安全设备的策略配置、规则调优与故障处置，参与金融/制造业客户等保合规项目交付与验收。</li>
+      <li><b>安全产品交付与运维</b>：防火墙 / WAF / RSAS 策略配置与规则调优，参与金融、制造业客户等保合规项目交付与验收。</li>
       <li><b>AI 赋能安全运营 · PoC</b>：参与"安全运营–AI 赋能专项组"，负责大模型辅助告警分析的可行性验证：用 LangChain 搭建本地化 RAG 原型，将历史告警日志向量化入库，通过 Prompt 调优输出告警归并与研判建议，原型与结论交专项组评估。</li>
       <li><b>自研工具并开源</b>：<a href="https://github.com/lxcxjxhx/HOS-LS" style="color:#3498db">HOS-LS</a> 是面向 AI 生成代码的安全扫描引擎（AGPL-3.0，86 次提交 / 32 个测试）：Semgrep·bandit→CodeQL→大模型三级级联，LangGraph 编排 7 个 Agent，静态层 5.3s 完成初筛后仅对候选子集做 AI 深扫；RepoPairBench 50 对实测确认率 42%、误报 28%（裸调大模型约 90%）。另开源 <a href="https://github.com/lxcxjxhx/BOS-NI" style="color:#3498db">BOS-NI</a>，把 AI 安全运营文章提炼为可复用的 Skill / Agent / Workflow 设计。</li>
     </ul>
@@ -156,8 +156,7 @@
   <div class="entry-role">队员 & AI 应用开发 | 英特尔 AI 创新大赛入围</div>
   <div class="entry-text">
     <ul>
-      <li>基于"AI PC"平台研发面向基层诊所的智能问诊辅助机器人，本人负责隐私安全与 AI 交互模块。</li>
-      <li><b>隐私安全与 AI 交互</b>：设计端到端通信加密与敏感内容识别机制（BERT 微调分类器），保障医疗数据合规；参与语音识别（Whisper 微调）与意图理解（LLM Few-shot）开发。</li>
+      <li><b>AI 算法实践</b>：BERT 微调做敏感内容识别，参与 Whisper 语音识别与 LLM Few-shot 意图理解；设计端到端加密保障医疗数据合规。</li>
       <li>入围英特尔创新创业专项赛（GBAC240303106392），方案通过主办方技术评审并进入专项赛道。</li>
     </ul>
   </div>
@@ -177,14 +176,13 @@
   <li><span class="pr-tag">已合并</span><a href="https://github.com/vanhauser-thc/thc-hydra/pull/1092">vanhauser-thc/thc-hydra</a><span style="color:#888;font-size:8.5pt"> 1.2万星</span> #1092 缓冲区溢出 | <a href="https://github.com/vanhauser-thc/thc-hydra/pull/1091">#1091</a> 内存泄漏 | 等共 6 个已合并安全修复 PR</li>
   <li><span class="pr-tag">已合并</span><a href="https://github.com/aquasecurity/trivy/pull/11013">aquasecurity/trivy</a><span style="color:#888;font-size:8.5pt"> 3.8万星</span> #11013 - 修复 Alpine APKINDEX 归档读取中的类型断言</li>
   <li><span class="pr-tag">已合并</span><a href="https://github.com/zaproxy/zaproxy/pull/9411">zaproxy/zaproxy</a><span style="color:#888;font-size:8.5pt"> 1.6万星</span> #9411 - HashUtils 资源泄漏修复</li>
-  <li><span class="pr-tag">已合并</span><a href="https://github.com/slimm609/checksec/pull/349">slimm609/checksec</a><span style="color:#888;font-size:8.5pt"> 2.3k星</span> #349 - 修复 kernel.unprivileged_bpf_disabled 检测逻辑</li>
   <li><span class="pr-tag">已合并</span><a href="https://github.com/bytedance/g3/pull/1103">bytedance/g3</a><span style="color:#888;font-size:8.5pt"> 888星</span> #1103 - 修复 openssl 证书对中不安全的 unwrap() 调用</li>
 </ul>
 
 
 <!-- 自我介绍 -->
 <div class="sec-title">自我介绍</div>
-<div class="intro">求职意向：AI Agent 应用开发、算法工程、后端开发；7 个上游合并 PR、5 项软件著作权可佐证。</div>
+<div class="intro">我主要做 AI Agent 和算法落地相关的开发。之前带队做了攻防实训平台，用 Qwen-14B 微调 + 知识图谱 + PPO 做漏洞利用路径推荐，拿了中美创客国家奖；在绿盟也独立搭过本地化 RAG 告警分析原型，做过 Prompt 工程和向量检索调优。平时会写工具、提上游 PR，也拿了几项软著。现在更专注把 Agent、工具链和算法真正跑通到可用系统里。</div>
 
 <div class="footer">最后更新：2026年10月22日</div>
 
