@@ -101,6 +101,34 @@ GLOSSARY = {
         'upstream and self-built tools that cleared software copyright review are the '
         'product of that standard - a combination that is usually indispensable when AI '
         'products actually go live.',
+    # 技能区两行同样直连：gtx 被限流时回退 MyMemory，会产出 "both have merged PR"、
+    # "rag"（小写破坏技术名词）、"Being processed"、"IPR" 等劣化表达。
+    # 这三类岗（Agent / 算法 / 开发）的关键词必须准确，不能交给不稳定的机翻。
+    'Python / C / Go / Java / Rust 多语言开发（均有已合并 PR）；'
+    'PyTorch / LangChain 全链路（RAG、LoRA/QLoRA 微调、Neo4j 知识图谱）；'
+    'MCP 与 Skill 封装，熟练使用 [CC] / Codex / DSH / Pi。':
+        'Python / C / Go / Java / Rust multi-language development, each backed by a merged '
+        'PR; PyTorch / LangChain end-to-end (RAG, LoRA/QLoRA fine-tuning, Neo4j knowledge '
+        'graph); MCP and Skill packaging; hands-on with [CC] / Codex / DSH / Pi.',
+    'AI Agent 与工具链开发；强化学习（PPO 已落地）；模型压缩与蒸馏；AI 安全背景。':
+        'AI Agent and tooling development; reinforcement learning (PPO in production); '
+        'model compression and distillation; AI security background.',
+    # 以下短标签在 <b> 内单独成节点，机翻会丢冒号或给缩写（方向：→ "Orientation"，
+    # 知识产权：→ "IPR"），固定映射避免随后端波动。
+    '方向：': 'Focus:',
+    '知识产权：': 'Intellectual property:',
+    # 知识产权正文：MyMemory 回退时产出 "IPR: 5 items of software copyright"、
+    # "Command line proxy software"、"Being processed"，均不专业，固定译法。
+    '软件著作权 5 项（HOSxAI 命令行代理软件已登记 2025R11L0843188；'
+    'HOS-Sec-Engine / HOS-Critic-Review / HOS-Vibe-Guard / HOS-LS 受理中）':
+        '5 software copyrights (HOSxAI command-line agent software registered '
+        '2025R11L0843188; HOS-Sec-Engine / HOS-Critic-Review / HOS-Vibe-Guard / '
+        'HOS-LS under examination)',
+    # 其他行：MyMemory 产出 "Mandarin Grade 2 B"、"EFG Entrepreneurship Bootcamp
+    # Completion (Issue 75)" 等不规范表达，固定译法。
+    '英语 CET-6 | 普通话二级乙等 | EFG 创业训练营结业（第75期）| 计算机一级 | C2 驾照':
+        'English CET-6 | Mandarin Proficiency Level 2B | EFG Entrepreneurship Training '
+        'Camp (75th cohort) | Computer Proficiency Level 1 | C2 Driver License',
 }
 
 TERM_FIXES = [
@@ -117,6 +145,11 @@ TERM_FIXES = [
     (re.compile(r'\bcan also locate and repair\b', re.I), 'also locates and repairs'),
     # 博客粉丝数：机器翻译给 "fans"，英文简历惯例用 "followers"
     (re.compile(r'\b(\d[\d,]*\+?)\s*fans\b', re.I), r'\1 followers'),
+    (re.compile(r'\bmulti-language development \(all PRs have been merged\)',
+                re.I), 'multi-language development (each backed by a merged PR)'),
+    (re.compile(r'\breinforcement learning \(PPO has been implemented\)',
+                re.I), 'reinforcement learning (PPO in production use)'),
+    (re.compile(r'\btool chain development\b', re.I), 'tooling development'),
     # 软著状态：机翻把"受理中"译成 "is being accepted"，语义错（应为审核中）
     (re.compile(r'\bHOSxAI Command line\b'), 'HOSxAI command-line'),
     (re.compile(r'\bhas been registered\b', re.I), 'registered'),
@@ -125,6 +158,17 @@ TERM_FIXES = [
     # 机翻把"既能…也能…"译成 "It can not only handle..."，主语冗余
     (re.compile(r'\bIt can not only handle\b', re.I), 'Handles both'),
     (re.compile(r'\bbut also locate and repair\b', re.I), 'and locates and repairs'),
+    # 知识产权行的文本被 <span class="nowrap"> 切成多个节点，整段 GLOSSARY 命中不了，
+    # 只能按碎片修。gtx 正常与 MyMemory 回退两种译法都要覆盖。
+    (re.compile(r'\b5 items of software copyright\b', re.I), '5 software copyrights'),
+    (re.compile(r'\bCommand line proxy software\b'), 'command-line agent software'),
+    (re.compile(r'\bCommand-line proxy software\b'), 'command-line agent software'),
+    (re.compile(r'\bBeing processed\b', re.I), 'under examination'),
+    # 中文全角右括号紧跟在"受理中"后，机翻会把它吞掉。
+    # "受理中）" 是独立节点且只会译成 "under examination"，用整节点匹配补回括号，
+    # 不影响句中出现的 under examination。
+    (re.compile(r'^(\s*)under examination(\s*)$', re.I),
+     r'\1under examination)\2'),
 ]
 
 # 翻译规则版本：normalize()/TERM_FIXES 逻辑变更时递增，
