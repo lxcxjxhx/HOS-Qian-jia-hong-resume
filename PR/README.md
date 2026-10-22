@@ -79,9 +79,10 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#27](https://github.com/lxcxjxhx/HOS-LS/pull/27) | fix: Agent-2 风险枚举放宽为候选风险（验证层过滤） | 2026-08-14 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#26](https://github.com/lxcxjxhx/HOS-LS/pull/26) | fix: Agent-6 因 location 绝对路径规则过度 REJECTED 真实漏洞 | 2026-08-14 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#25](https://github.com/lxcxjxhx/HOS-LS/pull/25) | fix: NVD 数据库缺失时降级内置 DB 而非挂起 | 2026-08-14 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#24](https://github.com/lxcxjxhx/HOS-LS/pull/24) | fix: NVD 查询列名 + CWE ETL 导入修复 | 2026-08-13 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#22](https://github.com/lxcxjxhx/HOS-LS/pull/22) | feat: 移除报告中的 APTS 合规披露区块 | 2026-08-13 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#21](https://github.com/lxcxjxhx/HOS-LS/pull/21) | fix: 修复 AI pipeline JSON 输出可靠性问题 | 2026-08-13 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#21](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/21) | feat(resume): 实习/项目强化，补博客粉丝数，修英文拼接缺陷 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#20](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/20) | fix(resume): 删掉求职方向限定，修正英文直译与缓存指纹 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#19](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/19) | feat(resume): 技能行改用真实工具名，自我介绍改为事实型 | 2026-10-21 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#18](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/18) | fix(ci): 翻译按源文件指纹缓存，修复改 workflow 必撞 429 | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#17](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/17) | chore(ci): CI 自动提交补上 Signed-off-by | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#16](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/16) | fix(resume): 精简 header 冗余字段（生日/身高），腾出空间加厚章节间距 | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#15](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/15) | fix(pdf): 自动适配单页，修复英文简历被撑成 2 页 | 2026-10-21 |
@@ -104,7 +105,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#62](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/62) | feat(S-13): ARGO × 天琴座创意写作预设系统 | 2026-08-20 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#61](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/61) | feat(S-01-HOS-Save-Cost): ponytail-restraint + token-router skills + reasonix.toml template | 2026-08-19 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#60](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/60) | feat: integrate CN-SRC-Hunter bug bounty pipeline methodology | 2026-08-17 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#58](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/58) | feat(S-12): 方法论背书 + CS 审稿 rubric 补全 | 2026-08-11 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#4](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/4) | feat: 首页重构为海报式 SOC 信号分析台（去模板化） | 2026-08-20 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-21 10:41:58 UTC
+Last updated: 2026-10-22 03:09:54 UTC
 
 ---
 
