@@ -106,12 +106,20 @@ TERM_FIXES = [
     (re.compile(r'\bcan also locate and repair\b', re.I), 'also locates and repairs'),
     # 博客粉丝数：机器翻译给 "fans"，英文简历惯例用 "followers"
     (re.compile(r'\b(\d[\d,]*\+?)\s*fans\b', re.I), r'\1 followers'),
+    # 软著状态：机翻把"受理中"译成 "is being accepted"，语义错（应为审核中）
+    (re.compile(r'\bHOSxAI Command line\b'), 'HOSxAI command-line'),
+    (re.compile(r'\bhas been registered\b', re.I), 'registered'),
+    (re.compile(r'\bAccepting\b'), 'under examination'),
+    (re.compile(r'\baccepting\b'), 'under examination'),
+    # 机翻把"既能…也能…"译成 "It can not only handle..."，主语冗余
+    (re.compile(r'\bIt can not only handle\b', re.I), 'Handles both'),
+    (re.compile(r'\bbut also locate and repair\b', re.I), 'and locates and repairs'),
 ]
 
 # 翻译规则版本：normalize()/TERM_FIXES 逻辑变更时递增，
 # 参与缓存指纹计算 —— 否则改了规则，缓存仍判定"源文件未变"而跳过，
 # 新规则永远不生效。
-RULES_VERSION = 'v4.2'
+RULES_VERSION = 'v4.3'
 
 FULLWIDTH = str.maketrans({
     '：': ':', '，': ',', '。': '.', '；': ';',
@@ -393,6 +401,62 @@ def fix_punct_spacing(soup):
     return fixed
 
 
+def capitalize_block_starts(soup):
+    """把技能/介绍等块级行的首字母改为大写。
+
+    逐节点翻译时 `<b>知识产权：</b>` 被当成独立片段，接口返回
+    "intellectual property:"，整行就成了小写开头。这里对每个块级容器
+    的第一个文本节点做首字母大写。
+    """
+    BLOCK_CLASSES = ('skill', 'intro', 'entry-role', 'entry-text')
+    fixed = 0
+    for el in soup.find_all(True):
+        cls = el.get('class') or []
+        if not any(c in BLOCK_CLASSES for c in cls):
+            continue
+        for s in el.find_all(string=True):
+            if isinstance(s, Comment):
+                continue
+            t = str(s)
+            stripped = t.lstrip()
+            if not stripped:
+                continue
+            head = stripped[0]
+            if head.isalpha() and head.islower():
+                s.replace_with(NavigableString(t.replace(head, head.upper(), 1)))
+                fixed += 1
+            break  # 只处理该容器第一个非空文本节点
+
+    # 上面只看首个节点，但 `<b>标签：</b>5 software copyrights (<span>HOSxAI</span>
+    # Command line agent...` 这种结构里，nowrap 之后的文本节点会被误判为
+    # 块首而错误大写，收尾纠正回来。
+    for pat, repl in (
+        (re.compile(r'\bCommand line agent software\b'), 'command-line agent software'),
+        (re.compile(r'\bAccepting\b'), 'under examination'),
+    ):
+        for s in soup.find_all(string=True):
+            if pat.search(str(s)):
+                s.replace_with(NavigableString(pat.sub(repl, str(s))))
+    if fixed:
+        print(f'  [INFO] 修正了 {fixed} 处块级行首小写')
+    return fixed
+
+
+def prose_cjk_count(html):
+    """只统计真正需要翻译的正文中文，排除 style/script 里的注释。
+
+    resume.html 的 CSS 注释是中文的，它们本来就不翻译；若拿整份 HTML 的
+    中文字数当分母，这些注释会被算成"未翻译残留"，把比例虚高到超阈值，
+    导致明明译完了却判定失败、拒绝产出。
+    """
+    soup = BeautifulSoup(html, 'html.parser')
+    for tag in soup.find_all(list(SKIP_TAGS)):
+        tag.decompose()
+    for c in soup.find_all(string=lambda t: isinstance(t, Comment)):
+        c.extract()
+    return len(CJK_RE.findall(soup.get_text()))
+
+
 def source_fingerprint(html):
     """缓存指纹 = 源文件内容 + 翻译规则。
 
@@ -445,8 +509,8 @@ def reuse_cached_output(html, fingerprint):
     if base64_payloads(prev) != base64_payloads(html):
         print('[INFO] 缓存产物 base64 资源与源文件不一致，重新翻译')
         return False
-    total = len(CJK_RE.findall(html)) or 1
-    residual = len(CJK_RE.findall(prev))
+    total = prose_cjk_count(html) or 1
+    residual = prose_cjk_count(prev)
     if residual / total > MAX_RESIDUAL:
         print(f'[INFO] 缓存产物中文残留 {residual / total:.0%} 超阈值，重新翻译')
         return False
@@ -477,7 +541,7 @@ def main():
         if alt and CJK_RE.search(alt):
             targets.append((alt, lambda v, node=img: node.__setitem__('alt', v)))
 
-    total_cjk = len(CJK_RE.findall(html))
+    total_cjk = prose_cjk_count(html) or 1
     print(f'{len(targets)} text/alt target(s) to translate (source CJK chars: {total_cjk})')
     print('backend chain: google-gtx -> mymemory (free only)')
 
@@ -551,6 +615,7 @@ def main():
     strip_zero_width(soup)
     fix_latin_spacing(soup)
     fix_punct_spacing(soup)
+    capitalize_block_starts(soup)
 
     out = str(soup)
     if out.startswith('\n'):
@@ -582,7 +647,7 @@ def main():
         sys.exit(1)
 
     # ---- 断言 3：中文残留必须低于阈值，否则同样不落盘 ----
-    remaining = len(CJK_RE.findall(out))
+    remaining = prose_cjk_count(out)
     ratio = remaining / total_cjk if total_cjk else 0
     if ratio > MAX_RESIDUAL:
         print(f'[ERROR] 中文残留 {remaining} 字 ({ratio:.0%}) 超过阈值 {MAX_RESIDUAL:.0%}，', file=sys.stderr)

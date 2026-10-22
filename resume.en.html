@@ -66,8 +66,11 @@
   .entry-text li { text-indent: 0; margin-bottom: 1.5px; line-height: 1.40; }
 
   /* ===== Skill Row ===== */
-  .skill { font-size: 9pt; color: #333; margin-bottom: 2px; line-height: 1.45; }
+  .skill { font-size: 9pt; color: #333; margin-bottom: 1px; line-height: 1.42; }
   .skill b { color: #2c3e50; font-weight: 700; }
+  /* 产品名不得在连字符处断行，否则 HOS-Sec-Engine 会被拆成两行，
+     简历里难看且破坏 ATS 关键词匹配 */
+  .nowrap { white-space: nowrap; }
 
   /* ===== Self Intro ===== */
   .intro { font-size: 9pt; color: #333; text-indent: 2em; line-height: 1.38; }
@@ -89,7 +92,7 @@
 
   @media print { body { padding: 10mm 15mm 4.5mm 15mm; } }
 </style>
-<!-- translation-cache: f4bfce81c6ef1d6675946604e5da000b358fe33dc633796a9ed11a37e286de9b -->
+<!-- translation-cache: 5369e655457277709041e555a7874bb0e1395a7bee07955f437d025faed57f6a -->
 </head> 
 <body>
 <!-- Header -->
@@ -139,7 +142,7 @@
 <ul>
 <li>Led a team of 6 people to build an integrated training platform for "attack simulation-log audit-intelligent response" and was responsible for the overall architecture design and technology selection.</li> 
 <li><b>Core technology attack</b>: based on <b>Qwen-14B</b> Command fine-tuning (LoRA), combined with <b>Neo4j knowledge graph</b> and <b>PPO reinforcement learning</b> Optimize vulnerability exploitation path recommendations; implement command line intelligent auxiliary modules to open up platform command line operation links.</li> 
-<li><b>Project implementation</b>: Design attack log classification and visual response modules to achieve rapid source tracing of abnormal behaviors. Achievements: Sino-US Maker National Award; software copyright review in progress, patent drafting in progress.</li>
+<li><b>Project implementation</b>: Design attack log classification and visual response modules to achieve rapid source tracing of abnormal behaviors. Achievements: Sino-US Maker National Award; patent preparation in progress.</li>
 </ul>
 </div>
 </div> 
@@ -161,7 +164,8 @@
 <div class="sec-title">Skills &amp; Certifications</div> 
 <div class="skill"><b>Core competencies:</b> AI system engineering (PyTorch/LangChain full pipeline, RAG, LoRA/QLoRA fine-tuning, Neo4j knowledge graph) and AI security (offense and defense, vulnerability mining) in parallel; proficient in using [CC] / Codex / DSH / Pi, mastering MCP and Skill encapsulation.</div> 
 <div class="skill"><b>Directions to explore:</b> Cutting-edge architectures such as reinforcement learning (PPO), AI Agent development, and model compression distillation.</div> 
-<div class="skill"><b>other:</b> English CET-6 | Mandarin Level 2 B | EFG Entrepreneurship Training Camp Completion (75th Issue) | Computer Level 1 | C2 Driver's License</div>
+<div class="skill"><b>Intellectual property:</b> 5 software copyrights (<span class="nowrap">HOSxAI</span> command-line agent software registered 2025R11L0843188; <span class="nowrap">HOS-Sec-Engine</span> / <span class="nowrap">HOS-Critic-Review</span> / <span class="nowrap">HOS-Vibe-Guard</span> / <span class="nowrap">HOS-LS</span> under examination)</div> 
+<div class="skill"><b>Other:</b> English CET-6 | Mandarin Level 2 B | EFG Entrepreneurship Training Camp Completion (75th Issue) | Computer Level 1 | C2 Driver's License</div>
 <!-- 开源贡献 -->
 <div class="sec-title">Open source contributions (all merged PRs)</div> 
 <ul class="pr-list">
@@ -175,7 +179,7 @@
 </ul>
 <!-- 自我介绍 -->
 <div class="sec-title">introduce yourself</div> 
-<div class="intro">AI engineering × system security dual stack: Independently delivers the full pipeline of AI applications from data to deployment (LoRA/QLoRA fine-tuning, RAG, LangChain orchestration), and also locates and repairs underlying security issues (OpenSSL, memory leaks, buffer overflows). Repair PRs submitted to mainstream open source projects such as LlamaFactory, axolotl, trivy, and zaproxy have all been merged; the leading offensive and defensive training platform won the Sino-US Maker National Award.</div> 
+<div class="intro">AI engineering × system security dual stack: Handles both the full pipeline of AI applications, and locates and repairs underlying security issues (OpenSSL, memory leaks, buffer overflows); repair PRs submitted to LlamaFactory, axolotl, trivy, and zaproxy have all been merged, and self-developed tools have registered software copyrights.</div> 
 <div class="footer">Last updated: August 23, 2026</div>
 </body>
 </html>
