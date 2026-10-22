@@ -100,6 +100,7 @@ GLOSSARY = {
         'LangChain orchestration, plus tracking down OpenSSL, memory leaks, and buffer '
         'overflows. Fixes submitted upstream are merged; self-built tools are '
         'software-copyright registered.',
+
     # 技能区两行同样直连：gtx 被限流时回退 MyMemory，会产出 "both have merged PR"、
     # "rag"（小写破坏技术名词）、"Being processed"、"IPR" 等劣化表达。
     # 这三类岗（Agent / 算法 / 开发）的关键词必须准确，不能交给不稳定的机翻。
@@ -112,6 +113,8 @@ GLOSSARY = {
     'AI Agent 与工具链开发；强化学习（PPO 已落地）；模型压缩与蒸馏；AI 安全背景。':
         'AI Agent and tooling development; reinforcement learning (PPO in production); '
         'model compression and distillation; AI security background.',
+    
+    
     # 以下短标签在 <b> 内单独成节点，机翻会丢冒号或给缩写（方向：→ "Orientation"，
     # 知识产权：→ "IPR"），固定映射避免随后端波动。
     '方向：': 'Focus:',
@@ -131,6 +134,11 @@ GLOSSARY = {
 }
 
 TERM_FIXES = [
+    # Qwen-14B 指令微调 -> instruction fine-tuning（机翻误作 Command fine-tuning）
+    (re.compile(r'Qwen-14B Command fine-tuning'), 'Qwen-14B instruction fine-tuning'),
+    (re.compile(r'command line intelligent auxiliary modules'), 'command-line assistance modules'),
+    (re.compile(r'to open up platform command line operation links'), 'connecting the platform CLI'),
+
     (re.compile(r'\bsafety hyacinth\b', re.I), 'Security Hyacinth'),
     (re.compile(r'\bsecurity hyacinth\b', re.I), 'Security Hyacinth'),
     (re.compile(r'\bsafety engineer\b', re.I), 'Security Engineer'),
@@ -573,6 +581,47 @@ def reuse_cached_output(html, fingerprint):
     return True
 
 
+_ZH_POC = '<li><b>AI 赋能安全运营 · PoC</b>：参与"安全运营–AI 赋能专项组"，负责大模型辅助告警分析的可行性验证：用 LangChain 搭建本地化 RAG 原型，将历史告警日志向量化入库，通过 Prompt 调优输出告警归并与研判建议，原型与结论交专项组评估。</li>'
+_ZH_TOOL = '<li><b>自研工具并开源</b>：<a href="https://github.com/lxcxjxhx/HOS-LS" style="color:#3498db">HOS-LS</a> 是面向 AI 生成代码的安全扫描引擎（AGPL-3.0，86 次提交 / 32 个测试）：Semgrep·bandit→CodeQL→大模型三级级联，LangGraph 编排 7 个 Agent，静态层 5.3s 完成初筛后仅对候选子集做 AI 深扫；RepoPairBench 50 对实测确认率 42%、误报 28%（裸调大模型约 90%）。另开源 <a href="https://github.com/lxcxjxhx/BOS-NI" style="color:#3498db">BOS-NI</a>，把 AI 安全运营文章提炼为可复用的 Skill / Agent / Workflow 设计。</li>'
+_EN_POC = '<li><b>AI for security operations · PoC</b>: joined the Security Operations / AI task force to test whether LLMs can triage alerts: built a local RAG prototype on LangChain, embedded historical alert logs into a vector store, and tuned prompts until the model produced alert merging and triage suggestions; prototype and findings went to the task force for review.</li>'
+_EN_TOOL = '<li><b>Self-built and open-sourced</b>: <a href="https://github.com/lxcxjxhx/HOS-LS" style="color:#3498db">HOS-LS</a> is a security scanner for AI-generated code (AGPL-3.0, 86 commits / 32 tests): a Semgrep/bandit → CodeQL → LLM cascade with LangGraph orchestrating 7 agents, where the static stage screens a file in 5.3s so LLM analysis only runs on the shortlisted candidates. On 50 RepoPairBench pairs: 42% confirmed findings, 28% false positives on patched code, versus roughly 90% for a bare LLM. Also open-sourced <a href="https://github.com/lxcxjxhx/BOS-NI" style="color:#3498db">BOS-NI</a>, which distills AI security operations write-ups into reusable Skill / Agent / Workflow designs.</li>'
+
+
+_EN_LI_BY_INDEX = {
+    # 实习经历 <ul> 内的位置 -> 英文 li（None 表示保留机器翻译）
+    1: _EN_POC,
+    2: _EN_TOOL,
+}
+
+
+def _replace_intern_blocks(out):
+    """按位置替换实习经历的第 2、3 条 li。
+
+    为什么不用文本匹配：
+      这两条含 <a href> 链接，BeautifulSoup 会切成多个 text node，
+      GLOSSARY 的单节点键命中不了；而按中文整段匹配也无效 ——
+      本函数在翻译之后执行，此时中文已被替换掉。
+
+    为什么用位置：
+      只依赖"实习经历那个 <ul> 里有 3 个 li"这一结构事实，
+      与空白规整、属性顺序、翻译结果都无关。
+      若 li 数量不符则告警并原样返回，不会静默破坏内容。
+    """
+    m = re.search(r"<ul>(.*?)</ul>", out, re.S)
+    if not m:
+        print("[WARN] 未找到实习经历的 <ul>，跳过整段替换", file=sys.stderr)
+        return out
+    block = m.group(1)
+    items = re.findall(r"<li>.*?</li>", block, re.S)
+    if len(items) != 3:
+        print(f"[WARN] 实习经历 li 数量为 {len(items)}，非预期 3，跳过整段替换",
+              file=sys.stderr)
+        return out
+    for idx, en in _EN_LI_BY_INDEX.items():
+        block = block.replace(items[idx], en, 1)
+    return out[:m.start(1)] + block + out[m.end(1):]
+
+
 def main():
     with open(INPUT_FILE, encoding='utf-8') as f:
         html = f.read()
@@ -672,6 +721,14 @@ def main():
     capitalize_block_starts(soup)
 
     out = str(soup)
+
+    # ---- 实习经历两条：整段替换 ----
+    # 这两条里有 <a href> 链接，BeautifulSoup 会切成多个 text node，
+    # GLOSSARY 按单节点精确匹配命中不了，机翻会产出 "86 submissions"
+    # （commits 错译）、"LangGraph arranges 7 Agents"、"AI empowers"、
+    # "naked large model" 这类不专业表达。这两条是全篇最硬的技术论据，
+    # 改为在序列化后整段替换，链接与文字一起锁定。
+    out = _replace_intern_blocks(out)
     if out.startswith('\n'):
         out = out[1:]
 
