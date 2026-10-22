@@ -107,6 +107,15 @@ GLOSSARY = {
     # 直接给英文，不经机器翻译。
     '我主要做 AI Agent 和算法落地相关的开发。之前带队做了攻防实训平台，用 Qwen-14B 微调 + 知识图谱 + PPO 做漏洞利用路径推荐，拿了中美创客国家奖；在绿盟也独立搭过本地化 RAG 告警分析原型，做过 Prompt 工程和向量检索调优。平时会写工具、提上游 PR，也拿了几项软著。现在更专注把 Agent、工具链和算法真正跑通到可用系统里。':
         'I build AI agents and put algorithms into production. I led a team building an attack-defense training platform: vulnerability exploitation path recommendation using Qwen-14B fine-tuning, a knowledge graph, and PPO, which won the China-US Maker National Award. At NSFOCUS I independently built a local RAG prototype for alert analysis, covering prompt engineering and vector retrieval tuning. I write tools and send upstream PRs, and hold several software copyrights. Right now I focus on getting agents, tooling, and algorithms to run as usable systems.',
+    # 智医项目两条。机翻产出 "Let's Lenovo AI PC"（联想口号误译）、
+    # "Finalist"（入围不等于决赛）、"the plan passed the technical review
+    # of the organi..."（方案误作 plan），直接给英文。
+    # 注意：必须用整条 li 前缀精确取键，否则"成果"会撞上项目经历里
+    # "工程落地...成果：中美创客国家奖"那条。
+    '：面向基层诊所的问诊辅助机器人，做端到端语音交互——Whisper 微调做语音识别，LLM Few-shot 做意图理解，BERT 微调做敏感内容识别；设计端到端加密保障医疗数据合规。':
+        ': a consultation-assistant robot for grassroots clinics doing end-to-end voice interaction: Whisper fine-tuning for speech recognition, LLM few-shot for intent understanding, and BERT fine-tuning for sensitive-content detection, with end-to-end encryption to keep medical data compliant.',
+    '：英特尔人工智能创新应用大赛（一起联想 AI PC）创新创业专项赛入围，GBAC240303106392，方案通过主办方技术评审。':
+        ": shortlisted in the Innovation and Entrepreneurship track of the Intel AI Innovation Application Competition (Lenovo AI PC), entry GBAC240303106392, passing the host's technical review.",
     # 技能区两行同样直连：gtx 被限流时回退 MyMemory，会产出 "both have merged PR"、
     # "rag"（小写破坏技术名词）、"Being processed"、"IPR" 等劣化表达。
     # 这三类岗（Agent / 算法 / 开发）的关键词必须准确，不能交给不稳定的机翻。
