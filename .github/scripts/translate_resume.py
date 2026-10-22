@@ -90,17 +90,16 @@ SEGMENT_LIMIT = 1800
 GLOSSARY = {
     '合并': 'Merged',
     '照片': 'Photo',
-    # 整段自我介绍直连替换：机翻会产出 "It is a habit to locate the root cause"
-    # "delivered things" "soft copy review"（软著译错）等不通顺表达。
-    # 这段是简历最后一节的收尾语，必须地道，不让机翻经手。
-    '在 AI 应用与系统安全之间做工程落地：习惯先定位根因再动手，交付的东西要能跑、能被验证。'
-    '向上游项目提交的修复已合并、自研工具通过软著审查，是这套标准的结果——'
-    '而这种组合在 AI 产品真正落地时，往往缺一不可。':
-        'Engineering where AI applications meet system security: I find the root cause '
-        'before writing code, and what I ship has to run and be verifiable. Fixes merged '
-        'upstream and self-built tools that cleared software copyright review are the '
-        'product of that standard - a combination that is usually indispensable when AI '
-        'products actually go live.',
+    # 整段自我介绍直连替换：这段是简历收尾语，必须地道，不让机翻经手。
+    # 机翻会把它写成 "It is a habit to locate the root cause" "delivered things"
+    # "soft copy review"（软著译错）这类不通顺表达。
+    '模型层到系统层都做过：微调、RAG、LangChain 编排；'
+    'OpenSSL、内存泄漏、缓冲区溢出的定位与修复。'
+    '上游项目提的修复已合并，自研工具已获软著。':
+        'Hands-on from the model layer down to the system layer: fine-tuning, RAG, and '
+        'LangChain orchestration, plus tracking down OpenSSL, memory leaks, and buffer '
+        'overflows. Fixes submitted upstream are merged; self-built tools are '
+        'software-copyright registered.',
     # 技能区两行同样直连：gtx 被限流时回退 MyMemory，会产出 "both have merged PR"、
     # "rag"（小写破坏技术名词）、"Being processed"、"IPR" 等劣化表达。
     # 这三类岗（Agent / 算法 / 开发）的关键词必须准确，不能交给不稳定的机翻。
