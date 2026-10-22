@@ -90,6 +90,17 @@ SEGMENT_LIMIT = 1800
 GLOSSARY = {
     '合并': 'Merged',
     '照片': 'Photo',
+    # 整段自我介绍直连替换：机翻会产出 "It is a habit to locate the root cause"
+    # "delivered things" "soft copy review"（软著译错）等不通顺表达。
+    # 这段是简历最后一节的收尾语，必须地道，不让机翻经手。
+    '在 AI 应用与系统安全之间做工程落地：习惯先定位根因再动手，交付的东西要能跑、能被验证。'
+    '向上游项目提交的修复已合并、自研工具通过软著审查，是这套标准的结果——'
+    '而这种组合在 AI 产品真正落地时，往往缺一不可。':
+        'Engineering where AI applications meet system security: I find the root cause '
+        'before writing code, and what I ship has to run and be verifiable. Fixes merged '
+        'upstream and self-built tools that cleared software copyright review are the '
+        'product of that standard - a combination that is usually indispensable when AI '
+        'products actually go live.',
 }
 
 TERM_FIXES = [
