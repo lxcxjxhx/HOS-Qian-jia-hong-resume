@@ -65,8 +65,11 @@
   .entry-text li { text-indent: 0; margin-bottom: 1.5px; line-height: 1.40; }
 
   /* ===== Skill Row ===== */
-  .skill { font-size: 9pt; color: #333; margin-bottom: 2px; line-height: 1.45; }
+  .skill { font-size: 9pt; color: #333; margin-bottom: 1px; line-height: 1.42; }
   .skill b { color: #2c3e50; font-weight: 700; }
+  /* 产品名不得在连字符处断行，否则 HOS-Sec-Engine 会被拆成两行，
+     简历里难看且破坏 ATS 关键词匹配 */
+  .nowrap { white-space: nowrap; }
 
   /* ===== Self Intro ===== */
   .intro { font-size: 9pt; color: #333; text-indent: 2em; line-height: 1.38; }
@@ -141,7 +144,7 @@
     <ul>
       <li>带领 6 人团队打造"攻击模拟–日志审计–智能响应"一体化实训平台，负责整体架构设计与技术选型。</li>
       <li><b>核心技术攻坚</b>：基于 <b>Qwen-14B</b> 指令微调（LoRA），结合 <b>Neo4j 知识图谱</b>与 <b>PPO 强化学习</b>优化漏洞利用路径推荐；实现命令行智能辅助模块，打通平台命令行操作链路。</li>
-      <li><b>工程落地</b>：设计攻击日志归类与可视化响应模块，实现异常行为快速溯源。成果：中美创客国家奖；软件著作权实审中、专利撰写中。</li>
+      <li><b>工程落地</b>：设计攻击日志归类与可视化响应模块，实现异常行为快速溯源。成果：中美创客国家奖；专利撰写中。</li>
     </ul>
   </div>
 </div>
@@ -164,6 +167,7 @@
 <div class="sec-title">技能 & 证书</div>
 <div class="skill"><b>核心能力：</b>AI 系统工程（PyTorch / LangChain 全链路，RAG、LoRA/QLoRA 微调、Neo4j 知识图谱）与 AI 安全（攻防、漏洞挖掘）双线并行；熟练使用 [CC] / Codex / DSH / Pi，掌握 MCP 与 Skill 封装。</div>
 <div class="skill"><b>探索方向：</b>强化学习（PPO）、AI Agent 开发、模型压缩蒸馏等前沿架构。</div>
+<div class="skill"><b>知识产权：</b>软件著作权 5 项（<span class="nowrap">HOSxAI</span> 命令行代理软件已登记 2025R11L0843188；<span class="nowrap">HOS-Sec-Engine</span> / <span class="nowrap">HOS-Critic-Review</span> / <span class="nowrap">HOS-Vibe-Guard</span> / <span class="nowrap">HOS-LS</span> 受理中）</div>
 <div class="skill"><b>其他：</b>英语 CET-6 | 普通话二级乙等 | EFG 创业训练营结业（第75期）| 计算机一级 | C2 驾照</div>
 
 <!-- 开源贡献 -->
@@ -180,7 +184,7 @@
 
 <!-- 自我介绍 -->
 <div class="sec-title">自我介绍</div>
-<div class="intro">AI 工程化 × 系统安全双栈：能独立完成 AI 应用从数据到部署的全链路（LoRA/QLoRA 微调、RAG、LangChain 编排），也能定位并修复底层安全问题（OpenSSL、内存泄漏、缓冲区溢出）。向 LlamaFactory、axolotl、trivy、zaproxy 等主流开源项目提交的修复 PR 均已合并；主导的攻防实训平台获中美创客国家奖。</div>
+<div class="intro">AI 工程化 × 系统安全双栈：既能做 AI 应用全链路，也能定位并修复底层安全问题（OpenSSL、内存泄漏、缓冲区溢出）；向 LlamaFactory、axolotl、trivy、zaproxy 提交的修复 PR 均已合并，自研工具已登记软件著作权。</div>
 
 <div class="footer">最后更新：2026年8月23日</div>
 
