@@ -70,15 +70,15 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#36](https://github.com/lxcxjxhx/HOS-LS/pull/36) | fix: API配置修复和实验优化 | 2026-08-24 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#35](https://github.com/lxcxjxhx/HOS-LS/pull/35) | feat: 面向AI生成代码变更的差分漏洞验证系统 | 2026-08-24 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#34](https://github.com/lxcxjxhx/HOS-LS/pull/34) | feat(OPT): 三级 SAST→AI cascade 流水线 + 省钱策略 + 去重归属 | 2026-08-16 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#33](https://github.com/lxcxjxhx/HOS-LS/pull/33) | chore: gitignore 忽略 CodeGraph 预索引目录 | 2026-08-15 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#32](https://github.com/lxcxjxhx/HOS-LS/pull/32) | feat: M6 文件级并发可配置 + 缓存命中统计上报 | 2026-08-15 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#31](https://github.com/lxcxjxhx/HOS-LS/pull/31) | feat: M7 CWE 专项检测指引接线（配置门默认关） | 2026-08-15 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#30](https://github.com/lxcxjxhx/HOS-LS/pull/30) | feat: 客户端超时修复 + AST 确定性证据能力（默认关，A/B 验证后收敛） | 2026-08-15 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#29](https://github.com/lxcxjxhx/HOS-LS/pull/29) | feat: 评测分数卡 + JSON 结构化输出 + 响应缓存 + 请求超时 + 提示词优化（M1-M3） | 2026-08-14 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#28](https://github.com/lxcxjxhx/HOS-LS/pull/28) | feat: Agent-6 先分析后判定 + 双轨输出（提升检出） | 2026-08-14 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#27](https://github.com/lxcxjxhx/HOS-LS/pull/27) | fix: Agent-2 风险枚举放宽为候选风险（验证层过滤） | 2026-08-14 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#26](https://github.com/lxcxjxhx/HOS-LS/pull/26) | fix: Agent-6 因 location 绝对路径规则过度 REJECTED 真实漏洞 | 2026-08-14 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#25](https://github.com/lxcxjxhx/HOS-LS/pull/25) | fix: NVD 数据库缺失时降级内置 DB 而非挂起 | 2026-08-14 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#30](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/30) | feat(resume): 收掉智医项目重复表述, 充实代码实现描述 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#29](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/29) | feat(resume): 智医项目补回产品主线并修正赛事名 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#28](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/28) | feat(resume): 自我介绍按开发/Agent/算法方向重排 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#27](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/27) | fix(resume): 实习经历按仓库实况重写, 恢复自我介绍章节 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#26](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/26) | refactor(resume): 自我介绍去 AI 腔，105 字 → 77 字 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#25](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/25) | chore(resume): 页脚最后更新时间 8月23日 → 10月22日 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#24](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/24) | feat(resume): 技能区补编程语言，一份简历覆盖 Agent/算法/开发三方向 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#23](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/23) | refactor(resume): 重写自我介绍，从复述清单改为回答「为什么值得面」 | 2026-10-22 |
+| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#22](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/22) | feat(resume): 加入 5 项软件著作权，修翻译残留计数口径 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#21](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/21) | feat(resume): 实习/项目强化，补博客粉丝数，修英文拼接缺陷 | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#20](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/20) | fix(resume): 删掉求职方向限定，修正英文直译与缓存指纹 | 2026-10-21 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#19](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/19) | feat(resume): 技能行改用真实工具名，自我介绍改为事实型 | 2026-10-21 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-22 03:09:54 UTC
+Last updated: 2026-10-23 03:15:41 UTC
 
 ---
 
