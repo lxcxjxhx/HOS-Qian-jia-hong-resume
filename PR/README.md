@@ -14,6 +14,22 @@ Merged Pull Requests across open source projects.
 | [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
 | [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#47](https://github.com/lxcxjxhx/HOS-ARES/pull/47) | feat(profile): B16 双客户档 — 换行业只换 YAML（A1 断言） | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#46](https://github.com/lxcxjxhx/HOS-ARES/pull/46) | feat(web): B15 只读控制台 — ui.* 写请求 405 / 绑定页只给摘要 / 公式排序 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#45](https://github.com/lxcxjxhx/HOS-ARES/pull/45) | feat(oracles): B14 TierC 3 类 — 存储型 XSS / CORS / GraphQL introspection | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#44](https://github.com/lxcxjxhx/HOS-ARES/pull/44) | feat(doctor): B13 交付硬化 — doctor 16 项 / 死信 / 3 worker / 离线包 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#43](https://github.com/lxcxjxhx/HOS-ARES/pull/43) | feat(bench): B12 44 例 × 3 轮 + 五条硬门槛 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#42](https://github.com/lxcxjxhx/HOS-ARES/pull/42) | feat(report): B11 三视图 — MD/SARIF/JSON 单向渲染 + manifest 防手改 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#41](https://github.com/lxcxjxhx/HOS-ARES/pull/41) | feat(agent): B10 循环 — 预算硬刹车 / 窄 schema / 降级链 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#40](https://github.com/lxcxjxhx/HOS-ARES/pull/40) | feat(auth): B9 认证清单 — J1–J10 全量 + O/M/S 检查单 + 覆盖矩阵 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#39](https://github.com/lxcxjxhx/HOS-ARES/pull/39) | feat(contract): B8 OpenAPI → OperationSet → RouteSet（不产地址） | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#38](https://github.com/lxcxjxhx/HOS-ARES/pull/38) | feat(oracles): B7 TierB 5 类 + 默认关闭的启动校验 | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#37](https://github.com/lxcxjxhx/HOS-ARES/pull/37) | feat(oracles): B6 TierA 余 2 类 — open_redirect / path_traversal | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#36](https://github.com/lxcxjxhx/HOS-ARES/pull/36) | feat(oracles): B5 TierA×4 + OOB 通道（本地靶场，零 socket） | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#35](https://github.com/lxcxjxhx/HOS-ARES/pull/35) | feat(B4): 证据 — capsule 1.1 / 哈希链 / replay 六态 | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#34](https://github.com/lxcxjxhx/HOS-ARES/pull/34) | feat(guard): B3 scope 四处校验 + 令牌桶 + 审批门 | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#33](https://github.com/lxcxjxhx/HOS-ARES/pull/33) | feat(sched): B2 租约/心跳/回收/死信（进程级接管验收） | 2026-10-31 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#32](https://github.com/lxcxjxhx/HOS-ARES/pull/32) | feat(core): B1 骨架与契约 + B1.5 路由层（零硬路由） | 2026-10-31 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#31](https://github.com/lxcxjxhx/HOS-ARES/pull/31) | feat(B4): 证据 — capsule/哈希链/replay 四态/脱敏（W1 冷启动门） | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#30](https://github.com/lxcxjxhx/HOS-ARES/pull/30) | feat(B3): guard — scope 三处校验 / 令牌桶 / 审批门 | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#29](https://github.com/lxcxjxhx/HOS-ARES/pull/29) | feat(B2): 调度 — 租约/心跳/回收/死信/分区串行 | 2026-10-29 |
@@ -33,14 +49,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#14](https://github.com/lxcxjxhx/HOS-ARES/pull/14) | fix(ci): rootfs bake 鈥?drop apktool/jadx (not in Alpine repo), lock reasonix 1.19.1 | 2026-08-25 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#13](https://github.com/lxcxjxhx/HOS-ARES/pull/13) | feat(ui): Ares-V3 Neon UI theme + cyberpunk app icon set | 2026-08-25 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#12](https://github.com/lxcxjxhx/HOS-ARES/pull/12) | HOS-ARES v3.0 full delivery: reasonix agent framework + MCP security toolchain + gateway + Compose UI + APK packaging CI | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#11](https://github.com/lxcxjxhx/HOS-ARES/pull/11) | feat: rootfs build infrastructure - Docker + Windows/Linux scripts | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#10](https://github.com/lxcxjxhx/HOS-ARES/pull/10) | feat: UI progress cards + Settings connectivity test + SkillRegistry | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#9](https://github.com/lxcxjxhx/HOS-ARES/pull/9) | feat: TerminalActivity UI fix + MainActivity integration | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#8](https://github.com/lxcxjxhx/HOS-ARES/pull/8) | feat: bootstrap.sh pre-installed validation + entry.sh tool shims | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#7](https://github.com/lxcxjxhx/HOS-ARES/pull/7) | feat: ProotRuntime pre-installed mode + incremental update + error humanization | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#6](https://github.com/lxcxjxhx/HOS-ARES/pull/6) | feat: reasonix agent parallel scheduling + soft routing | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#5](https://github.com/lxcxjxhx/HOS-ARES/pull/5) | refactor: remove Strix UI layer + securityresearch agent (~37K lines) | 2026-08-17 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#4](https://github.com/lxcxjxhx/HOS-ARES/pull/4) | refactor: remove pentestgpt agent (~5.5K lines) | 2026-08-17 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#65](https://github.com/lxcxjxhx/HOS-LS/pull/65) | feat(p0): W1 static prep - sample select + ground truth templates | 2026-09-12 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#63](https://github.com/lxcxjxhx/HOS-LS/pull/63) | feat: ECATSL Section 7-9 - verified evaluation/reporting, package wiring, and full validation | 2026-09-05 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#62](https://github.com/lxcxjxhx/HOS-LS/pull/62) | ECATSL Section 6 - catalog ingestion extension and scalable deterministic discovery | 2026-09-04 |
@@ -101,15 +109,7 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#2](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/2) | 删除重复的COZE校园行三等奖图片 | 2026-08-23 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#65](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/65) | PR-D: CPG上下文注入 + BM25排序 + DEP证据增强 + 数据集管理 | 2026-08-28 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#64](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/64) | feat(S-16): add HOS-CAD-Builder - MCP Agent Skill for AI-driven CAD | 2026-08-22 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#63](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/63) | S-14-HOS-Jailbreak-Loop: Jailbreak 循环优化系统 v1.0.0 | 2026-08-20 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#62](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/62) | feat(S-13): ARGO × 天琴座创意写作预设系统 | 2026-08-20 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#61](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/61) | feat(S-01-HOS-Save-Cost): ponytail-restraint + token-router skills + reasonix.toml template | 2026-08-19 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#60](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/60) | feat: integrate CN-SRC-Hunter bug bounty pipeline methodology | 2026-08-17 |
 | [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
-| [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#5](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/5) | feat: 去竖线导航 + GitHub 多维观测面板 + 页脚重构 | 2026-08-20 |
-| [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#4](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/4) | feat: 首页重构为海报式 SOC 信号分析台（去模板化） | 2026-08-20 |
-| [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#3](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/3) | feat: 首页观测台重构 + 数据中枢多域 SQLite 文件管理 | 2026-08-20 |
-| [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#2](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/2) | feat: 外部数据管线 + 导航常规化（数据及时同步） | 2026-08-20 |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | [#9566](https://github.com/unslothai/unsloth/pull/9566) | docs: remove duplicate Search bullet and fix error messages | 2026-08-26 |
 
 ## Detail Files
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-10-31 03:55:56 UTC
+Last updated: 2026-11-01 04:09:34 UTC
 
 ---
 
