@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 9
+- **Projects**: 8
 
 ## PR List
 
@@ -14,6 +14,8 @@ Merged Pull Requests across open source projects.
 | [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
 | [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#49](https://github.com/lxcxjxhx/HOS-ARES/pull/49) | feat(core): B12.1 黑板+事件落库 + spec-drift 闸门 | 2026-11-01 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#48](https://github.com/lxcxjxhx/HOS-ARES/pull/48) | feat(delivery): B17 交付物料 — 端到端演示 + 四份文档 | 2026-11-01 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#47](https://github.com/lxcxjxhx/HOS-ARES/pull/47) | feat(profile): B16 双客户档 — 换行业只换 YAML（A1 断言） | 2026-11-01 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#46](https://github.com/lxcxjxhx/HOS-ARES/pull/46) | feat(web): B15 只读控制台 — ui.* 写请求 405 / 绑定页只给摘要 / 公式排序 | 2026-11-01 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#45](https://github.com/lxcxjxhx/HOS-ARES/pull/45) | feat(oracles): B14 TierC 3 类 — 存储型 XSS / CORS / GraphQL introspection | 2026-11-01 |
@@ -108,8 +110,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#3](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/3) | 优化图片文件命名，提高可读性 | 2026-08-23 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#2](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/2) | 删除重复的COZE校园行三等奖图片 | 2026-08-23 |
 | [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#65](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/65) | PR-D: CPG上下文注入 + BM25排序 + DEP证据增强 + 数据集管理 | 2026-08-28 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#64](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/64) | feat(S-16): add HOS-CAD-Builder - MCP Agent Skill for AI-driven CAD | 2026-08-22 |
-| [lxcxjxhx/lxcxjxhx.github.io](https://github.com/lxcxjxhx/lxcxjxhx.github.io) | [#6](https://github.com/lxcxjxhx/lxcxjxhx.github.io/pull/6) | feat: 去首页竖茎线 + 02-07 章节整体美化 | 2026-08-20 |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | [#9566](https://github.com/unslothai/unsloth/pull/9566) | docs: remove duplicate Search bullet and fix error messages | 2026-08-26 |
 
 ## Detail Files
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-01 04:09:34 UTC
+Last updated: 2026-11-02 04:13:37 UTC
 
 ---
 
