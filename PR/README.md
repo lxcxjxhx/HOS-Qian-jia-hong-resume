@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 8
+- **Projects**: 9
 
 ## PR List
 
@@ -14,6 +14,35 @@ Merged Pull Requests across open source projects.
 | [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
 | [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
+| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8241](https://github.com/labring/FastGPT/pull/8241) | docs: fix three broken in-page anchors | 2026-11-04 |
+| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8235](https://github.com/labring/FastGPT/pull/8235) | i18n: add the six keys the UI references but no locale defines | 2026-11-03 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#50](https://github.com/lxcxjxhx/HOS-ARES/pull/50) | plan: HOS-ARES 总规划 v1.0 —— 三对标能力矩阵 + 四波 25 批（B35–B59） | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#51](https://github.com/lxcxjxhx/HOS-ARES/pull/51) | plan: 方案包统一治理 v1.0 —— 注册表 + 时间节点制度 + 三门自检 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#52](https://github.com/lxcxjxhx/HOS-ARES/pull/52) | b35: 展示语义层 —— 未验证不冒充高危 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#53](https://github.com/lxcxjxhx/HOS-ARES/pull/53) | b36: 页面契约对齐 —— coverage 矩阵 / finding?id / audit 源 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#54](https://github.com/lxcxjxhx/HOS-ARES/pull/54) | b37: 控制台装载器入库 —— 产物到状态，只读、确定性、空输入安全 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#55](https://github.com/lxcxjxhx/HOS-ARES/pull/55) | b38: 概览卡片化 + 覆盖矩阵渲染 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#56](https://github.com/lxcxjxhx/HOS-ARES/pull/56) | b39: findings 交互 + unverified 四态渲染 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#57](https://github.com/lxcxjxhx/HOS-ARES/pull/57) | b40: 详情页五段 + route_short 修正 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#58](https://github.com/lxcxjxhx/HOS-ARES/pull/58) | b41: 视觉系统 —— 令牌、双配色、三态、对比度闸门 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#59](https://github.com/lxcxjxhx/HOS-ARES/pull/59) | b42: 可访问性与打印 —— 跳转链接、焦点、aria 播报、静态闸门 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#60](https://github.com/lxcxjxhx/HOS-ARES/pull/60) | b43: 门面门槛评估 —— 结论：停止 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#61](https://github.com/lxcxjxhx/HOS-ARES/pull/61) | b44: 产品面验收 —— A13–A16 进断言表，kernel 升 v3.7 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#62](https://github.com/lxcxjxhx/HOS-ARES/pull/62) | b45: 容器隔离 —— 接口/加固/白名单/BLOCKED（真隔离待运行时） | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#63](https://github.com/lxcxjxhx/HOS-ARES/pull/63) | b47: 工具面统一 —— 一个注册表、一套准入、一本审计 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#64](https://github.com/lxcxjxhx/HOS-ARES/pull/64) | b50: Playbook 资产库 —— 三个打法 + 实测成功率 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#65](https://github.com/lxcxjxhx/HOS-ARES/pull/65) | b51: 黑板冲突消解 —— 胜出入上下文，落选不删除 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#66](https://github.com/lxcxjxhx/HOS-ARES/pull/66) | b52: 上下文压缩 —— 压上下文，不压证据不压判定 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#67](https://github.com/lxcxjxhx/HOS-ARES/pull/67) | b53: 报告智能体行为审计节 —— 五张表，空表也要显式 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#68](https://github.com/lxcxjxhx/HOS-ARES/pull/68) | b54: 审批界面 —— 唯一写入点，自批与过期都在这里拒 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#69](https://github.com/lxcxjxhx/HOS-ARES/pull/69) | b55: 插件端到端 —— 卸载后工具面逐字复原 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#70](https://github.com/lxcxjxhx/HOS-ARES/pull/70) | b56: TUI —— stdlib curses 三面板，缺 curses 就降级 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#71](https://github.com/lxcxjxhx/HOS-ARES/pull/71) | b57: 跨任务记忆 —— 事实复用，结论作废 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#72](https://github.com/lxcxjxhx/HOS-ARES/pull/72) | b58: 交付双形态 —— light 不含浏览器，browser 不假装已装 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#73](https://github.com/lxcxjxhx/HOS-ARES/pull/73) | b59: 三对标总验收 —— 22 项四态，红即非 0 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#74](https://github.com/lxcxjxhx/HOS-ARES/pull/74) | b46: 渲染执行体 —— DOM 可复现、证据脱敏、宿主隔离显式 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#75](https://github.com/lxcxjxhx/HOS-ARES/pull/75) | b49: 任务级并行 —— 并发不污染结果，跨任务读即事故 | 2026-11-04 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#76](https://github.com/lxcxjxhx/HOS-ARES/pull/76) | docs(closeout): 最终验收 —— 25 批收口，接受容器隔离为未验 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#49](https://github.com/lxcxjxhx/HOS-ARES/pull/49) | feat(core): B12.1 黑板+事件落库 + spec-drift 闸门 | 2026-11-01 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#48](https://github.com/lxcxjxhx/HOS-ARES/pull/48) | feat(delivery): B17 交付物料 — 端到端演示 + 四份文档 | 2026-11-01 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#47](https://github.com/lxcxjxhx/HOS-ARES/pull/47) | feat(profile): B16 双客户档 — 换行业只换 YAML（A1 断言） | 2026-11-01 |
@@ -35,22 +64,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#31](https://github.com/lxcxjxhx/HOS-ARES/pull/31) | feat(B4): 证据 — capsule/哈希链/replay 四态/脱敏（W1 冷启动门） | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#30](https://github.com/lxcxjxhx/HOS-ARES/pull/30) | feat(B3): guard — scope 三处校验 / 令牌桶 / 审批门 | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#29](https://github.com/lxcxjxhx/HOS-ARES/pull/29) | feat(B2): 调度 — 租约/心跳/回收/死信/分区串行 | 2026-10-29 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#27](https://github.com/lxcxjxhx/HOS-ARES/pull/27) | fix(ci): round-16 根治 compressReleaseAssets Java heap space（noCompress + rootfs 裁剪） | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#26](https://github.com/lxcxjxhx/HOS-ARES/pull/26) | fix(ci): round-15 修复 skeleton 编译错误（compileReleaseKotlin 11 条） | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#25](https://github.com/lxcxjxhx/HOS-ARES/pull/25) | fix(ci): round-14 修复 assembleRelease 编译/堆溢出 + 接通 Phase 5 首启装载 | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#24](https://github.com/lxcxjxhx/HOS-ARES/pull/24) | fix(ci): round-13 - restore rust-src line in build-rootfs.sh (PR23 merge regressed it) | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#23](https://github.com/lxcxjxhx/HOS-ARES/pull/23) | fix(ci): round-11 - detach ares-gateway from android build (plugin-classpath conflict) | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#22](https://github.com/lxcxjxhx/HOS-ARES/pull/22) | fix(ci): round-9 - find rootfs.tar.xz before cp (upload-artifact v4 strips build/ prefix) | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#21](https://github.com/lxcxjxhx/HOS-ARES/pull/21) | fix(ci): round-8 - add rust-src to nightly musl toolchain (aya -Z build-std needs it) | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#20](https://github.com/lxcxjxhx/HOS-ARES/pull/20) | fix(ci): round-6 bake blockers - g++ for frida wheel + nightly musl toolchain for mitmproxy-linux-ebpf | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#19](https://github.com/lxcxjxhx/HOS-ARES/pull/19) | fix(ci): assembleRelease via gradle CLI (repo has no wrapper) | 2026-08-26 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#18](https://github.com/lxcxjxhx/HOS-ARES/pull/18) | fix(ci): prebuilt bpf-linker (musl) - bypass llvm-config/cargo source build | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#17](https://github.com/lxcxjxhx/HOS-ARES/pull/17) | fix(ci): add bpf-linker for mitmproxy-linux-ebpf build (round-5 remaining blocker) | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#16](https://github.com/lxcxjxhx/HOS-ARES/pull/16) | fix(ci): rustup stable -> cargo>=1.85 for edition2024 (mitmproxy-rs) | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#15](https://github.com/lxcxjxhx/HOS-ARES/pull/15) | fix(ci): rootfs bake - add Rust/C buildchain + --prefer-binary for musl source wheels (frida/aioquic/mitmproxy-rs), pin mobile-security-mcp 0.1.4 | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#14](https://github.com/lxcxjxhx/HOS-ARES/pull/14) | fix(ci): rootfs bake 鈥?drop apktool/jadx (not in Alpine repo), lock reasonix 1.19.1 | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#13](https://github.com/lxcxjxhx/HOS-ARES/pull/13) | feat(ui): Ares-V3 Neon UI theme + cyberpunk app icon set | 2026-08-25 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#12](https://github.com/lxcxjxhx/HOS-ARES/pull/12) | HOS-ARES v3.0 full delivery: reasonix agent framework + MCP security toolchain + gateway + Compose UI + APK packaging CI | 2026-08-25 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#65](https://github.com/lxcxjxhx/HOS-LS/pull/65) | feat(p0): W1 static prep - sample select + ground truth templates | 2026-09-12 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#63](https://github.com/lxcxjxhx/HOS-LS/pull/63) | feat: ECATSL Section 7-9 - verified evaluation/reporting, package wiring, and full validation | 2026-09-05 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#62](https://github.com/lxcxjxhx/HOS-LS/pull/62) | ECATSL Section 6 - catalog ingestion extension and scalable deterministic discovery | 2026-09-04 |
@@ -74,12 +87,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#43](https://github.com/lxcxjxhx/HOS-LS/pull/43) | fix: remove legacy AI postprocessing and repair lint | 2026-08-29 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#42](https://github.com/lxcxjxhx/HOS-LS/pull/42) | fix: stabilize Pure-AI scan workflow | 2026-08-28 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#41](https://github.com/lxcxjxhx/HOS-LS/pull/41) | HOS-LS 论文完整代码 + 数据管理脚本 | 2026-08-28 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#40](https://github.com/lxcxjxhx/HOS-LS/pull/40) | 优化: 添加数据流确认文档 | 2026-08-27 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#39](https://github.com/lxcxjxhx/HOS-LS/pull/39) | feat: DeepInfra Flex 服务层支持（service_tier=flex，8折） | 2026-08-27 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#38](https://github.com/lxcxjxhx/HOS-LS/pull/38) | feat: AI 补丁差分验证（SAL×DEP）止损实验数据 + 候选精化 + 代理修复 | 2026-08-26 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#37](https://github.com/lxcxjxhx/HOS-LS/pull/37) | fix: 修复HOS-LS API配置问题 - 支持自定义端点 | 2026-08-24 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#36](https://github.com/lxcxjxhx/HOS-LS/pull/36) | fix: API配置修复和实验优化 | 2026-08-24 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#35](https://github.com/lxcxjxhx/HOS-LS/pull/35) | feat: 面向AI生成代码变更的差分漏洞验证系统 | 2026-08-24 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#30](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/30) | feat(resume): 收掉智医项目重复表述, 充实代码实现描述 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#29](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/29) | feat(resume): 智医项目补回产品主线并修正赛事名 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#28](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/28) | feat(resume): 自我介绍按开发/Agent/算法方向重排 | 2026-10-22 |
@@ -101,16 +108,9 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#12](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/12) | fix(resume): 重排版解决「拥挤、上下划分不清晰」 | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#11](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/11) | feat(resume): 新增 A4 单页简历排版工程 (RESUME-A4-QIANJIAHONG) | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#10](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/10) | fix(ci): 修复简历构建链的结构性缺陷并改为纯免费翻译 | 2026-10-20 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#9](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/9) | style: 增加视觉层次，找回被过度清理的内容 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#8](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/8) | style: README视觉清理——去emoji、统一配色、居中排版 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#6](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/6) | refactor: README重写为叙事风格，去除塑料感 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#7](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/7) | refactor: 自我介绍叙事化 + 技能分层 + CET-6去分数 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#5](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/5) | style: 放大开源贡献字体，撑满A4底部余量 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#4](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/4) | 优化简历内容：强化技术深度，去伪存真，适配A4打印 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#3](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/3) | 优化图片文件命名，提高可读性 | 2026-08-23 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#2](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/2) | 删除重复的COZE校园行三等奖图片 | 2026-08-23 |
-| [lxcxjxhx/HOS_SKILL_WORKFLOW](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW) | [#65](https://github.com/lxcxjxhx/HOS_SKILL_WORKFLOW/pull/65) | PR-D: CPG上下文注入 + BM25排序 + DEP证据增强 + 数据集管理 | 2026-08-28 |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | [#9566](https://github.com/unslothai/unsloth/pull/9566) | docs: remove duplicate Search bullet and fix error messages | 2026-08-26 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6540](https://github.com/pipecat-ai/pipecat/pull/6540) | docs: drop Returns sections that describe values nothing returns | 2026-11-04 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6522](https://github.com/pipecat-ai/pipecat/pull/6522) | docs: drop Args blocks for parameters that no longer exist | 2026-11-04 |
+| [pytorch/torchtitan](https://github.com/pytorch/torchtitan) | [#5798](https://github.com/pytorch/torchtitan/pull/5798) | Fix docstring typo in preprocess_data (autoencoer -> autoencoder) | 2026-11-04 |
 
 ## Detail Files
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-03 05:13:09 UTC
+Last updated: 2026-11-04 04:43:28 UTC
 
 ---
 
