@@ -5,13 +5,14 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 9
+- **Projects**: 11
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
 | [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
+| [apache/dolphinscheduler](https://github.com/apache/dolphinscheduler) | [#18752](https://github.com/apache/dolphinscheduler/pull/18752) | [Fix-18015][Task-API] Apply day offsets with calendar arithmetic so DST transitions do not shift dates | 2026-11-04 |
 | [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8241](https://github.com/labring/FastGPT/pull/8241) | docs: fix three broken in-page anchors | 2026-11-04 |
@@ -85,8 +86,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#45](https://github.com/lxcxjxhx/HOS-LS/pull/45) | Add offline NVD and CWE catalog import | 2026-08-29 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#44](https://github.com/lxcxjxhx/HOS-LS/pull/44) | fix: fail fast when Pure-AI is unavailable | 2026-08-29 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#43](https://github.com/lxcxjxhx/HOS-LS/pull/43) | fix: remove legacy AI postprocessing and repair lint | 2026-08-29 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#42](https://github.com/lxcxjxhx/HOS-LS/pull/42) | fix: stabilize Pure-AI scan workflow | 2026-08-28 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#41](https://github.com/lxcxjxhx/HOS-LS/pull/41) | HOS-LS 论文完整代码 + 数据管理脚本 | 2026-08-28 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#30](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/30) | feat(resume): 收掉智医项目重复表述, 充实代码实现描述 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#29](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/29) | feat(resume): 智医项目补回产品主线并修正赛事名 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#28](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/28) | feat(resume): 自我介绍按开发/Agent/算法方向重排 | 2026-10-22 |
@@ -111,6 +110,7 @@ Merged Pull Requests across open source projects.
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6540](https://github.com/pipecat-ai/pipecat/pull/6540) | docs: drop Returns sections that describe values nothing returns | 2026-11-04 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6522](https://github.com/pipecat-ai/pipecat/pull/6522) | docs: drop Args blocks for parameters that no longer exist | 2026-11-04 |
 | [pytorch/torchtitan](https://github.com/pytorch/torchtitan) | [#5798](https://github.com/pytorch/torchtitan/pull/5798) | Fix docstring typo in preprocess_data (autoencoer -> autoencoder) | 2026-11-04 |
+| [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6415](https://github.com/uxlfoundation/oneDNN/pull/6415) | doc: fix broken image paths in memory formats guide | 2026-11-04 |
 
 ## Detail Files
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-04 04:43:28 UTC
+Last updated: 2026-11-05 04:58:04 UTC
 
 ---
 
