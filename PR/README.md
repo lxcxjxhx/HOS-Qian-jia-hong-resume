@@ -5,18 +5,35 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 11
+- **Projects**: 9
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
-| [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | [#66](https://github.com/HughYau/qiushi-skill/pull/66) | fix(validate): 双向校验 commands/、缺失 hook 走 errors[]、扩展 markdown 链接校验覆盖 | 2026-10-01 |
 | [apache/dolphinscheduler](https://github.com/apache/dolphinscheduler) | [#18752](https://github.com/apache/dolphinscheduler/pull/18752) | [Fix-18015][Task-API] Apply day offsets with calendar arithmetic so DST transitions do not shift dates | 2026-11-04 |
-| [cocotb/cocotb](https://github.com/cocotb/cocotb) | [#5814](https://github.com/cocotb/cocotb/pull/5814) | docs: document when plain pdb works (terminal-based simulators) | 2026-10-14 |
 | [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8241](https://github.com/labring/FastGPT/pull/8241) | docs: fix three broken in-page anchors | 2026-11-04 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8235](https://github.com/labring/FastGPT/pull/8235) | i18n: add the six keys the UI references but no locale defines | 2026-11-03 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#95](https://github.com/lxcxjxhx/HOS-ARES/pull/95) | B84: Windows Job Object 受限执行（无容器兜底） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#94](https://github.com/lxcxjxhx/HOS-ARES/pull/94) | B83: 项目入口 README（命令有机器校验） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#93](https://github.com/lxcxjxhx/HOS-ARES/pull/93) | B82: 统一入口 veripen <子命令> | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#92](https://github.com/lxcxjxhx/HOS-ARES/pull/92) | B81: chat 接真模型路径（修掉假接线） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#91](https://github.com/lxcxjxhx/HOS-ARES/pull/91) | B80: 多步计划与会话延续（一句话两三步） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#90](https://github.com/lxcxjxhx/HOS-ARES/pull/90) | B79: 对话面板接三支柱（跑一遍 / 按档跑） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#89](https://github.com/lxcxjxhx/HOS-ARES/pull/89) | B78: 录屏第五幕（交互式 agent 进成片） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#88](https://github.com/lxcxjxhx/HOS-ARES/pull/88) | B77: 交互式 agent 界面（veripen chat） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#87](https://github.com/lxcxjxhx/HOS-ARES/pull/87) | B76: 结构标签接线（把 parser 推断接进 plan） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#86](https://github.com/lxcxjxhx/HOS-ARES/pull/86) | B75: H01 能力矩阵回填（22 项逐条核对） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#85](https://github.com/lxcxjxhx/HOS-ARES/pull/85) | B74: 报告面的显示（route_short 保留来源段） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#84](https://github.com/lxcxjxhx/HOS-ARES/pull/84) | B73: 录屏第四幕（platform --profile） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#83](https://github.com/lxcxjxhx/HOS-ARES/pull/83) | B72: 平台接 profile（资产/白名单/审批从客户档来） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#82](https://github.com/lxcxjxhx/HOS-ARES/pull/82) | B71: MANIFEST 行尾根治（生成与校验两端按 LF） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#81](https://github.com/lxcxjxhx/HOS-ARES/pull/81) | B70: 成片与 make demo | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#80](https://github.com/lxcxjxhx/HOS-ARES/pull/80) | B69: 终端体验录屏（三幕真跑过程） | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#79](https://github.com/lxcxjxhx/HOS-ARES/pull/79) | B68: veripen platform 企业级编排 | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#78](https://github.com/lxcxjxhx/HOS-ARES/pull/78) | B67: veripen agent 交互会话 | 2026-11-05 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#77](https://github.com/lxcxjxhx/HOS-ARES/pull/77) | B66: veripen run 端到端渗透 | 2026-11-05 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#50](https://github.com/lxcxjxhx/HOS-ARES/pull/50) | plan: HOS-ARES 总规划 v1.0 —— 三对标能力矩阵 + 四波 25 批（B35–B59） | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#51](https://github.com/lxcxjxhx/HOS-ARES/pull/51) | plan: 方案包统一治理 v1.0 —— 注册表 + 时间节点制度 + 三门自检 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#52](https://github.com/lxcxjxhx/HOS-ARES/pull/52) | b35: 展示语义层 —— 未验证不冒充高危 | 2026-11-04 |
@@ -65,27 +82,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#31](https://github.com/lxcxjxhx/HOS-ARES/pull/31) | feat(B4): 证据 — capsule/哈希链/replay 四态/脱敏（W1 冷启动门） | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#30](https://github.com/lxcxjxhx/HOS-ARES/pull/30) | feat(B3): guard — scope 三处校验 / 令牌桶 / 审批门 | 2026-10-29 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#29](https://github.com/lxcxjxhx/HOS-ARES/pull/29) | feat(B2): 调度 — 租约/心跳/回收/死信/分区串行 | 2026-10-29 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#65](https://github.com/lxcxjxhx/HOS-LS/pull/65) | feat(p0): W1 static prep - sample select + ground truth templates | 2026-09-12 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#63](https://github.com/lxcxjxhx/HOS-LS/pull/63) | feat: ECATSL Section 7-9 - verified evaluation/reporting, package wiring, and full validation | 2026-09-05 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#62](https://github.com/lxcxjxhx/HOS-LS/pull/62) | ECATSL Section 6 - catalog ingestion extension and scalable deterministic discovery | 2026-09-04 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#61](https://github.com/lxcxjxhx/HOS-LS/pull/61) | chore: remove tracked hypothesis cache artifacts | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#60](https://github.com/lxcxjxhx/HOS-LS/pull/60) | ECATSL Tasks 5.7-5.8 - scope short-circuit and reuse/stage property tests | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#59](https://github.com/lxcxjxhx/HOS-LS/pull/59) | ECATSL Task 5.4 - orchestration and failure-isolation integration tests | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#58](https://github.com/lxcxjxhx/HOS-LS/pull/58) | ECATSL Task 5.3 - fully wired core orchestrator | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#57](https://github.com/lxcxjxhx/HOS-LS/pull/57) | ECATSL Task 5.2 - pipeline stage identity, consolidation, and execution isolation | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#56](https://github.com/lxcxjxhx/HOS-LS/pull/56) | ECATSL Tasks 5.1/5.5/5.6 - tooling-first resolver and LLM-gate properties | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#55](https://github.com/lxcxjxhx/HOS-LS/pull/55) | ECATSL Tasks 4.7-4.8 - static path confirmation and finding lineage properties | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#54](https://github.com/lxcxjxhx/HOS-LS/pull/54) | ECATSL Task 4.5 - static-path gate + remove superseded legacy property tests | 2026-09-03 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#53](https://github.com/lxcxjxhx/HOS-LS/pull/53) | feat: ECATSL Task 4.6 - static adapter fixture compatibility tests | 2026-08-31 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#52](https://github.com/lxcxjxhx/HOS-LS/pull/52) | feat: ECATSL Task 4.4 - static validation feedback wiring | 2026-08-31 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#51](https://github.com/lxcxjxhx/HOS-LS/pull/51) | feat: ECATSL Task 4.3 - CodeQLSastAdapter normalization | 2026-08-31 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#50](https://github.com/lxcxjxhx/HOS-LS/pull/50) | feat: ECATSL Task 4.2 - InputTracerAdapter normalization | 2026-08-31 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#49](https://github.com/lxcxjxhx/HOS-LS/pull/49) | feat: ECATSL Tasks 3.6/3.7/4.1 - safe compilation + static adapter contracts | 2026-08-31 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#48](https://github.com/lxcxjxhx/HOS-LS/pull/48) | feat: ECATSL Tasks 3.2-3.5 | 2026-08-30 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#47](https://github.com/lxcxjxhx/HOS-LS/pull/47) | Add evidence-constrained taint learning | 2026-08-30 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#45](https://github.com/lxcxjxhx/HOS-LS/pull/45) | Add offline NVD and CWE catalog import | 2026-08-29 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#44](https://github.com/lxcxjxhx/HOS-LS/pull/44) | fix: fail fast when Pure-AI is unavailable | 2026-08-29 |
-| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#43](https://github.com/lxcxjxhx/HOS-LS/pull/43) | fix: remove legacy AI postprocessing and repair lint | 2026-08-29 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#30](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/30) | feat(resume): 收掉智医项目重复表述, 充实代码实现描述 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#29](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/29) | feat(resume): 智医项目补回产品主线并修正赛事名 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#28](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/28) | feat(resume): 自我介绍按开发/Agent/算法方向重排 | 2026-10-22 |
@@ -107,10 +103,14 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#12](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/12) | fix(resume): 重排版解决「拥挤、上下划分不清晰」 | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#11](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/11) | feat(resume): 新增 A4 单页简历排版工程 (RESUME-A4-QIANJIAHONG) | 2026-10-20 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#10](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/10) | fix(ci): 修复简历构建链的结构性缺陷并改为纯免费翻译 | 2026-10-20 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6575](https://github.com/pipecat-ai/pipecat/pull/6575) | fix(whisper): drop repetitive MLX segments by compression ratio | 2026-11-06 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6540](https://github.com/pipecat-ai/pipecat/pull/6540) | docs: drop Returns sections that describe values nothing returns | 2026-11-04 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6522](https://github.com/pipecat-ai/pipecat/pull/6522) | docs: drop Args blocks for parameters that no longer exist | 2026-11-04 |
 | [pytorch/torchtitan](https://github.com/pytorch/torchtitan) | [#5798](https://github.com/pytorch/torchtitan/pull/5798) | Fix docstring typo in preprocess_data (autoencoer -> autoencoder) | 2026-11-04 |
+| [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6432](https://github.com/uxlfoundation/oneDNN/pull/6432) | doc: remove a stale @param from decompress_reg | 2026-11-05 |
 | [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6415](https://github.com/uxlfoundation/oneDNN/pull/6415) | doc: fix broken image paths in memory formats guide | 2026-11-04 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3460](https://github.com/vllm-project/llm-compressor/pull/3460) | docs: drop the llama4 import that no longer resolves | 2026-11-05 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3444](https://github.com/vllm-project/llm-compressor/pull/3444) | Fix stale docstring parameter and return sections | 2026-11-05 |
 
 ## Detail Files
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-05 04:58:04 UTC
+Last updated: 2026-11-06 04:57:36 UTC
 
 ---
 
