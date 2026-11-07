@@ -5,16 +5,26 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 9
+- **Projects**: 8
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
 | [apache/dolphinscheduler](https://github.com/apache/dolphinscheduler) | [#18752](https://github.com/apache/dolphinscheduler/pull/18752) | [Fix-18015][Task-API] Apply day offsets with calendar arithmetic so DST transitions do not shift dates | 2026-11-04 |
-| [dolfinus/setuptools-git-versioning](https://github.com/dolfinus/setuptools-git-versioning) | [#162](https://github.com/dolfinus/setuptools-git-versioning/pull/162) | Add prefer_tag option to use the latest tag over the version file | 2026-10-05 |
+| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8285](https://github.com/labring/FastGPT/pull/8285) | docs: fix the todo link in tasks/plan.md | 2026-11-06 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8241](https://github.com/labring/FastGPT/pull/8241) | docs: fix three broken in-page anchors | 2026-11-04 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8235](https://github.com/labring/FastGPT/pull/8235) | i18n: add the six keys the UI references but no locale defines | 2026-11-03 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#106](https://github.com/lxcxjxhx/HOS-ARES/pull/106) | feat(ui): 覆盖账本进控制台——缺口表与完整度 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#105](https://github.com/lxcxjxhx/HOS-ARES/pull/105) | feat(workbench): chat 支持无契约跑法（run 的 openapi / discover 二选一） | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#104](https://github.com/lxcxjxhx/HOS-ARES/pull/104) | fix(workbench): chat 用自己的系统提示——模型才会真的接管 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#102](https://github.com/lxcxjxhx/HOS-ARES/pull/102) | feat(exec): B94 无契约闭环——观测面打标签，run --discover 直接跑 | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#101](https://github.com/lxcxjxhx/HOS-ARES/pull/101) | fix(exec): 发现面不收下载型资源——pdf/jpg/css 不是"面" | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#100](https://github.com/lxcxjxhx/HOS-ARES/pull/100) | docs(plan): H27 strix 收割矩阵与无契约发现 | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#99](https://github.com/lxcxjxhx/HOS-ARES/pull/99) | feat(kernel): B89 契约格式识别——swagger 2.0 归一、Postman 明确拒绝 | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#98](https://github.com/lxcxjxhx/HOS-ARES/pull/98) | feat(exec): B87 覆盖账本——六类缺口，机器观测与自述分开存 | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#103](https://github.com/lxcxjxhx/HOS-ARES/pull/103) | feat(exec): B86 无契约发现——从响应体攒面，不引代理 | 2026-11-06 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#96](https://github.com/lxcxjxhx/HOS-ARES/pull/96) | fix(exec): 恢复 mypy --strict 全绿——B84 回归与既有类型债 | 2026-11-06 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#95](https://github.com/lxcxjxhx/HOS-ARES/pull/95) | B84: Windows Job Object 受限执行（无容器兜底） | 2026-11-05 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#94](https://github.com/lxcxjxhx/HOS-ARES/pull/94) | B83: 项目入口 README（命令有机器校验） | 2026-11-05 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#93](https://github.com/lxcxjxhx/HOS-ARES/pull/93) | B82: 统一入口 veripen <子命令> | 2026-11-05 |
@@ -92,23 +102,13 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#23](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/23) | refactor(resume): 重写自我介绍，从复述清单改为回答「为什么值得面」 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#22](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/22) | feat(resume): 加入 5 项软件著作权，修翻译残留计数口径 | 2026-10-22 |
 | [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#21](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/21) | feat(resume): 实习/项目强化，补博客粉丝数，修英文拼接缺陷 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#20](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/20) | fix(resume): 删掉求职方向限定，修正英文直译与缓存指纹 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#19](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/19) | feat(resume): 技能行改用真实工具名，自我介绍改为事实型 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#18](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/18) | fix(ci): 翻译按源文件指纹缓存，修复改 workflow 必撞 429 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#17](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/17) | chore(ci): CI 自动提交补上 Signed-off-by | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#16](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/16) | fix(resume): 精简 header 冗余字段（生日/身高），腾出空间加厚章节间距 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#15](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/15) | fix(pdf): 自动适配单页，修复英文简历被撑成 2 页 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#14](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/14) | fix(resume): 重分配纵向空间，解决「拥挤、上下划分不清晰」 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#13](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/13) | chore: 移除误提交的 RESUME-A4-QIANJIAHONG 临时排版目录 | 2026-10-21 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#12](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/12) | fix(resume): 重排版解决「拥挤、上下划分不清晰」 | 2026-10-20 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#11](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/11) | feat(resume): 新增 A4 单页简历排版工程 (RESUME-A4-QIANJIAHONG) | 2026-10-20 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#10](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/10) | fix(ci): 修复简历构建链的结构性缺陷并改为纯免费翻译 | 2026-10-20 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6575](https://github.com/pipecat-ai/pipecat/pull/6575) | fix(whisper): drop repetitive MLX segments by compression ratio | 2026-11-06 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6540](https://github.com/pipecat-ai/pipecat/pull/6540) | docs: drop Returns sections that describe values nothing returns | 2026-11-04 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6522](https://github.com/pipecat-ai/pipecat/pull/6522) | docs: drop Args blocks for parameters that no longer exist | 2026-11-04 |
 | [pytorch/torchtitan](https://github.com/pytorch/torchtitan) | [#5798](https://github.com/pytorch/torchtitan/pull/5798) | Fix docstring typo in preprocess_data (autoencoer -> autoencoder) | 2026-11-04 |
 | [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6432](https://github.com/uxlfoundation/oneDNN/pull/6432) | doc: remove a stale @param from decompress_reg | 2026-11-05 |
 | [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6415](https://github.com/uxlfoundation/oneDNN/pull/6415) | doc: fix broken image paths in memory formats guide | 2026-11-04 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3461](https://github.com/vllm-project/llm-compressor/pull/3461) | docs: correct the documented default of max_seq_length | 2026-11-06 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3460](https://github.com/vllm-project/llm-compressor/pull/3460) | docs: drop the llama4 import that no longer resolves | 2026-11-05 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3444](https://github.com/vllm-project/llm-compressor/pull/3444) | Fix stale docstring parameter and return sections | 2026-11-05 |
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-06 04:57:36 UTC
+Last updated: 2026-11-07 04:30:39 UTC
 
 ---
 
