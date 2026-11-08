@@ -5,16 +5,64 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 8
+- **Projects**: 7
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
-| [apache/dolphinscheduler](https://github.com/apache/dolphinscheduler) | [#18752](https://github.com/apache/dolphinscheduler/pull/18752) | [Fix-18015][Task-API] Apply day offsets with calendar arithmetic so DST transitions do not shift dates | 2026-11-04 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8285](https://github.com/labring/FastGPT/pull/8285) | docs: fix the todo link in tasks/plan.md | 2026-11-06 |
-| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8241](https://github.com/labring/FastGPT/pull/8241) | docs: fix three broken in-page anchors | 2026-11-04 |
-| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8235](https://github.com/labring/FastGPT/pull/8235) | i18n: add the six keys the UI references but no locale defines | 2026-11-03 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#157](https://github.com/lxcxjxhx/HOS-ARES/pull/157) | fix(run): 证据绑面——同一 oracle 的多个面不再共用一份 capsule | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#156](https://github.com/lxcxjxhx/HOS-ARES/pull/156) | docs(plan): 老账再核三条——B2/B3/B11 都是已解决 | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#155](https://github.com/lxcxjxhx/HOS-ARES/pull/155) | fix(console): 覆盖矩阵把没跑的面画出来，别让缺口隐身 | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#154](https://github.com/lxcxjxhx/HOS-ARES/pull/154) | fix(console): hunt 产物不再被编造成另一种东西——真实面 + 不编证据 | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#153](https://github.com/lxcxjxhx/HOS-ARES/pull/153) | fix(report): 已判否不再冒充未执行 | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#152](https://github.com/lxcxjxhx/HOS-ARES/pull/152) | fix(coverage): 缺口数对不上——5 和「3 项缺口」说的是两个集合 | 2026-11-08 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#151](https://github.com/lxcxjxhx/HOS-ARES/pull/151) | docs(plan): H00 修订记录补 4 条——文档自己的账也要记 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#150](https://github.com/lxcxjxhx/HOS-ARES/pull/150) | fix(parity): E4 从暂不做改成机械探针——能力矩阵不许说假话 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#149](https://github.com/lxcxjxhx/HOS-ARES/pull/149) | feat(oracles): CORS 补预检——oracle 终于能发 OPTIONS | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#148](https://github.com/lxcxjxhx/HOS-ARES/pull/148) | docs(plan): 老账再核三条——控制台已做、xss_stored_probe 属取舍、CORS 缺预检仍欠 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#147](https://github.com/lxcxjxhx/HOS-ARES/pull/147) | test(render): 用实验定论 B46——open shadow root 在快照里是可见的 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#146](https://github.com/lxcxjxhx/HOS-ARES/pull/146) | fix(doctor): 夹具不在就 WARN——不许 ImportError 打挂整个自检 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#145](https://github.com/lxcxjxhx/HOS-ARES/pull/145) | feat(lint): 老账机械分诊 + 手工核掉两条 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#144](https://github.com/lxcxjxhx/HOS-ARES/pull/144) | docs(plan): H32 交接说明——现状 / 八条已定裁决 / 接下来能往哪走 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#143](https://github.com/lxcxjxhx/HOS-ARES/pull/143) | test(bench): 判定能力的机械门槛——改坏就红 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#142](https://github.com/lxcxjxhx/HOS-ARES/pull/142) | docs(plan): 老账复审——bench 召回 0.82 → 0.93（实测，三轮一致） | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#141](https://github.com/lxcxjxhx/HOS-ARES/pull/141) | fix(run): 缺输入记 BLOCKED——跑了但跑不动不是没跑 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#140](https://github.com/lxcxjxhx/HOS-ARES/pull/140) | docs(plan): H31 未结项归口——9 已解决 / 5 有意取舍 / 1 真欠账 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#139](https://github.com/lxcxjxhx/HOS-ARES/pull/139) | fix(render): 回显判定改成全量扫描——不再截断、不再留正文 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#138](https://github.com/lxcxjxhx/HOS-ARES/pull/138) | feat(sandbox): 执行体行为可离线验证——E1 的能验先验 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#137](https://github.com/lxcxjxhx/HOS-ARES/pull/137) | docs(plan): H30 头类判定口径——判据、不适用条件、刻意不做的三件事 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#136](https://github.com/lxcxjxhx/HOS-ARES/pull/136) | feat(oracles): HSTS —— scheme 进 Trace，http 目标诚实地说不适用 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#135](https://github.com/lxcxjxhx/HOS-ARES/pull/135) | feat(oracles): 响应头三件套——CSP / 点击劫持防护 / nosniff | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#134](https://github.com/lxcxjxhx/HOS-ARES/pull/134) | feat(oracles): 纯静态页第一次有了可判定的面——csp_absent + html_document | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#133](https://github.com/lxcxjxhx/HOS-ARES/pull/133) | refactor(core): 逐面记录收敛成 FaceRun——run 与 hunt 共用同一形状 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#132](https://github.com/lxcxjxhx/HOS-ARES/pull/132) | feat(hunt): 多面执行——route_ref 不再被无视，游标按面推进 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#131](https://github.com/lxcxjxhx/HOS-ARES/pull/131) | feat(run): 一个 oracle 跑每条适用的面，不只第一条 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#130](https://github.com/lxcxjxhx/HOS-ARES/pull/130) | feat(oracles): xss_dom 区分反射型与客户端型——看原始响应里有没有载荷 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#129](https://github.com/lxcxjxhx/HOS-ARES/pull/129) | feat(run): DOM XSS 第 3 步——按 oracle 分派传输，端到端跑出 VERIFIED | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#128](https://github.com/lxcxjxhx/HOS-ARES/pull/128) | feat(oracles): DOM XSS 第 2 步——xss_dom 判定（只看标记位，三条件） | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#127](https://github.com/lxcxjxhx/HOS-ARES/pull/127) | feat(exec): DOM XSS 第一步——渲染加标记位 + 浏览器传输 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#126](https://github.com/lxcxjxhx/HOS-ARES/pull/126) | fix(ui): 控制台吃目录；只有账本时资产名取自 asset_id | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#125](https://github.com/lxcxjxhx/HOS-ARES/pull/125) | feat(run): 没有可跑的 oracle 时也出账本，并逐面说清原因 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#124](https://github.com/lxcxjxhx/HOS-ARES/pull/124) | docs(plan): H29 交付说明——能力现状 / 验证方式 / 残留缺口 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#123](https://github.com/lxcxjxhx/HOS-ARES/pull/123) | refactor(cli): 发现参数收成一份——hunt 补上 --submit-forms | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#122](https://github.com/lxcxjxhx/HOS-ARES/pull/122) | feat(discovery): 提交无副作用的 GET 表单——结果页里的入口也能发现 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#121](https://github.com/lxcxjxhx/HOS-ARES/pull/121) | fix(cli): agent 的 stdin 没切——管道首行 BOM 把指令吃掉 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#120](https://github.com/lxcxjxhx/HOS-ARES/pull/120) | fix(cli): 修 B107 漏掉的 import——veripen discover 运行即 NameError | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#119](https://github.com/lxcxjxhx/HOS-ARES/pull/119) | feat(report): 报告抬头写明面的来源（discover vs 契约） | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#118](https://github.com/lxcxjxhx/HOS-ARES/pull/118) | feat(discovery): 表单字段名进记录——GET 表单不再是无参静态页 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#117](https://github.com/lxcxjxhx/HOS-ARES/pull/117) | feat(discovery): robots.txt / sitemap.xml 进发现——静态站的全量目录 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#116](https://github.com/lxcxjxhx/HOS-ARES/pull/116) | feat(discovery): 渲染接进发现——JS 里的入口与 XHR 也能看见 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#115](https://github.com/lxcxjxhx/HOS-ARES/pull/115) | fix(doctor): 浏览器检查默认不启动，实测放在显式开关后面 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#114](https://github.com/lxcxjxhx/HOS-ARES/pull/114) | feat(exec): hunt 支持无契约跑法；面强度与 run 共用一条规则 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#113](https://github.com/lxcxjxhx/HOS-ARES/pull/113) | docs(plan): H27 §3.8 V4 复测——发现可判定率（夹具 0.50 / 静态站 0.00） | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#112](https://github.com/lxcxjxhx/HOS-ARES/pull/112) | fix(discovery): 查询串要传到记录层——带 ?q= 的面不再退化成静态页 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#111](https://github.com/lxcxjxhx/HOS-ARES/pull/111) | feat(exec): 浏览器启动通道回退链——实际用了哪个写进结果 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#110](https://github.com/lxcxjxhx/HOS-ARES/pull/110) | fix(report): 面标识两种形态各归其位——机器用 ref，人看 short | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#109](https://github.com/lxcxjxhx/HOS-ARES/pull/109) | fix(ui): run 的产物能直接打开——列表形态、finding id、单一 severity 表 | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#108](https://github.com/lxcxjxhx/HOS-ARES/pull/108) | feat(report): 严重度由统一规则表给，不再一律 medium | 2026-11-07 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#107](https://github.com/lxcxjxhx/HOS-ARES/pull/107) | fix(report): 面强度与元信息不再"看起来有内容、其实编的" | 2026-11-07 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#106](https://github.com/lxcxjxhx/HOS-ARES/pull/106) | feat(ui): 覆盖账本进控制台——缺口表与完整度 | 2026-11-07 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#105](https://github.com/lxcxjxhx/HOS-ARES/pull/105) | feat(workbench): chat 支持无契约跑法（run 的 openapi / discover 二选一） | 2026-11-07 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#104](https://github.com/lxcxjxhx/HOS-ARES/pull/104) | fix(workbench): chat 用自己的系统提示——模型才会真的接管 | 2026-11-07 |
@@ -44,70 +92,22 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#79](https://github.com/lxcxjxhx/HOS-ARES/pull/79) | B68: veripen platform 企业级编排 | 2026-11-05 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#78](https://github.com/lxcxjxhx/HOS-ARES/pull/78) | B67: veripen agent 交互会话 | 2026-11-05 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#77](https://github.com/lxcxjxhx/HOS-ARES/pull/77) | B66: veripen run 端到端渗透 | 2026-11-05 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#50](https://github.com/lxcxjxhx/HOS-ARES/pull/50) | plan: HOS-ARES 总规划 v1.0 —— 三对标能力矩阵 + 四波 25 批（B35–B59） | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#51](https://github.com/lxcxjxhx/HOS-ARES/pull/51) | plan: 方案包统一治理 v1.0 —— 注册表 + 时间节点制度 + 三门自检 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#52](https://github.com/lxcxjxhx/HOS-ARES/pull/52) | b35: 展示语义层 —— 未验证不冒充高危 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#53](https://github.com/lxcxjxhx/HOS-ARES/pull/53) | b36: 页面契约对齐 —— coverage 矩阵 / finding?id / audit 源 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#54](https://github.com/lxcxjxhx/HOS-ARES/pull/54) | b37: 控制台装载器入库 —— 产物到状态，只读、确定性、空输入安全 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#55](https://github.com/lxcxjxhx/HOS-ARES/pull/55) | b38: 概览卡片化 + 覆盖矩阵渲染 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#56](https://github.com/lxcxjxhx/HOS-ARES/pull/56) | b39: findings 交互 + unverified 四态渲染 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#57](https://github.com/lxcxjxhx/HOS-ARES/pull/57) | b40: 详情页五段 + route_short 修正 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#58](https://github.com/lxcxjxhx/HOS-ARES/pull/58) | b41: 视觉系统 —— 令牌、双配色、三态、对比度闸门 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#59](https://github.com/lxcxjxhx/HOS-ARES/pull/59) | b42: 可访问性与打印 —— 跳转链接、焦点、aria 播报、静态闸门 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#60](https://github.com/lxcxjxhx/HOS-ARES/pull/60) | b43: 门面门槛评估 —— 结论：停止 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#61](https://github.com/lxcxjxhx/HOS-ARES/pull/61) | b44: 产品面验收 —— A13–A16 进断言表，kernel 升 v3.7 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#62](https://github.com/lxcxjxhx/HOS-ARES/pull/62) | b45: 容器隔离 —— 接口/加固/白名单/BLOCKED（真隔离待运行时） | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#63](https://github.com/lxcxjxhx/HOS-ARES/pull/63) | b47: 工具面统一 —— 一个注册表、一套准入、一本审计 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#64](https://github.com/lxcxjxhx/HOS-ARES/pull/64) | b50: Playbook 资产库 —— 三个打法 + 实测成功率 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#65](https://github.com/lxcxjxhx/HOS-ARES/pull/65) | b51: 黑板冲突消解 —— 胜出入上下文，落选不删除 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#66](https://github.com/lxcxjxhx/HOS-ARES/pull/66) | b52: 上下文压缩 —— 压上下文，不压证据不压判定 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#67](https://github.com/lxcxjxhx/HOS-ARES/pull/67) | b53: 报告智能体行为审计节 —— 五张表，空表也要显式 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#68](https://github.com/lxcxjxhx/HOS-ARES/pull/68) | b54: 审批界面 —— 唯一写入点，自批与过期都在这里拒 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#69](https://github.com/lxcxjxhx/HOS-ARES/pull/69) | b55: 插件端到端 —— 卸载后工具面逐字复原 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#70](https://github.com/lxcxjxhx/HOS-ARES/pull/70) | b56: TUI —— stdlib curses 三面板，缺 curses 就降级 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#71](https://github.com/lxcxjxhx/HOS-ARES/pull/71) | b57: 跨任务记忆 —— 事实复用，结论作废 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#72](https://github.com/lxcxjxhx/HOS-ARES/pull/72) | b58: 交付双形态 —— light 不含浏览器，browser 不假装已装 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#73](https://github.com/lxcxjxhx/HOS-ARES/pull/73) | b59: 三对标总验收 —— 22 项四态，红即非 0 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#74](https://github.com/lxcxjxhx/HOS-ARES/pull/74) | b46: 渲染执行体 —— DOM 可复现、证据脱敏、宿主隔离显式 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#75](https://github.com/lxcxjxhx/HOS-ARES/pull/75) | b49: 任务级并行 —— 并发不污染结果，跨任务读即事故 | 2026-11-04 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#76](https://github.com/lxcxjxhx/HOS-ARES/pull/76) | docs(closeout): 最终验收 —— 25 批收口，接受容器隔离为未验 | 2026-11-04 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#49](https://github.com/lxcxjxhx/HOS-ARES/pull/49) | feat(core): B12.1 黑板+事件落库 + spec-drift 闸门 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#48](https://github.com/lxcxjxhx/HOS-ARES/pull/48) | feat(delivery): B17 交付物料 — 端到端演示 + 四份文档 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#47](https://github.com/lxcxjxhx/HOS-ARES/pull/47) | feat(profile): B16 双客户档 — 换行业只换 YAML（A1 断言） | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#46](https://github.com/lxcxjxhx/HOS-ARES/pull/46) | feat(web): B15 只读控制台 — ui.* 写请求 405 / 绑定页只给摘要 / 公式排序 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#45](https://github.com/lxcxjxhx/HOS-ARES/pull/45) | feat(oracles): B14 TierC 3 类 — 存储型 XSS / CORS / GraphQL introspection | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#44](https://github.com/lxcxjxhx/HOS-ARES/pull/44) | feat(doctor): B13 交付硬化 — doctor 16 项 / 死信 / 3 worker / 离线包 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#43](https://github.com/lxcxjxhx/HOS-ARES/pull/43) | feat(bench): B12 44 例 × 3 轮 + 五条硬门槛 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#42](https://github.com/lxcxjxhx/HOS-ARES/pull/42) | feat(report): B11 三视图 — MD/SARIF/JSON 单向渲染 + manifest 防手改 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#41](https://github.com/lxcxjxhx/HOS-ARES/pull/41) | feat(agent): B10 循环 — 预算硬刹车 / 窄 schema / 降级链 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#40](https://github.com/lxcxjxhx/HOS-ARES/pull/40) | feat(auth): B9 认证清单 — J1–J10 全量 + O/M/S 检查单 + 覆盖矩阵 | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#39](https://github.com/lxcxjxhx/HOS-ARES/pull/39) | feat(contract): B8 OpenAPI → OperationSet → RouteSet（不产地址） | 2026-11-01 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#38](https://github.com/lxcxjxhx/HOS-ARES/pull/38) | feat(oracles): B7 TierB 5 类 + 默认关闭的启动校验 | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#37](https://github.com/lxcxjxhx/HOS-ARES/pull/37) | feat(oracles): B6 TierA 余 2 类 — open_redirect / path_traversal | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#36](https://github.com/lxcxjxhx/HOS-ARES/pull/36) | feat(oracles): B5 TierA×4 + OOB 通道（本地靶场，零 socket） | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#35](https://github.com/lxcxjxhx/HOS-ARES/pull/35) | feat(B4): 证据 — capsule 1.1 / 哈希链 / replay 六态 | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#34](https://github.com/lxcxjxhx/HOS-ARES/pull/34) | feat(guard): B3 scope 四处校验 + 令牌桶 + 审批门 | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#33](https://github.com/lxcxjxhx/HOS-ARES/pull/33) | feat(sched): B2 租约/心跳/回收/死信（进程级接管验收） | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#32](https://github.com/lxcxjxhx/HOS-ARES/pull/32) | feat(core): B1 骨架与契约 + B1.5 路由层（零硬路由） | 2026-10-31 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#31](https://github.com/lxcxjxhx/HOS-ARES/pull/31) | feat(B4): 证据 — capsule/哈希链/replay 四态/脱敏（W1 冷启动门） | 2026-10-29 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#30](https://github.com/lxcxjxhx/HOS-ARES/pull/30) | feat(B3): guard — scope 三处校验 / 令牌桶 / 审批门 | 2026-10-29 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#29](https://github.com/lxcxjxhx/HOS-ARES/pull/29) | feat(B2): 调度 — 租约/心跳/回收/死信/分区串行 | 2026-10-29 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#30](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/30) | feat(resume): 收掉智医项目重复表述, 充实代码实现描述 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#29](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/29) | feat(resume): 智医项目补回产品主线并修正赛事名 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#28](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/28) | feat(resume): 自我介绍按开发/Agent/算法方向重排 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#27](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/27) | fix(resume): 实习经历按仓库实况重写, 恢复自我介绍章节 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#26](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/26) | refactor(resume): 自我介绍去 AI 腔，105 字 → 77 字 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#25](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/25) | chore(resume): 页脚最后更新时间 8月23日 → 10月22日 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#24](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/24) | feat(resume): 技能区补编程语言，一份简历覆盖 Agent/算法/开发三方向 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#23](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/23) | refactor(resume): 重写自我介绍，从复述清单改为回答「为什么值得面」 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#22](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/22) | feat(resume): 加入 5 项软件著作权，修翻译残留计数口径 | 2026-10-22 |
-| [lxcxjxhx/HOS-Qian-jia-hong-resume](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume) | [#21](https://github.com/lxcxjxhx/HOS-Qian-jia-hong-resume/pull/21) | feat(resume): 实习/项目强化，补博客粉丝数，修英文拼接缺陷 | 2026-10-21 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6609](https://github.com/pipecat-ai/pipecat/pull/6609) | test(livekit): keep the module importable without the livekit extra | 2026-11-07 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6610](https://github.com/pipecat-ai/pipecat/pull/6610) | fix(deprecations): key the scan exclusion by a POSIX path | 2026-11-07 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6612](https://github.com/pipecat-ai/pipecat/pull/6612) | fix(tone): read the model config as UTF-8 | 2026-11-07 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6608](https://github.com/pipecat-ai/pipecat/pull/6608) | fix(cli): read the project config as UTF-8 | 2026-11-07 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6606](https://github.com/pipecat-ai/pipecat/pull/6606) | fix(evals): read and write eval artifacts as UTF-8 | 2026-11-07 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6604](https://github.com/pipecat-ai/pipecat/pull/6604) | fix(scripts): read and write provider-watch files as UTF-8 | 2026-11-07 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6575](https://github.com/pipecat-ai/pipecat/pull/6575) | fix(whisper): drop repetitive MLX segments by compression ratio | 2026-11-06 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6540](https://github.com/pipecat-ai/pipecat/pull/6540) | docs: drop Returns sections that describe values nothing returns | 2026-11-04 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6522](https://github.com/pipecat-ai/pipecat/pull/6522) | docs: drop Args blocks for parameters that no longer exist | 2026-11-04 |
 | [pytorch/torchtitan](https://github.com/pytorch/torchtitan) | [#5798](https://github.com/pytorch/torchtitan/pull/5798) | Fix docstring typo in preprocess_data (autoencoer -> autoencoder) | 2026-11-04 |
+| [usestrix/strix](https://github.com/usestrix/strix) | [#1690](https://github.com/usestrix/strix/pull/1690) | docs(skills): stop linking reference files that are not in this repo | 2026-11-08 |
 | [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6432](https://github.com/uxlfoundation/oneDNN/pull/6432) | doc: remove a stale @param from decompress_reg | 2026-11-05 |
-| [uxlfoundation/oneDNN](https://github.com/uxlfoundation/oneDNN) | [#6415](https://github.com/uxlfoundation/oneDNN/pull/6415) | doc: fix broken image paths in memory formats guide | 2026-11-04 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3461](https://github.com/vllm-project/llm-compressor/pull/3461) | docs: correct the documented default of max_seq_length | 2026-11-06 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3460](https://github.com/vllm-project/llm-compressor/pull/3460) | docs: drop the llama4 import that no longer resolves | 2026-11-05 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3444](https://github.com/vllm-project/llm-compressor/pull/3444) | Fix stale docstring parameter and return sections | 2026-11-05 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-07 04:30:39 UTC
+Last updated: 2026-11-08 04:15:24 UTC
 
 ---
 
