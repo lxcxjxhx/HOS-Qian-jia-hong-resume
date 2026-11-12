@@ -5,17 +5,21 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 9
+- **Projects**: 11
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
+| [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#448](https://github.com/NVIDIA/SkillEvaluator/pull/448) | docs: point the plugin inventory reference at the module that exists | 2026-11-11 |
+| [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11516](https://github.com/agno-agi/agno/pull/11516) | chore: name the arguments the docstrings' signatures actually accept | 2026-11-08 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8307](https://github.com/labring/FastGPT/pull/8307) | i18n: give three workflow hints a key that resolves | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8306](https://github.com/labring/FastGPT/pull/8306) | i18n: add the 79 Korean keys the other locales already define | 2026-11-09 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#237](https://github.com/lxcxjxhx/HOS-ARES/pull/237) | docs(readme): 把两个 workflow 的状态挂上去 | 2026-11-11 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#236](https://github.com/lxcxjxhx/HOS-ARES/pull/236) | docs(repo): 新来的人找不到"跑什么才算过"，也没有漏洞报告入口 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#235](https://github.com/lxcxjxhx/HOS-ARES/pull/235) | B226 接真模型的三个环境变量，哪里都查不到 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#234](https://github.com/lxcxjxhx/HOS-ARES/pull/234) | B225 装完点开就是界面：只有一次运行证明，没有用例守着 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#233](https://github.com/lxcxjxhx/HOS-ARES/pull/233) | B224 离线包从没说过面向哪个平台 | 2026-11-11 |
@@ -91,24 +95,20 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#163](https://github.com/lxcxjxhx/HOS-ARES/pull/163) | B154 hunt 的 VERIFIED 结论开始有真证据——增量封印，id 一次成型 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#162](https://github.com/lxcxjxhx/HOS-ARES/pull/162) | B153 证据目录只属于一轮——同一 out 跑第二次会混成两条链 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#161](https://github.com/lxcxjxhx/HOS-ARES/pull/161) | B152 工具结果里的 capsule_id 是编的——模型会照着它引用证据 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#160](https://github.com/lxcxjxhx/HOS-ARES/pull/160) | B151 replay 的 FAILED 背了两件事：翻案 与 没法审 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#159](https://github.com/lxcxjxhx/HOS-ARES/pull/159) | B150 · bench 的证据只算不落盘——123 份 capsule 盘上一份也没有 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#158](https://github.com/lxcxjxhx/HOS-ARES/pull/158) | B149 · 链头被删仍判 ok——少一份证据不能叫链完整 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#157](https://github.com/lxcxjxhx/HOS-ARES/pull/157) | fix(run): 证据绑面——同一 oracle 的多个面不再共用一份 capsule | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#156](https://github.com/lxcxjxhx/HOS-ARES/pull/156) | docs(plan): 老账再核三条——B2/B3/B11 都是已解决 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#155](https://github.com/lxcxjxhx/HOS-ARES/pull/155) | fix(console): 覆盖矩阵把没跑的面画出来，别让缺口隐身 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#154](https://github.com/lxcxjxhx/HOS-ARES/pull/154) | fix(console): hunt 产物不再被编造成另一种东西——真实面 + 不编证据 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#153](https://github.com/lxcxjxhx/HOS-ARES/pull/153) | fix(report): 已判否不再冒充未执行 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#152](https://github.com/lxcxjxhx/HOS-ARES/pull/152) | fix(coverage): 缺口数对不上——5 和「3 项缺口」说的是两个集合 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#151](https://github.com/lxcxjxhx/HOS-ARES/pull/151) | docs(plan): H00 修订记录补 4 条——文档自己的账也要记 | 2026-11-07 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#150](https://github.com/lxcxjxhx/HOS-ARES/pull/150) | fix(parity): E4 从暂不做改成机械探针——能力矩阵不许说假话 | 2026-11-07 |
+| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
+| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
+| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
+| [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#66](https://github.com/lxcxjxhx/HOS-LS/pull/66) | docs(repo): 一个扫描别人代码的项目，没有说明自己的漏洞往哪报 | 2026-11-11 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | [#10239](https://github.com/microsoft/agent-framework/pull/10239) | Python: chore(observability): remove OTEL_METRICS, an unused local sentinel | 2026-11-11 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | [#10233](https://github.com/microsoft/agent-framework/pull/10233) | Python: Remove a stale Args block from a samples docstring | 2026-11-11 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | [#10203](https://github.com/microsoft/agent-framework/pull/10203) | Python: drop a Returns section from a method that returns None | 2026-11-11 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | [#10201](https://github.com/microsoft/agent-framework/pull/10201) | Python: declare the two integration exports the runtime already serves | 2026-11-11 |
 | [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | [#10236](https://github.com/microsoft/agent-framework/pull/10236) | CI: Drop the path filter that matches no directory | 2026-11-10 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6620](https://github.com/pipecat-ai/pipecat/pull/6620) | docs(numbers): show the output the transform produces in its examples | 2026-11-10 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6618](https://github.com/pipecat-ai/pipecat/pull/6618) | fix(currency): read a scaled amount without its trailing zeros and keep a code apart | 2026-11-10 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6690](https://github.com/pipecat-ai/pipecat/pull/6690) | fix(context): read SUMMARY_TOKEN_BUFFER instead of repeating 0.8 | 2026-11-10 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6619](https://github.com/pipecat-ai/pipecat/pull/6619) | fix(percentages): read a percentage written with thousand separators | 2026-11-09 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6621](https://github.com/pipecat-ai/pipecat/pull/6621) | fix(flows): await an action handler that returns an awaitable | 2026-11-09 |
-| [usestrix/strix](https://github.com/usestrix/strix) | [#1690](https://github.com/usestrix/strix/pull/1690) | docs(skills): stop linking reference files that are not in this repo | 2026-11-08 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2862](https://github.com/vstorm-co/agenticos/pull/2862) | docs(skill-gallery): point the AgenticOS guide at the docs site instead of missing files | 2026-11-10 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2869](https://github.com/vstorm-co/agenticos/pull/2869) | chore(channels): drop the unused JSON access policy literal | 2026-11-10 |
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-11 04:34:08 UTC
+Last updated: 2026-11-12 05:39:24 UTC
 
 ---
 
