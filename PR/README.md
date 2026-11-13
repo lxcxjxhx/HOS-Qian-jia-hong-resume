@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 11
+- **Projects**: 12
 
 ## PR List
 
@@ -18,6 +18,7 @@ Merged Pull Requests across open source projects.
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8307](https://github.com/labring/FastGPT/pull/8307) | i18n: give three workflow hints a key that resolves | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8306](https://github.com/labring/FastGPT/pull/8306) | i18n: add the 79 Korean keys the other locales already define | 2026-11-09 |
+| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | [#7673](https://github.com/langchain-ai/deepagents/pull/7673) | docs(repo): point the auto:* label anchor at the heading GitHub renders | 2026-11-12 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#237](https://github.com/lxcxjxhx/HOS-ARES/pull/237) | docs(readme): 把两个 workflow 的状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#236](https://github.com/lxcxjxhx/HOS-ARES/pull/236) | docs(repo): 新来的人找不到"跑什么才算过"，也没有漏洞报告入口 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#235](https://github.com/lxcxjxhx/HOS-ARES/pull/235) | B226 接真模型的三个环境变量，哪里都查不到 | 2026-11-11 |
@@ -94,7 +95,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#164](https://github.com/lxcxjxhx/HOS-ARES/pull/164) | B155 hunt 的证据落盘了，界面还在说没有 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#163](https://github.com/lxcxjxhx/HOS-ARES/pull/163) | B154 hunt 的 VERIFIED 结论开始有真证据——增量封印，id 一次成型 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#162](https://github.com/lxcxjxhx/HOS-ARES/pull/162) | B153 证据目录只属于一轮——同一 out 跑第二次会混成两条链 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#161](https://github.com/lxcxjxhx/HOS-ARES/pull/161) | B152 工具结果里的 capsule_id 是编的——模型会照着它引用证据 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-12 05:39:24 UTC
+Last updated: 2026-11-13 04:56:07 UTC
 
 ---
 
