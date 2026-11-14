@@ -5,17 +5,18 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 12
+- **Projects**: 11
 
 ## PR List
 
 | Repository | PR | Title | Merged |
 |------------|-----|-------|--------|
+| [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#447](https://github.com/NVIDIA/SkillEvaluator/pull/447) | fix(quality): share quality default across CLI and library gates | 2026-11-13 |
 | [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#448](https://github.com/NVIDIA/SkillEvaluator/pull/448) | docs: point the plugin inventory reference at the module that exists | 2026-11-11 |
 | [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | [#11516](https://github.com/agno-agi/agno/pull/11516) | chore: name the arguments the docstrings' signatures actually accept | 2026-11-08 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
+| [labring/FastGPT](https://github.com/labring/FastGPT) | [#8336](https://github.com/labring/FastGPT/pull/8336) | fix(sandbox): report an edit that matched nothing instead of claiming success | 2026-11-13 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8307](https://github.com/labring/FastGPT/pull/8307) | i18n: give three workflow hints a key that resolves | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8306](https://github.com/labring/FastGPT/pull/8306) | i18n: add the 79 Korean keys the other locales already define | 2026-11-09 |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | [#7673](https://github.com/langchain-ai/deepagents/pull/7673) | docs(repo): point the auto:* label anchor at the heading GitHub renders | 2026-11-12 |
@@ -94,7 +95,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#165](https://github.com/lxcxjxhx/HOS-ARES/pull/165) | B156 多面结论被后一条面抹掉——成立的洞会消失 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#164](https://github.com/lxcxjxhx/HOS-ARES/pull/164) | B155 hunt 的证据落盘了，界面还在说没有 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#163](https://github.com/lxcxjxhx/HOS-ARES/pull/163) | B154 hunt 的 VERIFIED 结论开始有真证据——增量封印，id 一次成型 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#162](https://github.com/lxcxjxhx/HOS-ARES/pull/162) | B153 证据目录只属于一轮——同一 out 跑第二次会混成两条链 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-13 04:56:07 UTC
+Last updated: 2026-11-14 04:49:18 UTC
 
 ---
 
