@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 14
+- **Projects**: 15
 
 ## PR List
 
@@ -18,7 +18,6 @@ Merged Pull Requests across open source projects.
 | [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11550](https://github.com/agno-agi/agno/pull/11550) | chore: correct two docstrings that promise a returned tuple | 2026-11-16 |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | [#11516](https://github.com/agno-agi/agno/pull/11516) | chore: name the arguments the docstrings' signatures actually accept | 2026-11-08 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#9297](https://github.com/crewAIInc/crewAI/pull/9297) | fix(experimental): read the experiment baseline as UTF-8 | 2026-11-16 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8336](https://github.com/labring/FastGPT/pull/8336) | fix(sandbox): report an edit that matched nothing instead of claiming success | 2026-11-13 |
@@ -109,6 +108,7 @@ Merged Pull Requests across open source projects.
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6690](https://github.com/pipecat-ai/pipecat/pull/6690) | fix(context): read SUMMARY_TOKEN_BUFFER instead of repeating 0.8 | 2026-11-10 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6619](https://github.com/pipecat-ai/pipecat/pull/6619) | fix(percentages): read a percentage written with thousand separators | 2026-11-09 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6621](https://github.com/pipecat-ai/pipecat/pull/6621) | fix(flows): await an action handler that returns an awaitable | 2026-11-09 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3557](https://github.com/vllm-project/llm-compressor/pull/3557) | fix: infer the router score function of GLM MoE models from model_type | 2026-11-21 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2862](https://github.com/vstorm-co/agenticos/pull/2862) | docs(skill-gallery): point the AgenticOS guide at the docs site instead of missing files | 2026-11-10 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2869](https://github.com/vstorm-co/agenticos/pull/2869) | chore(channels): drop the unused JSON access policy literal | 2026-11-10 |
 
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-20 05:36:48 UTC
+Last updated: 2026-11-21 05:30:24 UTC
 
 ---
 
