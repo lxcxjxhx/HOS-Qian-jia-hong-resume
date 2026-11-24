@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 15
+- **Projects**: 16
 
 ## PR List
 
@@ -14,12 +14,16 @@ Merged Pull Requests across open source projects.
 | [NVIDIA/NeMo-Relay](https://github.com/NVIDIA/NeMo-Relay) | [#1763](https://github.com/NVIDIA/NeMo-Relay/pull/1763) | docs: point the diagnostics example at an existing reference page | 2026-11-18 |
 | [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#447](https://github.com/NVIDIA/SkillEvaluator/pull/447) | fix(quality): share quality default across CLI and library gates | 2026-11-13 |
 | [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#448](https://github.com/NVIDIA/SkillEvaluator/pull/448) | docs: point the plugin inventory reference at the module that exists | 2026-11-11 |
+| [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3891](https://github.com/NVIDIA/TransformerEngine/pull/3891) | fix(cross_entropy): keep the denominator finite when a block is entirely `-inf` | 2026-11-23 |
 | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3877](https://github.com/NVIDIA/TransformerEngine/pull/3877) | [Docs] Fix the parameter name in two moe_sort_chunks_by_index docstrings | 2026-11-17 |
 | [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11550](https://github.com/agno-agi/agno/pull/11550) | chore: correct two docstrings that promise a returned tuple | 2026-11-16 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#9297](https://github.com/crewAIInc/crewAI/pull/9297) | fix(experimental): read the experiment baseline as UTF-8 | 2026-11-16 |
+| [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2652](https://github.com/intel/neural-compressor/pull/2652) | fix: report auto-tune relative loss against `abs(baseline)` | 2026-11-24 |
+| [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2648](https://github.com/intel/neural-compressor/pull/2648) | docs: name the parameters the smooth_quant docstrings actually take | 2026-11-24 |
+| [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2650](https://github.com/intel/neural-compressor/pull/2650) | docs: name the parameters three docstrings actually take | 2026-11-24 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8336](https://github.com/labring/FastGPT/pull/8336) | fix(sandbox): report an edit that matched nothing instead of claiming success | 2026-11-13 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8307](https://github.com/labring/FastGPT/pull/8307) | i18n: give three workflow hints a key that resolves | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8306](https://github.com/labring/FastGPT/pull/8306) | i18n: add the 79 Korean keys the other locales already define | 2026-11-09 |
@@ -95,10 +99,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#169](https://github.com/lxcxjxhx/HOS-ARES/pull/169) | B160 把报告复现命令的可执行性固化成端到端契约 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#168](https://github.com/lxcxjxhx/HOS-ARES/pull/168) | B159 平台重跑被拒，报告却把上一轮的 findings 当成这一轮的 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#167](https://github.com/lxcxjxhx/HOS-ARES/pull/167) | B158 finish 的自述被整个丢掉——模型说了等于没说 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#166](https://github.com/lxcxjxhx/HOS-ARES/pull/166) | B157 控制台的复现命令把 finding_id 当 capsule 路径 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#165](https://github.com/lxcxjxhx/HOS-ARES/pull/165) | B156 多面结论被后一条面抹掉——成立的洞会消失 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#164](https://github.com/lxcxjxhx/HOS-ARES/pull/164) | B155 hunt 的证据落盘了，界面还在说没有 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#163](https://github.com/lxcxjxhx/HOS-ARES/pull/163) | B154 hunt 的 VERIFIED 结论开始有真证据——增量封印，id 一次成型 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-23 05:36:32 UTC
+Last updated: 2026-11-24 08:15:15 UTC
 
 ---
 
