@@ -19,7 +19,6 @@ Merged Pull Requests across open source projects.
 | [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11550](https://github.com/agno-agi/agno/pull/11550) | chore: correct two docstrings that promise a returned tuple | 2026-11-16 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | [#8017](https://github.com/bytedance/deer-flow/pull/8017) | fix(skills): give a bracketed literal in the userinfo slot no host on every Python | 2026-11-09 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#9297](https://github.com/crewAIInc/crewAI/pull/9297) | fix(experimental): read the experiment baseline as UTF-8 | 2026-11-16 |
 | [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2652](https://github.com/intel/neural-compressor/pull/2652) | fix: report auto-tune relative loss against `abs(baseline)` | 2026-11-24 |
 | [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2648](https://github.com/intel/neural-compressor/pull/2648) | docs: name the parameters the smooth_quant docstrings actually take | 2026-11-24 |
@@ -95,19 +94,20 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#173](https://github.com/lxcxjxhx/HOS-ARES/pull/173) | B164 平台汇总没有分母：2 条结论被读成只测了 2 项 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#172](https://github.com/lxcxjxhx/HOS-ARES/pull/172) | B163 平台不能带凭据跑：带鉴权的资产永远拿不到身份 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#171](https://github.com/lxcxjxhx/HOS-ARES/pull/171) | B162 平台没跟上 run 的探测能力：没有 OpenAPI 就跑不了 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#170](https://github.com/lxcxjxhx/HOS-ARES/pull/170) | B161 模型自述存下来了，控制台看不见 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#169](https://github.com/lxcxjxhx/HOS-ARES/pull/169) | B160 把报告复现命令的可执行性固化成端到端契约 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#168](https://github.com/lxcxjxhx/HOS-ARES/pull/168) | B159 平台重跑被拒，报告却把上一轮的 findings 当成这一轮的 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#167](https://github.com/lxcxjxhx/HOS-ARES/pull/167) | B158 finish 的自述被整个丢掉——模型说了等于没说 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#66](https://github.com/lxcxjxhx/HOS-LS/pull/66) | docs(repo): 一个扫描别人代码的项目，没有说明自己的漏洞往哪报 | 2026-11-11 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6620](https://github.com/pipecat-ai/pipecat/pull/6620) | docs(numbers): show the output the transform produces in its examples | 2026-11-10 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6618](https://github.com/pipecat-ai/pipecat/pull/6618) | fix(currency): read a scaled amount without its trailing zeros and keep a code apart | 2026-11-10 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#14](https://github.com/lxcxjxhx/lxcxjxhx/pull/14) | art: stop moving the background, let the light move instead | 2026-11-25 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#13](https://github.com/lxcxjxhx/lxcxjxhx/pull/13) | art: give the card a moving background | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#12](https://github.com/lxcxjxhx/lxcxjxhx/pull/12) | chore: drop the two snake cards nothing links to | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#11](https://github.com/lxcxjxhx/lxcxjxhx/pull/11) | docs: reduce the page to its card, and stop declaring a licence the repo dropped | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#10](https://github.com/lxcxjxhx/lxcxjxhx/pull/10) | chore: drop dist/hos-card.html, a byte-identical copy of docs/index.html | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#9](https://github.com/lxcxjxhx/lxcxjxhx/pull/9) | docs: reference the counts instead of restating them | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#8](https://github.com/lxcxjxhx/lxcxjxhx/pull/8) | fix(workflow): hand the stats across the step boundary again | 2026-11-24 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#7](https://github.com/lxcxjxhx/lxcxjxhx/pull/7) | docs: rewrite the front page against links that resolve | 2026-11-24 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6759](https://github.com/pipecat-ai/pipecat/pull/6759) | fix(evals): state the encoding on the remaining text-mode opens | 2026-11-24 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6690](https://github.com/pipecat-ai/pipecat/pull/6690) | fix(context): read SUMMARY_TOKEN_BUFFER instead of repeating 0.8 | 2026-11-10 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6619](https://github.com/pipecat-ai/pipecat/pull/6619) | fix(percentages): read a percentage written with thousand separators | 2026-11-09 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6621](https://github.com/pipecat-ai/pipecat/pull/6621) | fix(flows): await an action handler that returns an awaitable | 2026-11-09 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3557](https://github.com/vllm-project/llm-compressor/pull/3557) | fix: infer the router score function of GLM MoE models from model_type | 2026-11-21 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2862](https://github.com/vstorm-co/agenticos/pull/2862) | docs(skill-gallery): point the AgenticOS guide at the docs site instead of missing files | 2026-11-10 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2869](https://github.com/vstorm-co/agenticos/pull/2869) | chore(channels): drop the unused JSON access policy literal | 2026-11-10 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-24 08:15:15 UTC
+Last updated: 2026-11-25 06:51:51 UTC
 
 ---
 
