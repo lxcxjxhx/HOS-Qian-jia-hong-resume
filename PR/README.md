@@ -93,11 +93,11 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#174](https://github.com/lxcxjxhx/HOS-ARES/pull/174) | B165 hunt 与 platform 的证据也能拿起来就重判 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#173](https://github.com/lxcxjxhx/HOS-ARES/pull/173) | B164 平台汇总没有分母：2 条结论被读成只测了 2 项 | 2026-11-08 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#172](https://github.com/lxcxjxhx/HOS-ARES/pull/172) | B163 平台不能带凭据跑：带鉴权的资产永远拿不到身份 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#171](https://github.com/lxcxjxhx/HOS-ARES/pull/171) | B162 平台没跟上 run 的探测能力：没有 OpenAPI 就跑不了 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#66](https://github.com/lxcxjxhx/HOS-LS/pull/66) | docs(repo): 一个扫描别人代码的项目，没有说明自己的漏洞往哪报 | 2026-11-11 |
+| [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#17](https://github.com/lxcxjxhx/lxcxjxhx/pull/17) | art: four AI-generated video backgrounds, one per screen | 2026-11-25 |
 | [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#14](https://github.com/lxcxjxhx/lxcxjxhx/pull/14) | art: stop moving the background, let the light move instead | 2026-11-25 |
 | [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#13](https://github.com/lxcxjxhx/lxcxjxhx/pull/13) | art: give the card a moving background | 2026-11-24 |
 | [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#12](https://github.com/lxcxjxhx/lxcxjxhx/pull/12) | chore: drop the two snake cards nothing links to | 2026-11-24 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-25 06:51:51 UTC
+Last updated: 2026-11-26 06:43:15 UTC
 
 ---
 
