@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 16
+- **Projects**: 17
 
 ## PR List
 
@@ -16,10 +16,10 @@ Merged Pull Requests across open source projects.
 | [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#448](https://github.com/NVIDIA/SkillEvaluator/pull/448) | docs: point the plugin inventory reference at the module that exists | 2026-11-11 |
 | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3891](https://github.com/NVIDIA/TransformerEngine/pull/3891) | fix(cross_entropy): keep the denominator finite when a block is entirely `-inf` | 2026-11-23 |
 | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3877](https://github.com/NVIDIA/TransformerEngine/pull/3877) | [Docs] Fix the parameter name in two moe_sort_chunks_by_index docstrings | 2026-11-17 |
-| [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | [#6409](https://github.com/UKGovernmentBEIS/inspect_ai/pull/6409) | fix: keep a host's Rich progress context usable after an eval | 2026-11-11 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11550](https://github.com/agno-agi/agno/pull/11550) | chore: correct two docstrings that promise a returned tuple | 2026-11-16 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#9297](https://github.com/crewAIInc/crewAI/pull/9297) | fix(experimental): read the experiment baseline as UTF-8 | 2026-11-16 |
+| [intel/auto-round](https://github.com/intel/auto-round) | [#2692](https://github.com/intel/auto-round/pull/2692) | docs: name the parameters three docstrings actually take | 2026-11-27 |
 | [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2652](https://github.com/intel/neural-compressor/pull/2652) | fix: report auto-tune relative loss against `abs(baseline)` | 2026-11-24 |
 | [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2648](https://github.com/intel/neural-compressor/pull/2648) | docs: name the parameters the smooth_quant docstrings actually take | 2026-11-24 |
 | [intel/neural-compressor](https://github.com/intel/neural-compressor) | [#2650](https://github.com/intel/neural-compressor/pull/2650) | docs: name the parameters three docstrings actually take | 2026-11-24 |
@@ -27,6 +27,13 @@ Merged Pull Requests across open source projects.
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8307](https://github.com/labring/FastGPT/pull/8307) | i18n: give three workflow hints a key that resolves | 2026-11-09 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | [#8306](https://github.com/labring/FastGPT/pull/8306) | i18n: add the 79 Korean keys the other locales already define | 2026-11-09 |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | [#7673](https://github.com/langchain-ai/deepagents/pull/7673) | docs(repo): point the auto:* label anchor at the heading GitHub renders | 2026-11-12 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#251](https://github.com/lxcxjxhx/HOS-ARES/pull/251) | docs: 七次量具失误归纳成清单，并给清单自己加闸门 | 2026-11-27 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#250](https://github.com/lxcxjxhx/HOS-ARES/pull/250) | fix(agent): 多调用是**不可达代码**——上层支持、下层拒掉 | 2026-11-27 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#249](https://github.com/lxcxjxhx/HOS-ARES/pull/249) | test: 六套独立验证（只读审计 / 篡改检测 / 断点恢复 / 插件回滚 / 审批 / 黑板） | 2026-11-26 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#248](https://github.com/lxcxjxhx/HOS-ARES/pull/248) | chore: 收口 B536–B545 到 main（原 PR 链堆叠导致内容悬空） | 2026-11-26 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#239](https://github.com/lxcxjxhx/HOS-ARES/pull/239) | feat(parallel): 容器级并行——每任务一容器，与串行逐条相同 | 2026-11-26 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#238](https://github.com/lxcxjxhx/HOS-ARES/pull/238) | feat(sandbox): E1 真隔离验过——WSL 里的 podman 接成容器档执行体 | 2026-11-26 |
+| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#243](https://github.com/lxcxjxhx/HOS-ARES/pull/243) | fix(sandbox): available() 探活守护进程——CI 上 docker CLI 在、daemon 不在 | 2026-11-26 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#237](https://github.com/lxcxjxhx/HOS-ARES/pull/237) | docs(readme): 把两个 workflow 的状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#236](https://github.com/lxcxjxhx/HOS-ARES/pull/236) | docs(repo): 新来的人找不到"跑什么才算过"，也没有漏洞报告入口 | 2026-11-11 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#235](https://github.com/lxcxjxhx/HOS-ARES/pull/235) | B226 接真模型的三个环境变量，哪里都查不到 | 2026-11-11 |
@@ -83,16 +90,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#184](https://github.com/lxcxjxhx/HOS-ARES/pull/184) | B175 doctor 的插件锁快照永远绿：它验的是空字典能算哈希 | 2026-11-09 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#183](https://github.com/lxcxjxhx/HOS-ARES/pull/183) | B174 按档跑永远缺契约；代签把签字人写成 operator | 2026-11-09 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#182](https://github.com/lxcxjxhx/HOS-ARES/pull/182) | B173 requires 有宣告没执行点：先给判定和开关，默认仍关 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#181](https://github.com/lxcxjxhx/HOS-ARES/pull/181) | B172 离线包的无外网承诺比实现宽：git clone 与 .ps1 全漏 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#180](https://github.com/lxcxjxhx/HOS-ARES/pull/180) | B171 工作台早就会找文件搜内容，REPL 却没接 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#179](https://github.com/lxcxjxhx/HOS-ARES/pull/179) | B170 账本看不出这一步是新建还是覆盖 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#178](https://github.com/lxcxjxhx/HOS-ARES/pull/178) | B169 agent 的 sh 跑不了 python 命令，而且静默成功 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#177](https://github.com/lxcxjxhx/HOS-ARES/pull/177) | B168 平台视图少了覆盖账本：合计口径没人说 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#176](https://github.com/lxcxjxhx/HOS-ARES/pull/176) | B167 控制台打不开平台的产物：多资产那个出口一直是空的 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#175](https://github.com/lxcxjxhx/HOS-ARES/pull/175) | B166 hunt 只有 JSON：补一份可交付报告 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#174](https://github.com/lxcxjxhx/HOS-ARES/pull/174) | B165 hunt 与 platform 的证据也能拿起来就重判 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#173](https://github.com/lxcxjxhx/HOS-ARES/pull/173) | B164 平台汇总没有分母：2 条结论被读成只测了 2 项 | 2026-11-08 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#172](https://github.com/lxcxjxhx/HOS-ARES/pull/172) | B163 平台不能带凭据跑：带鉴权的资产永远拿不到身份 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
@@ -108,6 +105,9 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/lxcxjxhx](https://github.com/lxcxjxhx/lxcxjxhx) | [#7](https://github.com/lxcxjxhx/lxcxjxhx/pull/7) | docs: rewrite the front page against links that resolve | 2026-11-24 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6759](https://github.com/pipecat-ai/pipecat/pull/6759) | fix(evals): state the encoding on the remaining text-mode opens | 2026-11-24 |
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | [#6690](https://github.com/pipecat-ai/pipecat/pull/6690) | fix(context): read SUMMARY_TOKEN_BUFFER instead of repeating 0.8 | 2026-11-10 |
+| [vllm-project/compressed-tensors](https://github.com/vllm-project/compressed-tensors) | [#1038](https://github.com/vllm-project/compressed-tensors/pull/1038) | fix(config): read and write model config JSON as UTF-8 | 2026-11-27 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3526](https://github.com/vllm-project/llm-compressor/pull/3526) | docs(autoround): drop the extra cell that breaks the support matrix row | 2026-11-26 |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3564](https://github.com/vllm-project/llm-compressor/pull/3564) | test: write the recipe file through tmp_path, not an open NamedTemporaryFile | 2026-11-26 |
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | [#3557](https://github.com/vllm-project/llm-compressor/pull/3557) | fix: infer the router score function of GLM MoE models from model_type | 2026-11-21 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2862](https://github.com/vstorm-co/agenticos/pull/2862) | docs(skill-gallery): point the AgenticOS guide at the docs site instead of missing files | 2026-11-10 |
 | [vstorm-co/agenticos](https://github.com/vstorm-co/agenticos) | [#2869](https://github.com/vstorm-co/agenticos/pull/2869) | chore(channels): drop the unused JSON access policy literal | 2026-11-10 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-26 06:43:15 UTC
+Last updated: 2026-11-27 06:34:44 UTC
 
 ---
 
