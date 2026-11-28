@@ -5,7 +5,7 @@ Merged Pull Requests across open source projects.
 ## Summary
 
 - **Total Merged PRs**: 100
-- **Projects**: 17
+- **Projects**: 18
 
 ## PR List
 
@@ -16,6 +16,7 @@ Merged Pull Requests across open source projects.
 | [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | [#448](https://github.com/NVIDIA/SkillEvaluator/pull/448) | docs: point the plugin inventory reference at the module that exists | 2026-11-11 |
 | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3891](https://github.com/NVIDIA/TransformerEngine/pull/3891) | fix(cross_entropy): keep the denominator finite when a block is entirely `-inf` | 2026-11-23 |
 | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | [#3877](https://github.com/NVIDIA/TransformerEngine/pull/3877) | [Docs] Fix the parameter name in two moe_sort_chunks_by_index docstrings | 2026-11-17 |
+| [NaiboWang/FoldMobileGym](https://github.com/NaiboWang/FoldMobileGym) | [#1](https://github.com/NaiboWang/FoldMobileGym/pull/1) | fix(tools): 回归脚本先创建 artifacts 父目录再分配输出 | 2026-11-28 |
 | [ZHangZHengEric/Sage](https://github.com/ZHangZHengEric/Sage) | [#333](https://github.com/ZHangZHengEric/Sage/pull/333) | docs(i18n): drop the anchor that no longer has a heading | 2026-11-11 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | [#11550](https://github.com/agno-agi/agno/pull/11550) | chore: correct two docstrings that promise a returned tuple | 2026-11-16 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#9297](https://github.com/crewAIInc/crewAI/pull/9297) | fix(experimental): read the experiment baseline as UTF-8 | 2026-11-16 |
@@ -89,7 +90,6 @@ Merged Pull Requests across open source projects.
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#185](https://github.com/lxcxjxhx/HOS-ARES/pull/185) | B176 parity 三条永远绿的探针：只验 import 与文件存在 | 2026-11-09 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#184](https://github.com/lxcxjxhx/HOS-ARES/pull/184) | B175 doctor 的插件锁快照永远绿：它验的是空字典能算哈希 | 2026-11-09 |
 | [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#183](https://github.com/lxcxjxhx/HOS-ARES/pull/183) | B174 按档跑永远缺契约；代签把签字人写成 operator | 2026-11-09 |
-| [lxcxjxhx/HOS-ARES](https://github.com/lxcxjxhx/HOS-ARES) | [#182](https://github.com/lxcxjxhx/HOS-ARES/pull/182) | B173 requires 有宣告没执行点：先给判定和开关，默认仍关 | 2026-11-08 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#72](https://github.com/lxcxjxhx/HOS-LS/pull/72) | docs(readme): 把 CI 状态挂上去 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#68](https://github.com/lxcxjxhx/HOS-LS/pull/68) | docs(repo): 报"扫漏了"的人不知道该给什么，表单来收 | 2026-11-11 |
 | [lxcxjxhx/HOS-LS](https://github.com/lxcxjxhx/HOS-LS) | [#67](https://github.com/lxcxjxhx/HOS-LS/pull/67) | fix(core): scanner_analyze 的函数体丢了缩进，整个模块无法编译 | 2026-11-11 |
@@ -128,7 +128,7 @@ PR/
 
 Updated daily via GitHub Actions at UTC 00:00.
 
-Last updated: 2026-11-27 06:34:44 UTC
+Last updated: 2026-11-28 06:09:23 UTC
 
 ---
 
